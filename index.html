@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./agg/assets/css/clear.css">
+  <link rel="stylesheet" href="./agg/assets/css/fonts.css">
+  <link rel="stylesheet" href="./agg/assets/css/breadcrumbs.css">
+  <link rel="stylesheet" href="./agg/assets/css/header.css">
+  <link rel="stylesheet" href="./agg/assets/css/footer.css">
+  <link rel="stylesheet" href="./agg/assets/css/company.css">
+  <link rel="stylesheet" href="./agg/assets/css/settings.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="content spacer container">
+        <a href="https://k-ps.ru" class="logo">
+        </a>
+        <div class="header__right spacer">
+          <div id="search_cable" class="search " autocomplete="off">
+            <input data-limit="5" type="text" id="mr_search" name="mr_search" class="search__field"
+              placeholder="Поиск по маркоразмеру">
+            <div class="search__select">
+              <p data-stype="1" class="search__selected">
+                <svg class="svg-icon icon-search-type-2">
+                  <use xlink:href="#icon-search-type-2"></use>
+                </svg>
+                <span>По характеристикам</span>
+              </p>
+
+              <svg class="svg-icon icon-arrow-select">
+                <use xlink:href="#icon-arrow-select"></use>
+              </svg>
+
+              <div class="search__select-list">
+                <p data-stype="1" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-2">
+                    <use xlink:href="#icon-search-type-2"></use>
+                  </svg>
+                  <span>На складах</span>
+                </p>
+                <p data-stype="2" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-1">
+                    <use xlink:href="#icon-search-type-1"></use>
+                  </svg>
+                  <span>По характеристикам</span>
+                </p>
+              </div>
+              <!--search__select-list-->
+            </div>
+            <!--search__select-->
+            <button class="search__btn">
+              <svg class="svg-icon icon-search pos-center">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--header__right-->
+        <div class="header__price">
+          <div class="header__price-text">1 334,62 руб</div>
+          <div class="header__price-btn">
+            <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu-icon">
+
+            <img class="header__menu-icon--margin" src="./agg/assets/images/svg/profile.svg" alt="">
+            <img src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
+
+          </div>
+        </div>
+        <!--content-->
+    </header>
+
+    <section class="pager">
+      <div class="content container">
+        <a href="https://k-ps.ru/" class="pager__link">КПС</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Личный кабинет</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link pager__link--active">Кампании</a>
+      </div>
+      <!--content-->
+    </section>
+    <!--pager-->
+
+    <div class="lk">
+      <nav class="lk__nav">
+        <div class="container">
+          <ul class="lk__nav-list">
+            <li class="lk__nav-item"><a href="" class="lk__nav-link lk__nav-link--current">Кампании</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Статистика</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Бухгалтерия</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section class="company">
+      <div class="container">
+        <div class="company__title">Кампании</div>
+        <!-- <div class="company__subtitle">У вас нет активных кампаний</div> -->
+
+        <div class="company__list">
+          <div class="company__list-wrap">
+            <div class="company__list-content">
+              <div class="company__company">
+                <div class="company__company-item">
+                  <span class="company-input" role="textbox" contenteditable>Кампания 1</span>
+                </div>
+              </div>
+              <div class="company__switch" tab-index="0">
+                <div class="company__switch-title">Остановлено пользователем</div>
+                <label class="company__switch-label">
+                  <span class="company__switch-handle"></span>
+                  <input class="company__switch-input" type="checkbox" checked="true">
+                </label>
+              </div>
+            </div>
+            <div class="company__table-titles">
+              <div class="company__table-title company__table-info--number">№ 000001</div>
+              <div class="company__table-title company__table-info--strategy">Стратегия</div>
+              <div class="company__table-title">Клики</div>
+              <div class="company__table-title">Показы</div>
+              <div class="company__table-title">CTR, %</div>
+              <div class="company__table-title">Расходы, руб</div>
+              <div class="company__table-title">Дата начала</div>
+            </div>
+            <div class="company__table-infos">
+              <div class="company__table-info company__table-info--number">Целевой переход</div>
+              <div class="company__table-info company__table-info--strategy">Суточный лимит</div>
+              <div class="company__table-info company__table-info--click">1200</div>
+              <div class="company__table-info company__table-info--show">15 478</div>
+              <div class="company__table-info company__table-info--percent">0.9</div>
+              <div class="company__table-info company__table-info--expenses">30 000</div>
+              <div class="company__table-info company__table-info--date">10.02.2020</div>
+            </div>
+          </div>
+
+          <div class="company__table-buttons">
+            <div class="company__table-button">
+              <button class="company__table-btn company__table-btn--settings company__button--gray">Настроить</button>
+              <svg class="company__svg--gray">
+                <use xlink:href="#btn-settings"></use>
+              </svg>
+            </div>
+            <div class="company__table-button">
+              <button class="company__table-btn company__table-btn--agregator company__button--gray">Статистика</button>
+              <svg class="company__svg--gray">
+                <use xlink:href="#btn-agregator"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="company__list">
+          <div class="company__list-wrap">
+            <div class="company__list-content">
+              <div class="company__company">
+                <div class="company__company-item">
+                  <span class="company-input" role="textbox" contenteditable>Кампания 2</span>
+                </div>
+              </div>
+              <div class="company__switch company__switch--banner">
+                <div class="company__switch-title">Баннер на модерации</div>
+                <label class="company__switch-label">
+                  <span class="company__switch-handle"></span>
+                  <input class="company__switch-input" type="checkbox" checked="true">
+                </label>
+              </div>
+            </div>
+            <div class="company__table-titles">
+              <div class="company__table-title company__table-info--number">№ 000002</div>
+              <div class="company__table-title company__table-info--strategy">Стратегия</div>
+              <div class="company__table-title">Клики</div>
+              <div class="company__table-title">Показы</div>
+              <div class="company__table-title">CTR, %</div>
+              <div class="company__table-title">Расходы, руб</div>
+              <div class="company__table-title">Дата начала</div>
+            </div>
+            <div class="company__table-infos">
+              <div class="company__table-info company__table-info--number">Баннер 900x90</div>
+              <div class="company__table-info company__table-info--strategy">Без ограничений</div>
+              <div class="company__table-info company__table-info--click">155</div>
+              <div class="company__table-info company__table-info--show">16 409</div>
+              <div class="company__table-info company__table-info--percent">1.1</div>
+              <div class="company__table-info company__table-info--expenses">4 555</div>
+              <div class="company__table-info company__table-info--date">10.02.2020</div>
+            </div>
+          </div>
+
+
+          <div class="company__table-buttons">
+            <div class="company__table-button">
+              <button class="company__table-btn company__table-btn--settings company__button--gray">Настроить</button>
+              <svg class="company__svg--gray">
+                <use xlink:href="#btn-settings"></use>
+              </svg>
+            </div>
+            <div class="company__table-button">
+              <button class="company__table-btn company__table-btn--agregator company__button--gray">Статистика</button>
+              <svg class="company__svg--gray">
+                <use xlink:href="#btn-agregator"></use>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="company__plug">
+          <div class="company__plug-toggle" tab-index="0">
+            <img class="company__plug-plus" src="./agg/assets/images/svg/plus.svg" alt="">
+            <div class="company__plug-title">Подключить «Целевой переход»</div>
+          </div>
+          <div class="company__plug-content">
+            <div class="company__plug-price">25 рублей за переход</div>
+            <div class="company__plug-button">
+              <button class="company__plug-btn">Подключить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="company__plug-more company__plug-more-tab">
+          <div class="company__plug-more-title">Что он вам даёт?</div>
+          <ul class="company__plug-more-list">
+            <li class="company__plug-more-item">Поднимает ваши товары в ТОП-5 выдачи, значительно увеличивая конверсию
+            </li>
+            <li class="company__plug-more-item">Прямой переход посетителя на целевую страницу вашего ресурса</li>
+            <li class="company__plug-more-item">Дополнительная стилизация карточки товара</li>
+          </ul>
+        </div>
+
+        <div class="company__plug company__plug--post">
+          <div class="company__plug-toggle" tab-index="1">
+            <img class="company__plug-plus" src="./agg/assets/images/svg/plus.svg" alt="">
+            <div class="company__plug-title">Разместить медийный баннер</div>
+          </div>
+        </div>
+
+        <div class="company__plug-more company__plug-more-tab">
+          <div class="company__plug-more-title company__plug-more-title--post">Размещение медийного блока на любой из
+            трёх самых популярных локаций ресурса</div>
+          <div class="company__card-wrap">
+            <div class="company__card">
+              <div class="company__card-title">Агрегатор</div>
+              <div class="company__card-size">
+                <div class="company__card-size-number">900 x 90px</div>
+              </div>
+              <div class="company__card-subtitle">в верхней части страницы</div>
+              <div class="company__card-sum">25 копеек <span class="grey">за показ</span></div>
+              <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+              <div class="company__card-button">
+                <button class="company__card-btn">Разместить</button>
+              </div>
+            </div>
+            <div class="company__card">
+              <div class="company__card-title">Главная страница</div>
+              <div class="company__card-size">
+                <div class="company__card-size-number">900 x 90px</div>
+              </div>
+              <div class="company__card-subtitle">в верхней части страницы</div>
+              <div class="company__card-sum">15 копеек <span class="grey">за показ</span></div>
+              <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+              <div class="company__card-button">
+                <button class="company__card-btn">Разместить</button>
+              </div>
+            </div>
+            <div class="company__card">
+              <div class="company__card-title">Технические характеристики</div>
+              <div class="company__card-size">
+                <div class="company__card-size-number">900 x 90px</div>
+              </div>
+              <div class="company__card-subtitle">в верхней части страницы</div>
+              <div class="company__card-sum">20 копеек <span class="grey">за показ</span></div>
+              <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+              <div class="company__card-button">
+                <button class="company__card-btn">Разместить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="spacer content-footer">
+        <div class="footer__wrapper">
+          <p class="copyright">
+            КПС 2015—2020 </p>
+
+          <nav class="nav">
+            <a href="https://k-ps.ru/info/adv/" class="nav__link">Реклама</a>
+            <a href="https://k-ps.ru/info/" class="nav__link">Возможности системы</a>
+            <a href="https://k-ps.ru/confirm/" class="nav__link">Пользовательское соглашение</a>
+            <a href="https://k-ps.ru/contact/" class="nav__link">Контакты</a>
+          </nav>
+          <div class="social">
+            <a href="https://vk.com/kpsru" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-1">
+                <use xlink:href="#icon-social-1"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/KabelnayaPoiskovayaSistema/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-2">
+                <use xlink:href="#icon-social-2"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/kpsru/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-3">
+                <use xlink:href="#icon-social-3"></use>
+              </svg>
+            </a>
+            <a href="https://ok.ru/group/55563832590453" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-4">
+                <use xlink:href="#icon-social-4"></use>
+              </svg>
+            </a>
+          </div>
+          <!--social-->
+        </div>
+      </div>
+      <!--content-->
+    </footer>
+
+
+    <!--modal 900x90-->
+    <div class="modal__banner">
+      <div class="modal__banner-content">
+        <div class="modal__banner-close">
+          <img src="./agg/assets/images/svg/modal-close.svg" alt="">
+        </div>
+        <img src="./agg/assets/images/modal-900x90.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./agg/assets/js/search.js"></script>
+  <script src="./agg/assets/js/script.js"></script>
+  <script src="./agg/assets/js/company.js"></script>
+  <script src="./agg/assets/js/resizeinput.js"></script>
+
+</body>
+
+</html>

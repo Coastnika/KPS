@@ -1,0 +1,141 @@
+
+
+/*pager*/
+.pager {
+  background: rgba(47, 153, 204, 0.15);
+  padding: 7px 0 6px;
+  padding-top: 37px;
+}
+.pager .content > * {
+  display: inline;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.content{
+  display: flex;
+  align-items: center;
+}
+.icon-arrow-pager {
+  position: relative;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  stroke: #999999;
+}
+.pager__link,
+.pager__active {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+}
+.pager__link {
+  text-decoration: underline;
+  color: #2F99CC;
+}
+.pager__link--active{
+  color: #999999;
+  text-decoration: none;
+}
+.pager__link:hover {
+  text-decoration: none;
+}
+.pager__link:active {
+  color: #999999;
+  text-decoration: none;
+}
+.pager .pager__colon {
+  margin-right: -2px;
+  margin-left: 0;
+  display: inline-block;
+  font-size: 0;
+}
+/*end pager*/
+
+
+.nav__link,
+.copyright {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2F99CC;
+  position: relative;
+  top: 1px;
+}
+.social__link,
+.nav__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav__link {
+  text-decoration-line: underline;
+  margin-right: 31px;
+}
+.nav__link:last-child {
+  margin-right: 0;
+}
+.nav__link:hover {
+  text-decoration: none;
+}
+.nav__link:active {
+  text-decoration: none;
+  color: #2A6496;
+}
+.social__link .svg-icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.6;
+  fill: #2F99CC;
+}
+.social__link:hover .svg-icon {
+  opacity: 1;
+}
+.social__link:active .svg-icon {
+  opacity: 1;
+  fill: #2A6496;
+}
+.social {
+  font-size: 0;
+}
+.social__link {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.social__link:last-child {
+  margin-right: 0;
+}
+/*footer*/
+
+/*page*/
+.page {
+  padding-top: 25px;
+}
+/*end page*/
+
+/*search-result*/
+.search-result {
+  margin-top: 34px;
+}
+.help {
+  margin-bottom: 66px;
+}
+.help:last-child {
+  margin-bottom: 0;
+}
+.help__info {
+  max-width: 700px;
+}
+.help img {
+  max-width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 8px 16px rgba(47, 153, 204, 0.08), 0 8px 8px rgba(47, 153, 204, 0.1);
+}
+/*end search-result*/
+
+/*about*/
+
+.icon-arrow-pager{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
