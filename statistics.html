@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
- 
   <link rel="stylesheet" href="./agg/assets/css/clear.css">
   <link rel="stylesheet" href="./agg/assets/css/fonts.css">
   <link rel="stylesheet" href="./agg/assets/css/breadcrumbs.css">
   <link rel="stylesheet" href="./agg/assets/css/header.css">
   <link rel="stylesheet" href="./agg/assets/css/footer.css">
-  <link rel="stylesheet" href="./agg/assets/css/company.css">
+  <link rel="stylesheet" href="./agg/assets/css/settings.css">
   <link rel="stylesheet" href="./agg/assets/css/statistics.css">
 </head>
 <body>
@@ -59,30 +58,30 @@
           <div class="header__price">
             <div class="header__price-text">1 334,62 руб</div>
             <div class="header__price-btn">
-              <img src="./agg/assets/images/header/AddPlus.svg" alt="">
+              <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
             </div>
           </div>
           <div class="header__menu">
             <div class="header__menu-icon">
-              <img class="header__menu-icon--margin" src="./agg/assets/images/header/profile.svg" alt="">
-              <img src="./agg/assets/agg/assets/images/header/arrow-bottom.svg" alt="">
+              <img class="header__menu-icon--margin" src="./agg/assets/images/svg/profile.svg" alt="">
+              <img src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
             </div>
       </div><!--content-->
   </header>
 
-  <section class="pager">
+    <section class="pager">
       <div class="content container">
-          <a href="https://k-ps.ru/" class="pager__link">КПС</a>
-          <span class="pager__colon">
-            <img src="./agg/assets/images/header/arrow.svg" class="svg-icon icon-arrow-pager"/>
-          </span>
-          <a href="" class="pager__link">Личный кабинет</a>
-          <span class="pager__colon">
-            <img src="./agg/assets/images/header/arrow.svg" class="svg-icon icon-arrow-pager"/>
-          </span>        
-          <a href="" class="pager__link pager__link--active">Статистика</a>
-      </div><!--content-->
-  </section><!--pager-->
+        <a href="https://k-ps.ru/" class="pager__link">КПС</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager"/>
+        </span>
+        <a href="" class="pager__link">Личный кабинет</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager"/>
+        </span>        
+        <a href="" class="pager__link pager__link--active">Статистика</a>
+    </div><!--content-->
+    </section><!--pager-->
 
     <div class="lk">
       <nav class="lk__nav">
@@ -95,6 +94,7 @@
         </div>
       </nav>
     </div>
+
 
     <section class="statistics">
       <div class="container">
@@ -133,14 +133,30 @@
         <div class="statistics__list">
             <div class="statistics__table-wrap">
                 <div class="statistics__table-content">
-                    <div class="statistics__table-title">Кампания 1</div>
-                    <div class="statistics__table-title">Период</div>
-                    <div class="statistics__table-title">Клики</div>
-                    <div class="statistics__table-title">Показы</div>
-                    <div class="statistics__table-title">CTR, %</div>
-                    <div class="statistics__table-title">Расходы, руб</div>
+                    <div class="statistics__table-title statistics__table-title--company-more">Кампания 1</div>
+                    <div class="statistics__table-title statistics__table-title--period">Период</div>
+                    <div class="statistics__table-title statistics__table-title--click">Клики</div>
+                    <div class="statistics__table-title statistics__table-title--show">Показы</div>
+                    <div class="statistics__table-title statistics__table-title--percent">CTR, %</div>
+                    <div class="statistics__table-title statistics__table-title--rub">Расходы, руб/клик</div>
                 </div>
             </div>
+            <div class="statistics__table-wrp">
+              <div class="statistics__table-content statistics__table-content--more">
+                <div class="statistics__table-list">
+                  <div class="statistics__table-title statistics__table-title--company statistics__table-title-weight">Целевой переход</div>
+                  <svg class="svg-icon icon-arrow-select statistics-select">
+                    <use xlink:href="#icon-arrow-select"></use>
+                  </svg>
+                  
+                </div>
+                <div class="statistics__table-title statistics__table-title--period statistics__table-title-weight">c 26.10.20 по 01.10.20</div>
+                <div class="statistics__table-title statistics__table-title--click statistics__table-title-weight">110</div>
+                <div class="statistics__table-title statistics__table-title--show statistics__table-title-weight">15 478</div>
+                <div class="statistics__table-title statistics__table-title--percent statistics__table-title-weight">2,3</div>
+                <div class="statistics__table-title statistics__table-title--rub statistics__table-title-weight">2750,00</div>
+            </div>
+        </div>
 
         </div>
 
@@ -186,20 +202,13 @@
       </div><!--content-->
   </footer>
 
-
-    <!--modal 900x90-->
-    <div class="modal__banner">
-      <div class="modal__banner-content">
-        <div class="modal__banner-close">
-          <img src="./agg/assets/images/svg/modal-close.svg" alt="">
-        </div>
-        <img src="./agg/assets/images/modal-900x90.jpg" alt="">
-      </div>
-    </div>
-  </div>
+    
+  <script src="./agg/assets/js/resizeinput.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="./agg/assets/js/search.js"></script>
   <script src="./agg/assets/js/script.js"></script>
+  <script src="./agg/assets/js/contractModal.js"></script>
+  <script src="./agg/assets/js/showForm.js"></script>
   <script src="./agg/assets/js/company.js"></script>
  
 </body>
