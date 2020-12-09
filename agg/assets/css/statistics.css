@@ -110,17 +110,59 @@
     margin-top: 20px;
     padding: 25px;
 }
-.statistics__table-titles{
+.statistics__table-wrap{
+  background: rgba(47, 153, 204, 0.15);
+  border-radius: 3px 3px 0px 0px;
+  padding: 8px 12px;
+}
+.statistics__table-wrp{
+  border-bottom: 1px solid #F2F2F2;
+}
+.statistics__table-content{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background: rgba(47, 153, 204, 0.15);
-    border-radius: 3px 3px 0px 0px;
-   padding: 8px 10.5px;
+    width: 80%;
+}
+.statistics__table-content--more{
+  background: none;
+  padding: 12px 12px;
+  width: 80.5%;
 }
 .statistics__table-title{
     font-weight: 300;
     font-size: 14px;
     line-height: 143%;
     color: #444444;
+}
+.statistics-select{
+  margin-top: 3px;
+}
+.statistics__table-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.statistics__table-title--company-more{
+  width: 139px;
+}
+.statistics__table-title--company{
+  width: 133px;
+}
+.statistics__table-title--period{
+  width: 152px;
+}
+.statistics__table-title--click{
+  width: 42px;
+}
+.statistics__table-title--show{
+  width: 50px;
+}
+.statistics__table-title--percent{
+  width: 45px;
+}
+.statistics__table-title--rub{
+  width: 121px;
+}
+.statistics__table-title-weight{
+  font-weight: 600;
 }
