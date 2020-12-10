@@ -130,48 +130,66 @@
             </div>
         </div>
 
-        <div class="statistics__list">
-            <div class="statistics__table-wrap">
-                <div class="statistics__table-content">
-                    <div class="statistics__table-title statistics__table-title--company-more">Кампания 1</div>
-                    <div class="statistics__table-title statistics__table-title--period">Период</div>
-                    <div class="statistics__table-title statistics__table-title--click">Клики</div>
-                    <div class="statistics__table-title statistics__table-title--show">Показы</div>
-                    <div class="statistics__table-title statistics__table-title--percent">CTR, %</div>
-                    <div class="statistics__table-title statistics__table-title--rub">Расходы, руб/клик</div>
+        <div class="statistics__transition">
+          <div class="transition">
+            <div class="transition__table">
+              <div class="transition__headline">
+                <div class="transition__text transition__text-company">Кампания 1</div>
+                <div class="transition__text transition__text-period">Период</div>
+                <div class="transition__text transition__text-click">Клики</div>
+                <div class="transition__text transition__text-view">Показы</div>
+                <div class="transition__text transition__text-ctr">CTR, %</div>
+                <div class="transition__text transition__text-cost">Расходы, руб/клик</div>
+              </div>
+              <!--item1-->
+              <div class="transition__item">
+                <div class="transition__text transition__text-company transition__text--bold" >
+                  <label class="statistics__trigger">
+                    <span>Целевой переход</span> 
+                    <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                      <use xlink:href="#icon-arrow-select"></use>
+                    </svg>
+                  </label>
                 </div>
-            </div>
-            <div class="statistics__table-wrp">
-              <div class="statistics__table-content statistics__table-content--more">
-                <div class="statistics__table-list">
-                  <div class="statistics__table-title statistics__table-title--company statistics__table-title-weight">Целевой переход</div>
-                  <svg class="svg-icon icon-arrow-select statistics-select">
-                    <use xlink:href="#icon-arrow-select"></use>
-                  </svg>
+                <div class="transition__text transition__text-period transition__text--bold" >c 26.10.20 по 01.10.20</div>
+                <div class="transition__text transition__text-click transition__text--bold" >110</div>
+                <div class="transition__text transition__text-view transition__text--bold" >15 478</div>
+                <div class="transition__text transition__text-ctr transition__text--bold" >2,3</div>
+                <div class="transition__text transition__text-cost transition__text--bold" >2750,00</div>
+              </div>
+               <!--/item1-->
+              <!--subitems1-->
+              <div class="statistics__subitems hide">
+                <div class="transition__item">
+                  <div class="transition__text transition__text-company" ></div>
+                  <div class="transition__text transition__text-period" >c 26.10.20 по 01.10.20</div>
+                  <div class="transition__text transition__text-click" >110</div>
+                  <div class="transition__text transition__text-view" >15 478</div>
+                  <div class="transition__text transition__text-ctr" >2,3</div>
+                  <div class="transition__text transition__text-cost" >2750,00</div>
                 </div>
-                <div class="statistics__table-title statistics__table-title--period statistics__table-title-weight">c 26.10.20 по 01.10.20</div>
-                <div class="statistics__table-title statistics__table-title--click statistics__table-title-weight">110</div>
-                <div class="statistics__table-title statistics__table-title--show statistics__table-title-weight">15 478</div>
-                <div class="statistics__table-title statistics__table-title--percent statistics__table-title-weight">2,3</div>
-                <div class="statistics__table-title statistics__table-title--rub statistics__table-title-weight">2750,00</div>
+                <div class="transition__item">
+                  <div class="transition__text transition__text-company" ></div>
+                  <div class="transition__text transition__text-period" >c 26.10.20 по 01.10.20</div>
+                  <div class="transition__text transition__text-click" >110</div>
+                  <div class="transition__text transition__text-view" >15 478</div>
+                  <div class="transition__text transition__text-ctr" >2,3</div>
+                  <div class="transition__text transition__text-cost" >2750,00</div>
+                </div>
+                <div class="transition__item">
+                  <div class="transition__text transition__text-company" ></div>
+                  <div class="transition__text transition__text-period" >c 26.10.20 по 01.10.20</div>
+                  <div class="transition__text transition__text-click" >110</div>
+                  <div class="transition__text transition__text-view" >15 478</div>
+                  <div class="transition__text transition__text-ctr" >2,3</div>
+                  <div class="transition__text transition__text-cost" >2750,00</div>
+                </div>
+              </div>
+              <!--/subitems1-->
             </div>
-        </div>
-
-        <div class="statistics__open">
-          <div class="statistics__table-wrp">
-          </div>
-             statistics__table-data">
-            <div class="statistics__table-title statistics__table-title--period">26.10.20</div>
-            <div class="statistics__table-title statistics__table-title--click">110</div>
-            <div class="statistics__table-title statistics__table-title--show">15 478</div>
-            <div class="statistics__table-title statistics__table-title--percent">2,3</div>
-            <div class="statistics__table-title statistics__table-title--rub">2750,00</div>
           </div>
         </div>
 
-        </div>
-
-     
       </div>
     </section>
 
@@ -218,9 +236,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="./agg/assets/js/search.js"></script>
   <script src="./agg/assets/js/script.js"></script>
-  <script src="./agg/assets/js/contractModal.js"></script>
-  <script src="./agg/assets/js/showForm.js"></script>
-  <script src="./agg/assets/js/company.js"></script>
+  <script src="./agg/assets/js/statistics.js"></script>
  
 </body>
 </html>

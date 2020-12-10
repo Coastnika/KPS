@@ -1001,11 +1001,11 @@
                             <div class="timezone__show-range">
                               <div class="timezone__show-range-wrapper">
                                 <span>с</span>
-                                <input type="text" class="timezone__input-change" name="show-range" placeholder="19:00">
+                                <input type="text" class="timezone__input-change timezone__input-change-time" name="show-range" placeholder="19:00">
                               </div>
                               <div class="timezone__show-range-wrapper">
                                 <span>по</span>
-                                <input type="text" class="timezone__input-change" name="show-range" placeholder="23:00">
+                                <input type="text" class="timezone__input-change timezone__input-change-time" name="show-range" placeholder="23:00">
                               </div>
                             </div>
                           </div>
@@ -1034,7 +1034,7 @@
                         <span class="strategy__font">Суточный режим</span>
                       </label>
                       <div class="strategy__day-range">
-                        <input class="strategy__data-range" type="text" placeholder="1000">
+                        <input class="strategy__data-range" type="number" placeholder="1000">
                         <span class="strategy__font">рублей</span>
                       </div>
                     </div>
@@ -1051,7 +1051,7 @@
                         <span>Суточный режим</span>
                       </label>
                       <div class="strategy__company-range ">
-                        <input class="strategy__data-range strategy__data-range--2" type="text" placeholder="10000">
+                        <input class="strategy__data-range strategy__data-range--2" type="number" placeholder="10000">
                         <span>рублей</span>
                       </div>
                     </div>
@@ -1524,6 +1524,7 @@
   <script src="./agg/assets/js/resizeinput.js"></script>
   <script src="./agg/assets/js/dropdown.js"></script>
   <script src="./agg/assets/js/contractModal.js"></script>
+  <script src="./agg/assets/js/inputValidation.js"></script>
 </body>
 
 </html>
