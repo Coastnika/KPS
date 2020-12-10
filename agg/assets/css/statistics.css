@@ -103,7 +103,8 @@
 }
 .statistics__list{
     width: 100%;
-    height: 128px;
+    /* height: 128px; */
+    height: 200px;
     border: 1px solid #CECFCF;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -117,6 +118,7 @@
 }
 .statistics__table-wrp{
   border-bottom: 1px solid #F2F2F2;
+  width: 100%;
 }
 .statistics__table-content{
     display: flex;
@@ -165,4 +167,13 @@
 }
 .statistics__table-title-weight{
   font-weight: 600;
+}
+.statistics__table-data{
+  display: flex;
+  margin-left: 210px;
+  width: 60.2%;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F2F2F2;
 }
