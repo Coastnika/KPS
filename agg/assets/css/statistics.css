@@ -1,3 +1,6 @@
+.hide{
+  display: none;
+}
 .statistics__title{
     font-weight: 300;
     font-size: 26px;
@@ -101,68 +104,68 @@
     line-height: 143%;
     color: #444444;
 }
-.statistics__list{
-    width: 100%;
-    height: 128px;
-    border: 1px solid #CECFCF;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 25px;
+.statistics__transition{
+  padding: 25px;
+  border: 1px solid #CECFCF;
+  border-radius: 3px;
+  margin-top: 20px;
 }
-.statistics__table-wrap{
-  background: rgba(47, 153, 204, 0.15);
-  border-radius: 3px 3px 0px 0px;
-  padding: 8px 12px;
-}
-.statistics__table-wrp{
-  border-bottom: 1px solid #F2F2F2;
-}
-.statistics__table-content{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-.statistics__table-content--more{
-  background: none;
-  padding: 12px 12px;
-  width: 80.5%;
-}
-.statistics__table-title{
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 143%;
-    color: #444444;
-}
-.statistics-select{
-  margin-top: 3px;
-}
-.statistics__table-list{
+
+.transition__table{}
+.transition__headline{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 36px;
+  background: rgba(47, 153, 204, 0.15);
+  border-radius: 3px 3px 0px 0px; 
+  padding: 0px 12px;
 }
-.statistics__table-title--company-more{
-  width: 139px;
+.transition__item{
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0px 12px;
+  border: 1px solid rgba(255,255,255,0);
+  border-bottom: 1px solid #F2F2F2;
+  border-radius: 3px;
+  
 }
-.statistics__table-title--company{
-  width: 133px;
+.transition__item:hover{
+  border: 1px solid rgba(47, 153, 204, 0.25);
+  box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
 }
-.statistics__table-title--period{
-  width: 152px;
+
+.transition__text{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
 }
-.statistics__table-title--click{
-  width: 42px;
+.transition__text--bold{
+  font-family: MuseoSansCyrl;
+  font-weight: 500;
 }
-.statistics__table-title--show{
-  width: 50px;
+.transition__text-company{
+  width: 190px;
 }
-.statistics__table-title--percent{
-  width: 45px;
+.transition__text-period{
+  width: 216px;
 }
-.statistics__table-title--rub{
-  width: 121px;
+.transition__text-click{
+  width: 108px;
 }
-.statistics__table-title-weight{
-  font-weight: 600;
+.transition__text-view{
+  width: 120px;
+}
+.transition__text-ctr{
+  width: 110px;
+}
+.transition__text-cost{}
+
+.statistics__trigger{
+  cursor: pointer;
+}
+.statistics__trigger-arrow{}
+.statistics__trigger-arrow--active{
+  transform: rotate(180deg);
 }
