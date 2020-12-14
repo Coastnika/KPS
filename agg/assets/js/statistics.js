@@ -17,3 +17,16 @@ statisticsTrigger.forEach((trigger, triggerIndex) => {
     })
   })
 })
+
+let statisticsMore = document.querySelectorAll('.statistics__more')
+let moreArrow = document.querySelectorAll('.statistics__more-arrow')
+
+statisticsMore.forEach((trigger, triggerIndex) => {
+  trigger.addEventListener('click', () => {
+    moreArrow.forEach((arrow, arrowIndex) => {
+      if(arrowIndex == triggerIndex){
+        arrow.classList.toggle('statistics__more-arrow--active')
+      }
+    })
+  })
+})
