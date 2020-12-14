@@ -958,8 +958,11 @@
                     <div class="timezone__zone">
                       <div class="timezone__zone-title">Часовой пояс:</div>
                       <div class="timezone__zone-input">
-                        <input class="timezone__input-change timezone__input-change--pad" type="text"
-                          placeholder="г. Москва UTC +03:00">
+                        <select class="timezone__input-change timezone__input-change--pad" name="select"> <!--Supplement an id here instead of using 'name'-->
+                          <option value="value1">г. Самара UTC +03:00</option> 
+                          <option value="value2">г. Москва UTC +03:00</option>
+                          <option value="value3" selected>г. Воронеж UTC +03:00</option>
+                        </select>
                       </div>
                     </div>
                     <div class="timezone__show">
@@ -995,20 +998,68 @@
                           <div class="timezone__show-range">
                             <div class="timezone__show-range-wrapper">
                               <span>с</span>
-                              <input type="text" class="timezone__input-change" name="show-range" placeholder="19:00">
+                              <select class="timezone__input-change timezone__input-change-time select" name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">00:00</option> 
+                                <option value="value2">01:00</option>
+                                <option value="value3" >02:00</option>
+                                <option value="value3" >03:00</option>
+                                <option value="value3" >04:00</option>
+                                <option value="value3" >05:00</option>
+                                <option value="value3" >06:00</option>
+                                <option value="value3" >07:00</option>
+                                <option value="value3" >08:00</option>
+                                <option value="value3" >09:00</option>
+                                <option value="value3" >10:00</option>
+                                <option value="value3" >11:00</option>
+                                <option value="value3" >12:00</option>
+                                <option value="value3" >13:00</option>
+                                <option value="value3" >15:00</option>
+                                <option value="value3" >16:00</option>
+                                <option value="value3" >17:00</option>
+                                <option value="value3" >18:00</option>
+                                <option value="value3" >19:00</option>
+                                <option value="value3" >20:00</option>
+                                <option value="value3" >21:00</option>
+                                <option value="value3" >22:00</option>
+                                <option value="value3" selected>23:00</option>
+                              </select>
                             </div>
                             <div class="timezone__show-range-wrapper">
                               <span>по</span>
-                              <input type="text" class="timezone__input-change" name="show-range" placeholder="23:00">
-                            </div>
+                              <select class="timezone__input-change timezone__input-change-time select" name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">00:00</option> 
+                                <option value="value2">01:00</option>
+                                <option value="value3" >02:00</option>
+                                <option value="value3" >03:00</option>
+                                <option value="value3" >04:00</option>
+                                <option value="value3" >05:00</option>
+                                <option value="value3" >06:00</option>
+                                <option value="value3" >07:00</option>
+                                <option value="value3" >08:00</option>
+                                <option value="value3" >09:00</option>
+                                <option value="value3" >10:00</option>
+                                <option value="value3" >11:00</option>
+                                <option value="value3" >12:00</option>
+                                <option value="value3" >13:00</option>
+                                <option value="value3" >15:00</option>
+                                <option value="value3" >16:00</option>
+                                <option value="value3" >17:00</option>
+                                <option value="value3" >18:00</option>
+                                <option value="value3" >19:00</option>
+                                <option value="value3" >20:00</option>
+                                <option value="value3" >21:00</option>
+                                <option value="value3" >22:00</option>
+                                <option value="value3" selected>23:00</option>
+                              </select>
+                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
-              <!--/showtime-->
+            </div>
+            <!--/showtime-->
 
               <!--strategy-->
               <div class="strategy">
@@ -1083,8 +1134,8 @@
                       </div>
                       <!--item 1-->
                       <div class="upload__item">
-                        <div class="uplaod__item-action">
-                          <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
+                        <div class="uplaod__item-action"> 
+                          <input class="uplaod__item-action-del" type="checkbox">
                         </div>
                         <div class="upload__text upload__text--bold upload__text-name">
                           <label class="statistics__trigger">
@@ -1104,26 +1155,41 @@
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__error">404</div>
+                          <div class="upload__text upload__text-status status__error">
+                            <span>404</span>
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
+                          </div>
                         </div>
                         <div class="upload__item upload__subitem">
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__double">Дубль</div>
+                          <div class="upload__text upload__text-status status__double">
+                            <span>Дубль</span>
+                            <div class="status__info status__info-double">
+                              Кабель ВВГнг(А) 3х2,5 уже есть в распознанных марках текущей кампании
+                            </div>
+                          </div>
                         </div>
                         <div class="upload__item upload__subitem">
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__bind">Привязан</div>
+                          <div class="upload__text upload__text-status status__bind">
+                            <span>Привязан</span>
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <!--/item 1-->
                       <!--item 1-->
                       <div class="upload__item">
                         <div class="uplaod__item-action">
-                          <img src="./agg/assets/images/svg/circle-close.svg" alt="">
+                          <input class="uplaod__item-action-del" type="checkbox">
                         </div>
                         <div class="upload__text upload__text--bold upload__text-name">
                           <label class="statistics__trigger">
@@ -1143,65 +1209,41 @@
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__error">404</div>
+                          <div class="upload__text upload__text-status status__error">
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
+                            404
+                          </div>
                         </div>
                         <div class="upload__item upload__subitem">
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__double">Дубль</div>
+                          <div class="upload__text upload__text-status status__double">
+                            <span>Дубль</span>
+                            <div class="status__info status__info-double">
+                              Кабель ВВГнг(А) 3х2,5 уже есть в распознанных марках текущей кампании
+                            </div>
+                          </div>
                         </div>
                         <div class="upload__item upload__subitem">
                           <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__bind">Привязан</div>
+                          <div class="upload__text upload__text-status status__bind">
+                            <span>Привязан</span>
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <!--/item 1-->
                       <!--item 1-->
                       <div class="upload__item">
                         <div class="uplaod__item-action">
-                          <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
-                        </div>
-                        <div class="upload__text upload__text--bold upload__text-name">
-                          <label class="statistics__trigger">
-                            <span>ВВГ (0,66/1кВ)</span> 
-                            <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
-                              <use xlink:href="#icon-arrow-select"></use>
-                            </svg>
-                          </label>
-                        </div>
-                        <div class="upload__text upload__text--bold upload__text-price"></div>
-                        <div class="upload__text upload__text--bold upload__text-url">Кабели силовые  С ПВХ изоляцией (0,66; 1кВ)</div>
-                        <div class="upload__text upload__text--bold upload__text-status"></div>
-                      </div>
-
-                      <div class="statistics__subitems hide">
-                        <div class="upload__item upload__subitem">
-                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
-                          <div class="upload__text upload__text-price">55,40</div>
-                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__error">404</div>
-                        </div>
-                        <div class="upload__item upload__subitem">
-                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
-                          <div class="upload__text upload__text-price">55,40</div>
-                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__double">Дубль</div>
-                        </div>
-                        <div class="upload__item upload__subitem">
-                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
-                          <div class="upload__text upload__text-price">55,40</div>
-                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
-                          <div class="upload__text upload__text-status status__bind">Привязан</div>
-                        </div>
-                      </div>
-                      <!--/item 1-->
-                      <!--item 1-->
-                      <div class="upload__item">
-                        <div class="uplaod__item-action">
-                          <img src="./agg/assets/images/svg/circle-close.svg" alt="">
+                          <input class="uplaod__item-action-del" type="checkbox">
                         </div>
                         <div class="upload__text upload__text--bold upload__text-name">
                           <label class="statistics__trigger">
@@ -1222,10 +1264,10 @@
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
                           <div class="upload__text upload__text-status status__error">
-                            404
-                            <div class="upload__text-status-info">
-                              
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
                             </div>
+                            404
                           </div>
                         </div>
                         <div class="upload__item upload__subitem">
@@ -1233,7 +1275,10 @@
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
                           <div class="upload__text upload__text-status status__double">
-                            Дубль
+                            <span>Дубль</span>
+                            <div class="status__info status__info-double">
+                              Кабель ВВГнг(А) 3х2,5 уже есть в распознанных марках текущей кампании
+                            </div>
                           </div>
                         </div>
                         <div class="upload__item upload__subitem">
@@ -1241,7 +1286,64 @@
                           <div class="upload__text upload__text-price">55,40</div>
                           <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
                           <div class="upload__text upload__text-status status__bind">
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
                             Привязан
+                          </div>
+                        </div>
+                      </div>
+                      <!--/item 1-->
+                      <!--item 1-->
+                      <div class="upload__item">
+                        <div class="uplaod__item-action">
+                          <input class="uplaod__item-action-del" type="checkbox">
+                        </div>
+                        <div class="upload__text upload__text--bold upload__text-name">
+                          <label class="statistics__trigger">
+                            <span>ВВГ (0,66/1кВ)</span> 
+                            <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                              <use xlink:href="#icon-arrow-select"></use>
+                            </svg>
+                          </label>
+                        </div>
+                        <div class="upload__text upload__text--bold upload__text-price"></div>
+                        <div class="upload__text upload__text--bold upload__text-url">Кабели силовые  С ПВХ изоляцией (0,66; 1кВ)</div>
+                        <div class="upload__text upload__text--bold upload__text-status"></div>
+                      </div>
+
+                      <div class="statistics__subitems hide">
+                        <div class="upload__item upload__subitem">
+                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
+                          <div class="upload__text upload__text-price">55,40</div>
+                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
+                          <div class="upload__text upload__text-status status__error">
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
+                            404
+                          </div>
+                        </div>
+                        <div class="upload__item upload__subitem">
+                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
+                          <div class="upload__text upload__text-price">55,40</div>
+                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
+                          <div class="upload__text upload__text-status status__double">
+                            <span>Дубль</span>
+                            <div class="status__info status__info-double">
+                              Кабель ВВГнг(А) 3х2,5 уже есть в распознанных марках текущей кампании
+                            </div>
+                          </div>
+                        </div>
+                        <div class="upload__item upload__subitem">
+                          <div class="upload__text upload__text-name">ВВГнг(А) 3х2,5</div>
+                          <div class="upload__text upload__text-price">55,40</div>
+                          <div class="upload__text upload__text-url"><a href="">https://example.com/vvgng_3x2_5</a></div>
+                          <div class="upload__text upload__text-status status__bind">
+                            <span>Привязан</span>
+                            <div class="status__info">
+                              по указанному адресу сервер выдает ошибку 404
+                            </div>
                           </div>
                         </div>
                       </div>
