@@ -897,6 +897,7 @@
   line-height: 32px;
   padding-bottom: 10px;
   color: #444444;
+  font-weight: 500;
 }
 .upload__content{
  
@@ -1057,6 +1058,7 @@
   line-height: 32px;
   padding-bottom: 10px;
   color: #444444;
+  font-weight: 500;
 }
 .undefined__content{
   padding: 25px 25px 29px 25px;
@@ -1914,102 +1916,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-/* 
-@media(max-width:768px){
-  .addcompany__form-about{
-    width: 75%;
-  }
-  
-}
-
-@media(max-width:540px){
-  .lk__nav{
-    margin-bottom: 20px;
-  }
-
-  .settings__company{
-    margin-bottom: 25px;
-  }
-
-  .settings__dropdown-wrapper{
-    margin-bottom: 15px;
-  }
-  .form__payer-wrapper{
-    margin-bottom: 15px;
-  }
-  .form__payer-wrapper{
-    margin-left: 10px;
-  }
-  
-  .form__payer-radio:not(:last-child){
-    margin-bottom: 10px;
-  }
-
-  .form__payer-contract{
-    margin-left: 10px;
-  }
-
-  .form__payer-contract--form{
-    margin-left: 0;
-    transform: translateY(-205px)
-  }
-
-  .form__payer-btn{
-    margin-left: 10px;
-  }
-
-  .addcompany__entity{
-    padding-top: 24px;
-    border-top: 1px solid #F2F2F2;
-  }
-
-  .addcompany__title {
-    font-size: 22px;
-  }
-
-
-  .addcompany__form-input{
-    display: block;
-  }
-
-  .addcompany__form-name{
-    margin-bottom: 5px;
-  }
-
-  .addcompany__form-company{
-    display: none;
-  }
-
-  .addcompany__form-help{
-    margin-top: 10px;
-    display: inline-block;
-  }
-
-  .addcompany__form-input input{
-    width: 100%
-  }
-
-  .addcompany__form-about{
-    width: 100%;
-  }
-
-  .addcompany__form-info{
-    display: none;
-  }
-
-  .settings__payer-controlls{
-    flex-direction: column-reverse;
-    margin-top: 60px;
-  }
-
-  .settings__payer-controlls--margin{
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  .settings__payer-button{
-    margin-bottom: 10px;
-  }
-} */
 
 .svg--gray{
   width: 23px;
@@ -2020,4 +1926,142 @@ input::-webkit-inner-spin-button {
   transform: translateY(-50%);
   z-index: -1;
   fill: #CECFCF;
+}
+
+/* === modal-delete === */
+
+.modal__delete{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
+.modal__delete-wrap{
+  position: relative;
+  width: 750px;
+  height: 145px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding-top: 17px;
+  margin: auto;
+}
+.modal__delete-close{
+  position: absolute;
+  right: 17px;
+}
+.modal__delete-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 434px;
+  height: 38px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.modal__delete-question{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143px;
+  color: #444444;
+}
+.modal__buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+  margin: auto;
+}
+.modal__btn-yes{
+  width: 48px;
+  height: 40px;
+  border: 1px solid #CECFCF;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  background: none;
+}
+.modal__btn-yes:hover{
+  border: 1px solid #2F99CC;
+  color: #2F99CC;
+}
+.modal__btn-yes:active{
+  border: 1px solid #2A6496;
+  color:  #2A6496;
+}
+.modal__btn-cancel{
+  width: 82px;
+  height: 40px;
+  border: 1px solid #CECFCF;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  background: none;
+}
+.modal__btn-cancel:hover{
+  border: 1px solid #2F99CC;
+  color: #2F99CC;
+}
+.modal__btn-cancel:active{
+  border: 1px solid #2A6496;
+  color:  #2A6496;
+}
+
+/* === modal-moderator === */
+
+.modal__moderator{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
+.modal__moderator-wrap{
+  position: relative;
+  width: 750px;
+  height: 130px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding-top: 17px;
+  margin: auto;
+}
+.modal__moderator-close{
+  position: absolute;
+  right: 17px;
+}
+.modal__moderator-text{
+  width: 520px;
+  margin: auto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #444444;
+  margin-top: 20px;
+}
+.modal-email{
+  cursor: pointer;
+  color: #2F99CC;
+  border-bottom: 1px dashed rgba(47,153,204, .5);
+}
+.modal-email:hover{
+  border-bottom: 1px solid #fff;
 }
