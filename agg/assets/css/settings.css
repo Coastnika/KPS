@@ -770,6 +770,7 @@
   color: #444;
   background: none;
   padding: 10px 15px;
+  padding-top: 11px;
   border: 1px solid #CECFCF;
   border-radius: 3px;
   cursor: pointer;
@@ -897,6 +898,7 @@
   line-height: 32px;
   padding-bottom: 10px;
   color: #444444;
+  font-weight: 500;
 }
 .upload__content{
  
@@ -926,6 +928,9 @@
   border-bottom: 1px solid #F2F2F2;
   border-radius: 3px;
 }
+.upload__item-del{
+  opacity: .6;
+}
 .uplaod__item-action{
   width: 43px;
   display: flex;
@@ -934,6 +939,7 @@
   cursor: pointer;
   visibility: hidden;
 }
+
 
 .uplaod__item-action-del{
   -webkit-appearance: none;
@@ -945,6 +951,11 @@
   background-position: 50% 50%;
   cursor: pointer;
 }
+
+.uplaod__item-action-active{
+  visibility: visible;
+}
+
 .uplaod__item-action-del:checked{
   background-image: url('../images/svg/AddPlus.svg');
 }
@@ -974,6 +985,9 @@
 }
 .upload__text-name{
   width: 255px;
+}
+.upload__text-subname{
+  width: 245px;
 }
 .upload__text-price{
   width: 145px;
@@ -1006,12 +1020,12 @@
 }
 .status__double{
   color: #D02D42;
-  border-bottom: 1px dashed #D02D42;
+  border-bottom: 1px dashed rgba(208,45,66, .5);
   padding-top: 1px;
 }
 .status__bind{
   padding-top: 1px;
-  border-bottom: 1px dashed #444;
+  border-bottom: 1px dashed rgba(68,68,68, .5);
 }
 .status__info{
   position: absolute;
@@ -1057,6 +1071,7 @@
   line-height: 32px;
   padding-bottom: 10px;
   color: #444444;
+  font-weight: 500;
 }
 .undefined__content{
   padding: 25px 25px 29px 25px;
@@ -1915,7 +1930,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-
 .svg--gray{
   width: 23px;
   height: 23px;
@@ -1936,11 +1950,14 @@ input::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
+
   justify-content: center;
   align-items: center;
   display: none;
   z-index: 999;
+}
+.modal__delete--show{
+  display: flex;
 }
 .modal__delete-wrap{
   position: relative;
@@ -1955,6 +1972,7 @@ input::-webkit-inner-spin-button {
 .modal__delete-close{
   position: absolute;
   right: 17px;
+  cursor: pointer;
 }
 .modal__delete-content{
   display: flex;
@@ -2026,11 +2044,14 @@ input::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
+
   justify-content: center;
   align-items: center;
   display: none;
   z-index: 999;
+}
+.modal__moderator--show{
+  display: flex;
 }
 .modal__moderator-wrap{
   position: relative;
@@ -2045,6 +2066,7 @@ input::-webkit-inner-spin-button {
 .modal__moderator-close{
   position: absolute;
   right: 17px;
+  cursor: pointer;
 }
 .modal__moderator-text{
   width: 520px;
@@ -2064,4 +2086,3 @@ input::-webkit-inner-spin-button {
 .modal-email:hover{
   border-bottom: 1px solid #fff;
 }
-
