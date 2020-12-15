@@ -901,7 +901,6 @@
 }
 .upload__target{
   padding-left: 0px;
-  margin-right: 46px;
 }
 .upload__title{
   font-family: MuseoSansCyrl;
@@ -918,6 +917,9 @@
   border: 1px solid #CECFCF;
   border-radius: 3px;
   margin-bottom: 20px;
+}
+.upload__content-target{
+  margin-right: 46px;
 }
 .upload__wrapper{
   overflow: auto;
@@ -1091,6 +1093,9 @@
 }
 /* === undefined === */
 .upload__undefined{}
+.upload__undefined-target{
+  margin-right: 46px;
+}
 .undefined__title{
   font-family: MuseoSansCyrl;
   font-size: 20px;
