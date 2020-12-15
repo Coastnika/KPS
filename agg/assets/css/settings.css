@@ -901,6 +901,7 @@
 }
 .upload__target{
   padding-left: 0px;
+  margin-right: 46px;
 }
 .upload__title{
   font-family: MuseoSansCyrl;
@@ -1216,6 +1217,7 @@
 }
 .showtime__title-target{
   margin-left: 0px;
+  margin-right: 46px;
 }
 
 .showtime__content{
@@ -1227,6 +1229,7 @@
 }
 .showtime__content-target{
   margin-left: 0px;
+  margin-right: 46px;
 }
 
 .showtime__hours{
@@ -2003,6 +2006,9 @@ input::-webkit-inner-spin-button {
   fill: #CECFCF;
 }
 
+/* === banner settings ===*/
+
+
 /* === modal-delete === */
 
 .modal__delete{
@@ -2148,3 +2154,4 @@ input::-webkit-inner-spin-button {
 .modal-email:hover{
   border-bottom: 1px solid #fff;
 }
+
