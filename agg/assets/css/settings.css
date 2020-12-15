@@ -2012,7 +2012,24 @@ input::-webkit-inner-spin-button {
 }
 
 /* === banner settings ===*/
-
+.banner{}
+.banner__settings{}
+.banner__upload{}
+.banner__title{
+  font-size: 20px;
+  line-height: 32px;
+  color: #444444;
+  margin-bottom: 5px;
+}
+.banner__text{
+  
+}
+.banner__text p{
+  font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+}
 
 /* === modal-delete === */
 
