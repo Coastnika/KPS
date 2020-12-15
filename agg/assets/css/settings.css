@@ -52,6 +52,9 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.settings__company-target{
+  justify-content: space-between;
+}
 
 .settings__company-item{
   height: 20px;
@@ -591,6 +594,11 @@
   justify-content: flex-end;
   margin-top: 50px;
 }
+.settings__payer-controlls-target{
+  margin-top: 10px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
 
 .settings__payer-controlls--margin{
   margin-top: 10px;
@@ -891,7 +899,9 @@
 .upload{
   padding-left: 46px;
 }
-.upload__result{}
+.upload__target{
+  padding-left: 0px;
+}
 .upload__title{
   font-family: MuseoSansCyrl;
   font-size: 20px;
@@ -939,6 +949,9 @@
   cursor: pointer;
   visibility: hidden;
 }
+.uplaod__item-action-subitem{
+  width: 53px;
+}
 
 
 .uplaod__item-action-del{
@@ -961,7 +974,7 @@
 }
 
 .upload__subitem{
-  padding: 0px 53px;
+  
 }
 .upload__item:hover{
   border: 1px solid rgba(47, 153, 204, 0.25);
@@ -1018,6 +1031,11 @@
 
 .status__error{
   color: #D02D42;
+  border-bottom: 1px dashed rgba(208,45,66, .5);
+  padding-top: 1px;
+}
+.status__error:hover{
+  border-bottom: 1px dashed rgba(208,45,66, 0);
 }
 .status__double{
   color: #D02D42;
@@ -1196,9 +1214,8 @@
   margin-bottom: 13px;
   margin-left: 46px;
 }
-
-.showtime__form{
-
+.showtime__title-target{
+  margin-left: 0px;
 }
 
 .showtime__content{
@@ -1207,6 +1224,9 @@
   border: 1px solid #CECFCF;
   border-radius: 3px;
   margin-left: 47px;
+}
+.showtime__content-target{
+  margin-left: 0px;
 }
 
 .showtime__hours{
@@ -1518,6 +1538,31 @@
   margin-bottom: 20px;
   
 }
+.region__link span{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px dashed rgba(47,153,204, .5);
+  cursor: pointer;
+  position: relative;
+}
+.region__link span:hover{
+  border-bottom: 1px dashed rgba(47,153,204, 0);
+}
+.region__link span::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -19px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  background-image: url('../images/svg/pencil.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
 .dropdown-region{
   width: 170px;
   cursor: pointer;
@@ -1546,9 +1591,13 @@
   line-height: 32px;
   font-weight: 500;
   color: #444444;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   margin-left: 46px;
   font-weight: 500;
+}
+
+.region__title-target{
+  margin-left: 0px;
 }
 
 .region__search{
@@ -1699,7 +1748,9 @@
 .strategy{
   padding-left: 46px;
 }
-
+.strategy__target{
+  padding-left: 0px;
+}
 .strategy__title{
   font-family: MuseoSansCyrl;
   font-size: 20px;
