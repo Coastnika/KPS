@@ -1002,6 +1002,7 @@
   cursor: pointer;
   position: relative;
 }
+
 .upload__text-status:hover .status__info{
   display: block;
 }
@@ -1023,9 +1024,15 @@
   border-bottom: 1px dashed rgba(208,45,66, .5);
   padding-top: 1px;
 }
+.status__double:hover{
+  border-bottom: 1px dashed rgba(208,45,66, 0);
+}
 .status__bind{
   padding-top: 1px;
   border-bottom: 1px dashed rgba(68,68,68, .5);
+}
+.status__bind:hover{
+  border-bottom: 1px dashed rgba(68,68,68, 0);
 }
 .status__info{
   position: absolute;
@@ -1151,6 +1158,10 @@
   padding-top: 1px;
   position: relative;
   cursor: pointer;
+}
+
+.upload__error-link:hover{
+  border-bottom: 1px solid rgba(47,153,204, 0);
 }
 
 .upload__error-link::before{
