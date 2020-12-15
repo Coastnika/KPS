@@ -373,6 +373,9 @@ label input{
 .company__plug-more{
     padding-left: 90px;
 }
+.company__plug-more-load{
+    padding-left: 46px;
+}
 .company__plug-more-title{
     font-weight: 500;
     font-size: 18px;
@@ -414,6 +417,9 @@ label input{
     display: flex;
     width: 90%;
     justify-content: space-between;
+}
+.company__card-wrap--padding{
+    padding-bottom: 20px;
 }
 .company__card{
     width: 28%;
