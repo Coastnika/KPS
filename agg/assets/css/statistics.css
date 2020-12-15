@@ -22,22 +22,12 @@
     border-bottom: 1px dashed rgba(47,153,204, .5);
 }
 .statistics__link:hover{
-    color: #2F99CC;
-    border-bottom: 1px solid #fff;  
-}
-.statistics__link:active{
-    color: #2A6496;
     border-bottom: 1px solid #fff;  
 }
 .statistics__link--blue{
     color:  #2F99CC;
 }
 .statistics__link--blue:hover{
-    color: #2F99CC;
-    border-bottom: 1px solid #fff;  
-}
-.statistics__link--blue:active{
-    color: #2A6496;
     border-bottom: 1px solid #fff;  
 }
 .statistics__link--none{
@@ -60,13 +50,8 @@
     border-bottom: 1px dashed rgba(47,153,204, .5);
   }
   .statistics__choose-link-item p:hover{
-    color: #2F99CC;
     border-bottom: 1px solid #fff;
   }
-  .statistics__choose-link-item p:active{
-    color: #2A6496;
-    border-bottom: 1px solid #fff;  
-}
   .statistics__choose-link-item:not(:last-child){
     margin-right: 25px;
   }
