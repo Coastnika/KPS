@@ -2016,6 +2016,8 @@ input::-webkit-inner-spin-button {
 .banner__settings{}
 .banner__upload{}
 .banner__title{
+  font-family: MuseoSansCyrl;
+  font-weight: 500;
   font-size: 20px;
   line-height: 32px;
   color: #444444;
@@ -2026,9 +2028,9 @@ input::-webkit-inner-spin-button {
 }
 .banner__text p{
   font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /* === modal-delete === */
