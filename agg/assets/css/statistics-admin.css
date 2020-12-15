@@ -5,12 +5,16 @@
     align-items: center;
 }
 .admin__search-title{
+    cursor: pointer;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     color: #444444;
     border-bottom: 1px dashed rgba(47,153,204, .5);
 }
+.admin__search-title:hover{
+    border-bottom: 1px solid #fff;
+  }
 .admin__search-title--choose{
     color: #2F99CC;
 }
@@ -37,4 +41,201 @@
     position: absolute;
     top: 19%;
     right: 3%;
+}
+
+/* card */
+
+.admin__card{
+    background: #FFFFFF;
+    border: 1px solid #CECFCF;
+    border-radius: 3px;
+    width: 100%;
+    height: 213px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+.admin__card-content{
+    display: flex;
+}
+.admin__card-title{
+    font-family: MuseoSansCyrl;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+    padding-right: 502px;
+}
+.admin__card-sum{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #444444;
+    padding-right: 50px;
+}
+.admin__card-switch{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+}
+.admin__card-switch-title{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #444444;
+}
+.admin__card-switch-label{
+    position: relative;
+    background: #4CAE4C;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 22px;
+    width: 44px;
+    position: relative;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+.admin__card-switch-handle{
+    position: absolute;
+    top: 50%;
+    transform: translate(125%,-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    box-shadow: 0px 2px 4px rgba(0, 35, 11, 0.2);
+    transition: all .1s ease-in;
+}
+.admin__card-switch-handle--active{
+    transform: translate(20%, -50%);
+}
+.admin__card-switch-label--active{
+    background: rgba(208, 45, 66, .2);
+}
+
+label input{
+    -webkit-appearance: none;
+}
+
+.admin__card-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.admin__card-contacts-data{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    padding-bottom: 10px;
+}
+.admin__card-contacts--blue{
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F99CC;
+    border-bottom: 1px solid rgba(47,153,204, .5);
+}
+.admin__card-contacts--blue:hover{
+    border-bottom: 1px solid #fff;
+}
+.admin__card-account{
+    display: flex;
+}
+.admin__card-account-pay{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    margin-right: 5px;
+}
+.admin__card-search{
+    display: flex;
+    align-items: center;
+}
+.admin__card-search-item{
+    height: 20px;
+    position: relative;
+    width: 136px;
+    margin-right: 20px;
+}
+.admin__card-search-input{
+    border-bottom: 1px dashed rgba(47,153,204, .5);
+    outline: none;
+}
+.admin__card-search-input::placeholder{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+  .admin__card-search-item::before{
+    content: '';
+    position: absolute;
+    right:0px;
+    top:48%;
+    transform: translateY(-50%);
+    background-image: url('../images/svg/small-search.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 12px;
+    height: 12px;
+  }
+.admin__table-titles{
+    background: rgba(47, 153, 204, 0.15);
+    border-radius: 3px 3px 0px 0px;
+    width: 518px;
+    height: 36px;
+    padding: 8px 10.5px;
+    display: flex;
+}
+.admin__table-title{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.admin__table-title-date{
+    width: 129px;
+}
+.admin__table-title-click{
+    width: 90px;
+}
+.admin__table-title-show{
+    width: 97px;
+}
+.admin__table-title-ctr{
+    width: 95px;
+}
+.admin__table-subtitles{
+    padding: 12px 10.5px;
+    display: flex;
+}
+
+.admin__card-nav{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.admin__nav-item{
+    display: flex;
+    justify-content: space-between;
+}
+.admin__nav-icon{
+    cursor: pointer;
+}
+.admin__nav-title{
+    padding-left: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.transition__more--admin{
+    padding: 0;
+    border-bottom: none;
 }
