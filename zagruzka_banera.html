@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./agg/assets/css/clear.css">
+  <link rel="stylesheet" href="./agg/assets/css/fonts.css">
+  <link rel="stylesheet" href="./agg/assets/css/breadcrumbs.css">
+  <link rel="stylesheet" href="./agg/assets/css/header.css">
+  <link rel="stylesheet" href="./agg/assets/css/footer.css">
+  <link rel="stylesheet" href="./agg/assets/css/settings.css">
+  <link rel="stylesheet" href="./agg/assets/css/company.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="content spacer container">
+          <a href="https://k-ps.ru" class="logo">
+          </a>
+          <div  class="header__right spacer">
+            <div id="search_cable" class="search " autocomplete="off" >
+              <input data-limit="5" type="text" id="mr_search" name="mr_search" class="search__field" placeholder="Поиск по маркоразмеру">
+                <div class="search__select">
+                  <p data-stype="1" class="search__selected">
+                    <svg class="svg-icon icon-search-type-2">
+                      <use xlink:href="#icon-search-type-2"></use>
+                    </svg>
+                    <span>По характеристикам</span>
+                  </p>
+
+                  <svg class="svg-icon icon-arrow-select">
+                    <use xlink:href="#icon-arrow-select"></use>
+                  </svg>
+
+                  <div class="search__select-list">
+                      <p data-stype="1" class="search__select-item">
+                          <svg class="svg-icon icon-search-type-2">
+                            <use xlink:href="#icon-search-type-2"></use>
+                          </svg>
+                          <span>На складах</span>
+                      </p>
+                      <p data-stype="2" class="search__select-item">
+                        <svg class="svg-icon icon-search-type-1">
+                          <use xlink:href="#icon-search-type-1"></use>
+                        </svg>
+                        <span>По характеристикам</span>
+                      </p>
+                      </div><!--search__select-list-->
+                  </div><!--search__select-->
+                  <button class="search__btn">
+                      <svg class="svg-icon icon-search pos-center">
+                        <use xlink:href="#icon-search"></use>
+                      </svg>
+                  </button>
+              </div>
+          </div><!--header__right-->
+          <div class="header__price">
+            <div class="header__price-text">1 334,62 руб</div>
+            <div class="header__price-btn">
+              <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
+            </div>
+          </div>
+          <div class="header__menu">
+            <div class="header__menu-icon">
+              <img class="header__menu-icon--margin" src="./agg/assets/images/svg/profile.svg" alt="">
+              <img src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
+            </div>
+      </div><!--content-->
+  </header>
+
+    <section class="pager">
+      <div class="content container">
+        <a href="https://k-ps.ru/" class="pager__link">КПС</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager"/>
+        </span>
+        <a href="" class="pager__link">Личный кабинет</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager"/>
+        </span>        
+        <a href="" class="pager__link">Кампании</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager"/>
+        </span>   
+        <a href="" class="pager__link pager__link--active">Создание кампании</a>
+    </div><!--content-->
+    </section><!--pager-->
+
+    <div class="lk">
+      <nav class="lk__nav">
+        <div class="container">
+          <ul class="lk__nav-list">
+            <li class="lk__nav-item"><a href="" class="lk__nav-link lk__nav-link--current">Кампании</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Статистика</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Бухгалтерия</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main class="main">
+      <div class="settings">
+        <div class="container">
+          <div class="settings__company">
+            <div class="settings__company-item">
+              <span class="company-input" role="textbox" contenteditable>Кампания 1</span>
+            </div>
+          </div>
+          <!-- 1 Выбор плательщика -->
+          <div class="settings__dropdown ">
+            <div class="settings__dropdown-wrapper dropdown-active dropdown-payer" tab-index="1">
+              <div class="settings__dropdown-number settings__dropdown-number-done">
+                <img src="./agg/assets/images/svg/done.svg" alt="">
+              </div>
+              <div class="settings__dropdown-title">Плательщик</div>
+              <img class="settings__dropdown-arrow" tab-index="1" src="./agg/assets/images/svg/chevron-left.svg" alt="">
+            </div>
+            <div class="form__payer-wrapper">
+              <label class="form__payer-radio">
+                <input type="radio" name="name_payer" checked>
+                <span>Иванов И.И. (физическое лицо)</span>
+              </label>
+            </div>
+            <div class="settings__payer settings__tab">
+              <form class="form__payer" action="">
+                <div class="form__payer-addcompany dropdown-element hide" tab-index="1">
+                  <div class="addcompany">
+                    <div class="addcompany__title">
+                      Добавление организации
+                      <span class="addcompany__title-close" tab-index="1">
+                        Отменить
+                      </span>
+                    </div>
+                    <div class="addcompany__wrapper">
+                      <div class="addcompany__form addcompany__entity ">
+                        <div class="addcompany__form-title"><span>Данные юридического лица</span></div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">ИНН</div>
+                          <input class="addcompany__form-inn" type="text" name="inn" placeholder="7810050505">
+                          <div class="addcompany__form-company">ООО “Провод”</div>
+                          <div class="addcompany__form-help">Заполнить?</div>
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name" class="addcompany__form-name">Название организации</div>
+                          <input class="addcompany__form-nameCompany" type="text" name="nameCompany"
+                            placeholder="ООО “Провод”">
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">Юридический адрес</div>
+                          <input class="addcompany__form-address" type="text" name="address"
+                            placeholder="1254557, г. Санкт-Петербург, пр. Невский, д.110">
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">КПП</div>
+                          <input class="addcompany__form-kpp" type="text" name="kpp" placeholder="78101001">
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">ОГРН</div>
+                          <input class="addcompany__form-ogrn" type="text" name="ogrn" placeholder="721008110083010">
+                        </div>
+                      </div>
+                      <div class="addcompany__form addcompany__bank ">
+                        <div class="addcompany__form-title"><span>Данные банка</span></div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">БИК</div>
+                          <input class="addcompany__form-bik" type="text" name="bik" placeholder="044529754">
+                          <div class="addcompany__form-company">АО “Тинькофф Банк”</div>
+                          <div class="addcompany__form-help">Заполнить?</div>
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">Наименование банка</div>
+                          <input class="addcompany__form-bank" type="text" name="bank" placeholder="АО “Тинькофф Банк”">
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">К/сч</div>
+                          <input class="addcompany__form-ksch" type="text" name="ksch" placeholder="3010810819876594">
+                        </div>
+                        <div class="addcompany__form-input">
+                          <div class="addcompany__form-name">Р/сч</div>
+                          <input class="addcompany__form-rsch" type="text" name="rsch" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="addcompany__form addcompany__contacts ">
+                      <div class="addcompany__form-title">
+                        <span>Контактные данные</span>
+                        <div class="addcompany__form-info">
+                          <img src="./agg/assets/images/svg/help-icon.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="addcompany__form-input">
+                        <div class="addcompany__form-name">E-mail</div>
+                        <input class="addcompany__form-email" type="email" name="rsch" placeholder="test@yandex.ru">
+                      </div>
+                      <div class="addcompany__form-input">
+                        <div class="addcompany__form-name">Номер телефона</div>
+                        <input class="addcompany__form-phone" type="text" name="phone" placeholder="+7 (xxx) xxx-xx-xx">
+                      </div>
+                      <div class="addcompany__form-input">
+                        <div class="addcompany__form-name">Адрес офиса</div>
+                        <input class="addcompany__form-office" type="text" name="office"
+                          placeholder="г. Санкт-Петербург, пр. Невский, д.110">
+                      </div>
+                      <div class="addcompany__form-input">
+                        <div class="addcompany__form-name">О компании</div>
+                        <textarea class="addcompany__form-about" type="text" name="office"
+                          placeholder="Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. <- Это 200 символов. "></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="settings__payer-controlls">
+                    <div class="settings__payer-button">
+                      <button type="button" class="button-close button--gray" tab-index="1"> Отменить</button>
+                      <svg class="svg--gray">
+                        <use xlink:href="#btn-close"></use>
+                      </svg>
+                    </div>
+                    <div class="settings__payer-button">
+                      <button type="submit" class="button-save">Сохранить</button>
+                      <svg class="svg--blue">
+                        <use xlink:href="#btn-save"></use>
+                      </svg>
+                    </div>
+                    <div class="settings__payer-button">
+                      <button type="submit" class="button-load">Сохранить и перейти к загрузке товаров</button>
+                      <svg class="svg--blue">
+                        <use xlink:href="#btn-load"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__payer-contract form__payer-contract--form hide" tab-index="1">
+                  <label class="form__payer-checkbox">
+                    <input type="checkbox" checked>
+                  </label>
+                  <span class="form__payer-checkbox-text">Подписать договор об оказании услуг</span>
+                </div>
+                <!-- <div class="form__payer-btn form__button--gray">
+                  <button type="button" class="button button--show__form button--gray"> Добавить организацию</button>
+                  <svg class="svg--gray">
+                    <use xlink:href="#btn-plus"></use>
+                  </svg>
+                </div> -->
+                <div
+                  class="settings__payer-controlls settings__payer-controlls--margin settings__payer-controlls--hide">
+                  <!-- <div class="settings__payer-button">
+                    <button type="button" class="button-load">Перейти к загрузке товаров</button>
+                    <svg class="svg--blue">
+                      <use xlink:href="#btn-load"></use>
+                    </svg>
+                  </div> -->
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- 2 Настройка кампании -->
+          <div class="settings__dropdown">
+            <div class="settings__dropdown-wrapper dropdown-active dropdown-region" tab-index="2">
+              <div class="settings__dropdown-number settings__dropdown-number-done">
+                <img src="./agg/assets/images/svg/done.svg" alt="">
+              </div>
+              <div class="settings__dropdown-title">Кампания</div>
+              <img class="settings__dropdown-arrow" tab-index="2" src="./agg/assets/images/svg/chevron-left.svg" alt="">
+            </div>
+            <div class="settings__showtime dropdown-element hide" tab-index="2">
+              <!--region-->
+              <div class="region">
+                <div class="region__title">
+                  <span>Регионы показа </span>
+                </div>
+                <div class="region__container">
+                  <div class="region__search">
+                    <input type="text" placeholder="Введите название города или региона">
+                  </div>
+                  <div class="region__wrapper">
+                    <div class="region__select-title">
+                      <div class="region__select-title-region">Регион</div>
+                      <div class="region__select-title-coverage">Охват</div>
+                    </div>
+                    <!--Выбор страны 1-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow  region__select-arrow--active"
+                              src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox" checked>
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district" style="display: block;">
+                          <div class="region__subwrapper" >
+                            <div class="region__select-district-wrapper">
+                              <label>
+                                <img class="region__select-arrow_2  region__select-arrow_2--active"
+                                  src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                                <input class="region__select-district-input region__input" type="checkbox" checked>
+                                <span>Центр</span>
+                              </label>
+                              <div class="region__select-value">39 378 059 </div>
+                            </div>
+                            <!--Выбор города-->
+                            <div class="region__select-city" style="display: block;">
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Москва</span>
+                                </label>
+                                <div class="region__select-value">11 136 535</div>
+                              </div>
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Самара</span>
+                                </label>
+                                <div class="region__select-value">1 136 535</div>
+                              </div>
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Москва</span>
+                                </label>
+                                <div class="region__select-value">11 136 535</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="region__subwrapper">
+                            <div class="region__select-district-wrapper">
+                              <label>
+                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-district-input region__input" type="checkbox">
+                                <span>Центр</span>
+                              </label>
+                              <div class="region__select-value">39 378 059 </div>
+                            </div>
+                            <!--Выбор города-->
+                            <div class="region__select-city">
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Москва</span>
+                                </label>
+                                <div class="region__select-value">11 136 535</div>
+                              </div>
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Самара</span>
+                                </label>
+                                <div class="region__select-value">1 136 535</div>
+                              </div>
+                              <div class="region__select-city-wrapper">
+                                <label>
+                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                    alt="">
+                                  <input class="region__select-city-input region__input" type="checkbox">
+                                  <span>Москва</span>
+                                </label>
+                                <div class="region__select-value">11 136 535</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!--/Выбор страны 1-->
+
+                    <!--Выбор страны 2-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox">
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district">
+                          <div class="region__select-district-wrapper">
+                            <label>
+                              <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                              <input class="region__select-district-input region__input" type="checkbox">
+                              <span>Центр</span>
+                            </label>
+                            <div class="region__select-value">39 378 059 </div>
+                          </div>
+
+                          <!--Выбор города-->
+                          <div class="region__select-city">
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Москва</span>
+                              </label>
+                              <div class="region__select-value">11 136 535</div>
+                            </div>
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Самара</span>
+                              </label>
+                              <div class="region__select-value">1 136 535</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Выбор страны 2-->
+
+                    <!--Выбор страны 3-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox">
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district">
+                          <div class="region__select-district-wrapper">
+                            <label>
+                              <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                              <input class="region__select-district-input region__input" type="checkbox">
+                              <span>Центр</span>
+                            </label>
+                            <div class="region__select-value">39 378 059 </div>
+                          </div>
+
+                          <!--Выбор города-->
+                          <div class="region__select-city">
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Москва</span>
+                              </label>
+                              <div class="region__select-value">11 136 535</div>
+                            </div>
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Самара</span>
+                              </label>
+                              <div class="region__select-value">1 136 535</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Выбор страны 3-->
+
+                    <!--Выбор страны 4-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox">
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district">
+                          <div class="region__select-district-wrapper">
+                            <label>
+                              <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                              <input class="region__select-district-input region__input" type="checkbox">
+                              <span>Центр</span>
+                            </label>
+                            <div class="region__select-value">39 378 059 </div>
+                          </div>
+
+                          <!--Выбор города-->
+                          <div class="region__select-city">
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Москва</span>
+                              </label>
+                              <div class="region__select-value">11 136 535</div>
+                            </div>
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Самара</span>
+                              </label>
+                              <div class="region__select-value">1 136 535</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Выбор страны 4-->
+
+                    <!--Выбор страны 5-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox">
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district">
+                          <div class="region__select-district-wrapper">
+                            <label>
+                              <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                              <input class="region__select-district-input region__input" type="checkbox">
+                              <span>Центр</span>
+                            </label>
+                            <div class="region__select-value">39 378 059 </div>
+                          </div>
+
+                          <!--Выбор города-->
+                          <div class="region__select-city">
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Москва</span>
+                              </label>
+                              <div class="region__select-value">11 136 535</div>
+                            </div>
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Самара</span>
+                              </label>
+                              <div class="region__select-value">1 136 535</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Выбор страны 5-->
+
+                    <!--Выбор страны 6-->
+                    <div class="region__select">
+                      <div class="region__select-country">
+                        <div class="region__select-country-wrapper">
+                          <label>
+                            <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                            <input class="region__select-country-input region__input" type="checkbox">
+                            <span>Россия</span>
+                          </label>
+                          <div class="region__select-value">58 143 134</div>
+                        </div>
+                        <!--Выбор региона-->
+                        <div class="region__select-district">
+                          <div class="region__select-district-wrapper">
+                            <label>
+                              <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
+                              <input class="region__select-district-input region__input" type="checkbox">
+                              <span>Центр</span>
+                            </label>
+                            <div class="region__select-value">39 378 059 </div>
+                          </div>
+
+                          <!--Выбор города-->
+                          <div class="region__select-city">
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Москва</span>
+                              </label>
+                              <div class="region__select-value">11 136 535</div>
+                            </div>
+                            <div class="region__select-city-wrapper">
+                              <label>
+                                <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
+                                  alt="">g
+                                <input class="region__select-city-input region__input" type="checkbox">
+                                <span>Самара</span>
+                              </label>
+                              <div class="region__select-value">1 136 535</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/Выбор страны 6-->
+                  </div>
+                </div>
+              </div>
+              <!--/region-->
+
+              <!--showtime-->
+              <div class="showtime">
+                <div class="showtime__title">Время показов</div>
+                <div class="showtime__content">
+                  <div class="showtime__event">
+                    <!--hours-->
+                    <div class="showtime__hours">
+                      <label class="showtime__hours-label">
+                        <span>00</span>
+                        <input data-hour="00" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>01</span>
+                        <input data-hour="01" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>02</span>
+                        <input data-hour="02" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>03</span>
+                        <input data-hour="03" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>04</span>
+                        <input data-hour="04" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>05</span>
+                        <input data-hour="05" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>06</span>
+                        <input data-hour="06" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>07</span>
+                        <input data-hour="07" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>08</span>
+                        <input data-hour="08" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>09</span>
+                        <input data-hour="09" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>10</span>
+                        <input data-hour="10" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>11</span>
+                        <input data-hour="11" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>12</span>
+                        <input data-hour="12" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>13</span>
+                        <input data-hour="13" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>14</span>
+                        <input data-hour="14" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>15</span>
+                        <input data-hour="15" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>16</span>
+                        <input data-hour="16" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>17</span>
+                        <input data-hour="17" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>18</span>
+                        <input data-hour="18" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>19</span>
+                        <input data-hour="19" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>20</span>
+                        <input data-hour="20" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>21</span>
+                        <input data-hour="21" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>22</span>
+                        <input data-hour="22" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                      <label class="showtime__hours-label">
+                        <span>23</span>
+                        <input data-hour="23" type="checkbox" class="showtime__hours-checkbox">
+                      </label>
+                    </div>
+                    <div class="showtime__container">
+                      <!--days-->
+                      <div class="showtime__days">
+                        <label class="showtime__days-label">
+                          <span>Пн</span>
+                          <input data-day="1" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Вт</span>
+                          <input data-day="2" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Ср</span>
+                          <input data-day="3" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Чт</span>
+                          <input data-day="4" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Пт</span>
+                          <input data-day="5" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Сб</span>
+                          <input data-day="6" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                        <label class="showtime__days-label">
+                          <span>Вс</span>
+                          <input data-day="7" type="checkbox" class="showtime__days-checkbox">
+                        </label>
+                      </div>
+                      <!--elements-->
+                      <div class="showtime__elements">
+                        <!--day-1-->
+                        <div class="showtime__wrapper">
+                          <input data-day="1" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="1" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-2-->
+                        <div class="showtime__wrapper">
+                          <input data-day="2" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="2" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-3-->
+                        <div class="showtime__wrapper">
+                          <input data-day="3" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="3" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-4-->
+                        <div class="showtime__wrapper">
+                          <input data-day="4" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="4" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-5-->
+                        <div class="showtime__wrapper">
+                          <input data-day="5" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="5" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-6-->
+                        <div class="showtime__wrapper">
+                          <input data-day="6" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="6" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                        <!--day-7-->
+                        <div class="showtime__wrapper">
+                          <input data-day="7" data-hour="00" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="01" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="02" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="03" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="04" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="05" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="06" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="07" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="08" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="09" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="10" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="11" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="12" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="13" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="14" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="15" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="16" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="17" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="18" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="19" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="20" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="21" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="22" type="checkbox" class="showtime__elements-checkbox">
+                          <input data-day="7" data-hour="23" type="checkbox" class="showtime__elements-checkbox">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timezone">
+                    <div class="timezone__zone">
+                      <div class="timezone__zone-title">Часовой пояс:</div>
+                      <div class="timezone__zone-input">
+                        <select class="timezone__input-change timezone__input-change--pad" name="select"> <!--Supplement an id here instead of using 'name'-->
+                          <option value="value1">г. Самара UTC +03:00</option> 
+                          <option value="value2">г. Москва UTC +03:00</option>
+                          <option value="value3" selected>г. Воронеж UTC +03:00</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="timezone__show">
+                      <div class="timezone__show-title">Показывать объявления:</div>
+                      <div class="timezone__show-wrapper">
+                        <div class="timezone__show-days">
+                          <label class="timezone__show-days-label">
+                            <input type="checkbox">
+                            <span>eжедневно</span>
+                          </label>
+                          <label class="timezone__show-days-label">
+                            <input type="checkbox">
+                            <span>по будням</span>
+                          </label>
+                          <label class="timezone__show-days-label">
+                            <input type="checkbox">
+                            <span>по выходным</span>
+                          </label>
+                          <label class="timezone__show-days-label">
+                            <input type="checkbox">
+                            <span>праздничные дни</span>
+                          </label>
+                        </div>
+                        <div class="timezone__show-hours">
+                          <label class="timezone__show-hours-label">
+                            <input type="radio" name="show-hours">
+                            <span>круглосуточно</span>
+                          </label>
+                          <label class="timezone__show-hours-label">
+                            <input type="radio" name="show-hours">
+                            <span>диапазон</span>
+                          </label>
+                          <div class="timezone__show-range">
+                            <div class="timezone__show-range-wrapper">
+                              <span>с</span>
+                              <select class="timezone__input-change timezone__input-change-time select" name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">00:00</option> 
+                                <option value="value2">01:00</option>
+                                <option value="value3" >02:00</option>
+                                <option value="value3" >03:00</option>
+                                <option value="value3" >04:00</option>
+                                <option value="value3" >05:00</option>
+                                <option value="value3" >06:00</option>
+                                <option value="value3" >07:00</option>
+                                <option value="value3" >08:00</option>
+                                <option value="value3" >09:00</option>
+                                <option value="value3" >10:00</option>
+                                <option value="value3" >11:00</option>
+                                <option value="value3" >12:00</option>
+                                <option value="value3" >13:00</option>
+                                <option value="value3" >15:00</option>
+                                <option value="value3" >16:00</option>
+                                <option value="value3" >17:00</option>
+                                <option value="value3" >18:00</option>
+                                <option value="value3" >19:00</option>
+                                <option value="value3" >20:00</option>
+                                <option value="value3" >21:00</option>
+                                <option value="value3" >22:00</option>
+                                <option value="value3" selected>23:00</option>
+                              </select>
+                            </div>
+                            <div class="timezone__show-range-wrapper">
+                              <span>по</span>
+                              <select class="timezone__input-change timezone__input-change-time select" name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">00:00</option> 
+                                <option value="value2">01:00</option>
+                                <option value="value3" >02:00</option>
+                                <option value="value3" >03:00</option>
+                                <option value="value3" >04:00</option>
+                                <option value="value3" >05:00</option>
+                                <option value="value3" >06:00</option>
+                                <option value="value3" >07:00</option>
+                                <option value="value3" >08:00</option>
+                                <option value="value3" >09:00</option>
+                                <option value="value3" >10:00</option>
+                                <option value="value3" >11:00</option>
+                                <option value="value3" >12:00</option>
+                                <option value="value3" >13:00</option>
+                                <option value="value3" >15:00</option>
+                                <option value="value3" >16:00</option>
+                                <option value="value3" >17:00</option>
+                                <option value="value3" >18:00</option>
+                                <option value="value3" >19:00</option>
+                                <option value="value3" >20:00</option>
+                                <option value="value3" >21:00</option>
+                                <option value="value3" >22:00</option>
+                                <option value="value3" selected>23:00</option>
+                              </select>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!--/showtime-->
+
+              <!--strategy-->
+              <div class="strategy">
+                <div class="strategy__title">Стратегия по расходам</div>
+                <div class="strategy__data">
+                  <div class="strategy__wrapper">
+                    <label>
+                      <input class="strategy__data-radio" type="radio" name="strategy-radio">
+                      <span class="strategy__font">Без ограничений</span>
+                    </label>
+                  </div>
+
+                  <div class="strategy__day">
+                    <div class="strategy__wrapper">
+                      <label>
+                        <input class="strategy__data-radio" type="radio" name="strategy-radio">
+                        <span class="strategy__font">Суточный лимит</span>
+                      </label>
+                      <div class="strategy__day-range">
+                        <input class="strategy__data-range" type="text" placeholder="1000">
+                        <span class="strategy__font">рублей</span>
+                      </div>
+                    </div>
+                    <label class="strategy__day-alarm">
+                      <input type="checkbox">
+                      <span>Сообщить об окончании лимита</span>
+                    </label>
+                  </div>
+
+                  <div class="strategy__company">
+                    <div class="strategy__wrapper">
+                      <label>
+                        <input class="strategy__data-radio" type="radio" name="strategy-radio">
+                        <span class="strategy__font">Лимит на кампанию</span>
+                      </label>
+                      <div class="strategy__company-range ">
+                        <input class="strategy__data-range strategy__data-range--2" type="text" placeholder="10000">
+                        <span class="strategy__font">рублей</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="settings__payer-button settings__payer-button--textalign">
+                <button type="button" class="button-load">Перейти к загрузке товаров</button>
+                <svg class="svg--blue">
+                  <use xlink:href="#btn-load"></use>
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <!-- 3 Загрузка товаров -->
+          <div class="settings__dropdown">
+            <div class="settings__dropdown-wrapper "  tab-index="2">
+              <div class="settings__dropdown-number settings__dropdown-number-done">
+                <img src="./agg/assets/images/svg/done.svg" alt="">
+              </div>
+              <div class="settings__dropdown-title">Загрузка баннера</div>
+              <!-- <img class="settings__dropdown-arrow" src="./agg/assets/images/svg/chevron-left.svg" alt=""> -->
+            </div>
+            <div class="settings__upload settings__tab">
+              <div class="company__plug-more company__plug-more-load">
+                <div class="company__plug-more-title company__plug-more-title--post">Размещение медийного блока на любой из
+                  трёх самых популярных локаций ресурса</div>
+                <div class="company__card-wrap company__card-wrap--padding">
+                  <div class="company__card">
+                    <div class="company__card-title">Агрегатор</div>
+                    <div class="company__card-size">
+                      <div class="company__card-size-number">900 x 90px</div>
+                    </div>
+                    <div class="company__card-subtitle">в верхней части страницы</div>
+                    <div class="company__card-sum">25 копеек <span class="grey">за показ</span></div>
+                    <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+                    <div class="company__card-button">
+                      <button class="company__card-btn">Разместить</button>
+                    </div>
+                  </div>
+                  <div class="company__card">
+                    <div class="company__card-title">Главная страница</div>
+                    <div class="company__card-size">
+                      <div class="company__card-size-number">900 x 90px</div>
+                    </div>
+                    <div class="company__card-subtitle">в верхней части страницы</div>
+                    <div class="company__card-sum">15 копеек <span class="grey">за показ</span></div>
+                    <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+                    <div class="company__card-button">
+                      <button class="company__card-btn">Разместить</button>
+                    </div>
+                  </div>
+                  <div class="company__card">
+                    <div class="company__card-title">Технические характеристики</div>
+                    <div class="company__card-size">
+                      <div class="company__card-size-number">900 x 90px</div>
+                    </div>
+                    <div class="company__card-subtitle">в верхней части страницы</div>
+                    <div class="company__card-sum">20 копеек <span class="grey">за показ</span></div>
+                    <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
+                    <div class="company__card-button">
+                      <button class="company__card-btn">Разместить</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="banner">
+                  <div class="banner__settings">
+                    <div class="banner__title">Параметры баннера</div>
+                    <div class="banner__text">
+                      <p>Формат файлов: jpg / png / gif / html (в архиве)</p>
+                      <p>Вес: до 200кБ</p>
+                      <p>Размеры: 900х90 px - для ПК, 320х90 px - для мобильной версии</p>
+                    </div>
+                  </div>
+                  <div class="banner__upload">
+                    <div class="banner__title">Загрузить баннер</div>
+                    <div class="settings__upload-file settings__upload-file-return">
+                      <span class="settings__upload-text settings__upload-text-return settings__upload-text-banner">Баннер для ПК</span>
+                      <input type="file" id="file_btn">
+                      <label class="settings__upload-file-return" for="file_btn">Выбрать файл с товарами</label>
+                      <span class="settings__upload-text settings__upload-text-return"> upload.xls </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 Пополнение баланса -->
+          <div class="settings__dropdown">
+            <div class="settings__dropdown-wrapper "  tab-index="3">
+              <div class="settings__dropdown-disable"></div>
+              <div class="settings__dropdown-number">4</div>
+              <div class="settings__dropdown-title">Пополнение баланса</div>
+              <!-- <img class="settings__dropdown-arrow" src="./agg/assets/images/svg/chevron-left.svg" alt=""> -->
+            </div>
+            <div class="settings__upload settings__tab">
+            
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="spacer content-footer">
+        <div class="footer__wrapper">
+            <p class="copyright">
+                КПС 2015—2020            </p>
+
+            <nav class="nav">
+                <a href="https://k-ps.ru/info/adv/" class="nav__link">Реклама</a>
+                <a href="https://k-ps.ru/info/" class="nav__link">Возможности системы</a>
+                <a href="https://k-ps.ru/confirm/" class="nav__link">Пользовательское соглашение</a>
+                <a href="https://k-ps.ru/contact/" class="nav__link">Контакты</a>
+            </nav>
+            <div class="social">
+                <a href="https://vk.com/kpsru" class="social__link" rel="nofollow">
+                  <svg class="svg-icon icon-social-1">
+                    <use xlink:href="#icon-social-1"></use>
+                  </svg>
+                  </a>
+                <a href="https://www.facebook.com/KabelnayaPoiskovayaSistema/" class="social__link" rel="nofollow">
+                  <svg class="svg-icon icon-social-2">
+                    <use xlink:href="#icon-social-2"></use>
+                  </svg>
+                  </a>
+                <a href="https://www.instagram.com/kpsru/" class="social__link" rel="nofollow">
+                  <svg class="svg-icon icon-social-3">
+                    <use xlink:href="#icon-social-3"></use>
+                  </svg>
+                  </a>
+                <a href="https://ok.ru/group/55563832590453" class="social__link" rel="nofollow">
+                  <svg class="svg-icon icon-social-4">
+                    <use xlink:href="#icon-social-4"></use>
+                  </svg>
+                  </a>
+            </div><!--social-->
+        </div>
+      </div><!--content-->
+  </footer>
+  </div>
+  <!-- modal  -->
+  <div class="modal-contract">
+    <div class="modal-contract__content">
+      <div class="modal-contract__close">
+        <img src="./agg/assets/images/svg/modal-contract-close.svg" alt="">
+      </div>
+      <div class="modal-contract__title">
+        Договор об оказании услуг
+      </div>
+      <div class="modal-contract__wrapper">
+        <div class="modal-contract__text">
+           <p> Настоящее Соглашение заключается между Обществом с ограниченной ответственностью «Техноком», именуемым в дальнейшем «Администрация Сервиса» и любым лицом, становящимся пользователем при регистрации на сайте Сервиса «Кабельный справочник» (далее – Сервис), в дальнейшем именуемым «Пользователь», вместе по тексту Соглашения именуемые «Стороны», а по отдельности – «Сторона».
+          </p>
+            
+            <h3>1. Общие положения.</h3>
+
+            <p>
+              1.1. Настоящее Соглашение в соответствии со ст. 435 Гражданского кодекса РФ является публичной офертой. Получая доступ к материалам Сервиса Пользователь считается присоединившимся к настоящему Соглашению, принимает условия настоящей оферты и положения Соглашения (акцепт).
+            </p>
+            <p>
+              1.2. Безусловное принятие (акцепт) условий настоящей оферты осуществляется путем регистрации на сайте Сервиса.
+            </p>
+            <p>
+              1.3. Настоящее Соглашение, заключаемое путем акцепта настоящей оферты, не требует двустороннего подписания и действительно в электронном виде.
+            </p>
+            <p>
+              1.4. Использование материалов и функций Сервиса регулируется нормами действующего законодательства Российской Федерации.
+            </p>
+            <h3>2. Предмет Соглашения.</h3>
+            <p>
+              2.1. Сервис «Кабельный справочник» предоставляет Пользователю ограниченный доступ ко  всем бесплатным инструментам по поиску кабельно-проводниковой продукции, размещаемой на Сервисе.
+            </p>
+            
+            <p>
+              2.3. Действие условий настоящего Соглашения распространяется на все последующие обновления и новые версии Сервиса. Соглашаясь с использованием новой версии Сервиса, Пользователь принимает условия настоящего Соглашения для соответствующих обновлений, новых версий Сервиса, если обновление и/или новая версия Сервиса не сопровождается иным соглашением.
+
+            </p>
+
+            <h3>3. Условия использования Сервиса.</h3>
+            
+            <p>
+              3.1. Для начала работы с Сервисом Пользователю необходимо пройти процедуру регистрации путем присвоения уникального имени (Логина) и пароля. По завершении процесса регистрации Пользователь становится обладателем учетной записи. С момента входа в свою учетную запись Пользователь самостоятельно несет ответственность за безопасность вводимых данных, а также Логина и пароля.
+            </p>
+            
+            <p>
+              3.2. По окончании работы с Сервисом Пользователь самостоятельно осуществляет завершение работы под своей учетной записью путем нажатия кнопки «Выйти».
+            </p>
+            
+            <p>
+              3.3. Информация по описанию всей кабельной продукции  Сервиса, а именно: нормативные документы, технические и электрические характеристики, применение, расшифровка марки кабеля и его конструкция, взяты из общедоступных нормативных документов и каталогов продукции заводов-производителей. Поэтому Администрация Сервиса не несет ответственность за достоверность данных, указанных в данном пункте договора (уточняйте данные приобретаемой продукции у прямого производителя).
+            </p>
+            
+            <p>
+              3.4. Бесплатные услуги предоставляются Пользователю без каких-либо гарантий, в том качестве, объеме и с теми функциональными возможностями, которыми обладают данные услуги в составе Сервиса. Это означает, что Пользователь не вправе предъявлять претензии, касающиеся доступности, объема, качества или функциональных возможностей полученных бесплатных услуг и пользуется ими, принимая на себя все риски и ответственность, связанные с использованием таких бесплатных услуг.
+            </p>
+            
+            <h3>
+              4. Права и обязанности сторон.
+            </h3>
+            <p>
+              4.1. Права и обязанности Пользователя.
+            </p>
+            
+            <p>
+              4.1.1. Пользователь обязуется не предпринимать действий, которые могут рассматриваться как нарушающие Российское законодательство или нормы международного права, в том числе в сфере интеллектуальной собственности, авторских и/или смежных правах, а также любых действий, которые приводят или могут привести к нарушению нормальной работы Сервиса.
+            </p>
+
+            <p>
+              4.1.2. Пользователь обязан не реже, чем один раз в месяц знакомиться с актуальным содержанием настоящего Соглашения, размещенного по адресу https://k-ps.ru/confirm/
+            </p>
+            
+            <p>
+              4.1.3. Пользователь обязуется не предоставлять (передавать) полностью или частично третьим лицам полученные им по настоящему Соглашению права, не продавать, не тиражировать, не копировать материалы Сервиса полностью или частично, не отчуждать иным образом, в том числе безвозмездно, без получения на все вышеперечисленные действия предварительного письменного согласия Администрации Сервиса.
+            </p>
+            
+            <p>
+              4.1.4. Пользователь обязуется не передавать третьим лицам пароли и логины, используемые для доступа к Сервису, обеспечить конфиденциальность их хранения. В случае несанкционированного доступа к логину и паролю и/или учетной записи пользователя Пользователь обязан незамедлительно сообщить об этом Администрации Сервиса.
+            </p>
+            
+            <p>
+              4.1.5. Пользователь обязуется не использовать программное обеспечение, обеспечивающее автоматическое скачивание и обработку (разборку) веб-страниц Сервиса в целях получения нужных данных (не «парсить» веб-страницы Сервиса).
+            </p>
+            
+            <p>
+              4.1.6. Пользователь имеет право доступа к Сервису в любое время, кроме времени проведения профилактических работ.
+
+            </p>
+            
+            <p>
+              4.1.7. Пользователь имеет право пользоваться Сервисом в пределах его функциональных возможностей и на условиях установленных настоящим Соглашением.
+            </p>
+            
+            <p>4.1.8. Пользователь имеет право оплатить любой из предложенных  на Сервисе тарифных планов.</p>
+            
+            <p>
+              4.1.9. Пользователь имеет право самостоятельно изменять пароль, не уведомляя об этом Администрацию Сервиса.
+            </p>
+           
+            <p>
+              4.1.10. Пользователь имеет право в любой момент подать заявку на удаление учетной записи и информации Пользователя, хранимой в Сервисе. Удаление учетной записи и информации Пользователя, хранимой на Сервисе, производится в течение 7 дней с даты получения заявки. При удалении учетной записи, денежные средства, находящиеся на бонусном и лицевом счетах Пользователя, возврату не подлежат. Заявка подается по электронной почте по адресу info@k-ps.ru
+
+            </p>
+
+            <p>
+              4.1.11. Денежные средства, переведенные на расчетный счета Администрации Сервиса, возврату не подлежат и могут быть использованы для оплаты определенного тарифа.
+            </p>
+            
+            <p>
+              4.1.12. Пользователь соглашается получать информационную рассылку на электронный адрес, указанный при регистрации.
+
+            </p>
+            
+            <p>
+              4.2. Права и обязанности Администрации Сервиса.
+            </p>
+          
+            <p>
+              4.2.1. Администрация Сервиса обязана предоставить Пользователю доступ к Сервису сразу после прохождения Пользователем всей процедуры регистрации на Сервисе.
+
+            </p>
+            
+            <p>
+              4.2.2. Администрация Сервиса обязуется обеспечивать работу Сервиса, в соответствии с условиями настоящего Соглашения, круглосуточно 7 (Семь) дней в неделю, включая выходные и праздничные дни, за исключением времени проведения профилактических работ.
+
+            </p>
+            
+            <p>
+              4.2.3. Администрация Сервиса обязуется обеспечить сохранность данных Пользователя, размещенных в Сервисе в течение 90 (Девяносто) календарных дней с момента последнего использования Пользователем любой из платных услуг Сервиса.
+
+            </p>
+            
+            <p>
+              4.2.4. Администрация Сервиса имеет право приостанавливать работу Сервиса для проведения необходимых плановых профилактических и ремонтных работ на технических ресурсах Администрации Сервиса, а также внеплановых работ в аварийных ситуациях, уведомляя об этом Пользователя, если технически это представляется возможным, посредством размещения соответствующей информации на сайте.
+
+            </p>
+            
+            <p>
+              4.2.5. Администрация Сервиса имеет право прерывать работу Сервиса, если это обусловлено невозможностью использования информационно-транспортных каналов, не являющихся собственными ресурсами Администрации Сервиса, либо действием и/или бездействием третьих лиц, если это непосредственно влияет на работу Сервиса, в том числе при аварийной ситуации.
+
+            </p>
+            
+            <p>
+              4.2.6. Администрация Сервиса имеет право обновлять содержание, функциональные возможности и пользовательский интерфейс Сервиса в любое время по своему собственному усмотрению.
+
+            </p>
+            
+            <p>
+              4.2.7. Администрация Сервиса имеет право изменять стоимость платных услуг в одностороннем порядке.
+
+            </p>
+            
+            <p>
+              4.2.8. В случае блокировки или удаления учетной записи Пользователя по причине нарушения условий настоящего Соглашения денежные средства, находящиеся на лицевом и бонусном счетах Пользователя, возврату не подлежат.
+
+            </p>
+            
+            <h3>
+              5. Ответственность сторон и порядок разрешения споров.
+            </h3>
+            
+            <p>
+              5.1. Сервис предоставляется Пользователю «как есть» (as is) в соответствии с общепринятым в международной практике принципом. Это означает, что за проблемы, возникающие в процессе обновления, поддержки и эксплуатации Сервиса (в т. ч. проблемы совместимости с другими программными продуктами, а также несоответствия результатов использования Сервиса ожиданиям Пользователя и т.п.), Администрация Сервиса ответственности не несет.
+
+            </p>
+            
+            <p>
+              5.2. За нарушение обязательств по Соглашению Стороны несут ответственность в соответствии с действующим законодательством РФ. При этом ответственность Администрации Сервиса перед Пользователем в случае требования возмещения убытков ограничена размером стоимости оплаченных Пользователем Платных услуг.
+
+            </p>
+            
+            <p>
+              5.3. Ни одна из Сторон не несет ответственности за полное или частичное неисполнение любой из своих обязанностей, если неисполнение является следствием обстоятельств непреодолимой силы, возникших после заключения Соглашения и независящих от воли Сторон. В случае действия обстоятельств непреодолимой силы более 3 (Трех) месяцев любая Сторона вправе в одностороннем порядке отказаться от исполнения своих обязательств по настоящему Соглашению (расторгнуть Соглашение).
+
+            </p>
+            
+            <p>
+              5.4. Поскольку Сервис является объектом интеллектуальной собственности Администрации Сервиса, ответственность за нарушение авторских прав наступает в соответствии с действующим законодательством Российской Федерации.
+
+            </p>
+            
+            <p>
+              5.5. Администрация Сервиса не несет ответственности за неисполнение или ненадлежащее исполнение обязательств по настоящему Соглашению, а также за прямые и косвенные убытки Пользователя, включая упущенную выгоду и возможный ущерб, возникший в том числе в результате неправомерных действий пользователей сети Интернет, направленных на нарушение информационной безопасности или нормального функционирования Сервиса; отсутствия Интернет-соединений между компьютером Пользователя и сервером Администрации Сервиса; проведения государственными и муниципальными органами, а также иными организациями действий в рамках оперативно-розыскных мероприятий; установления государственного регулирования (или регулирования иными организациями) хозяйственной деятельности коммерческих организаций в сети Интернет и/или установления указанными субъектами разовых ограничений, затрудняющих или делающих невозможным исполнение настоящего Соглашения; и других случаев, связанных с действиями (бездействием) пользователей сети Интернет и/или других субъектов, направленными на ухудшение общей ситуации с использованием сети Интернет и/или компьютерного оборудования, существовавшей на момент заключения настоящего Соглашения.
+
+            </p>
+
+            <p>
+              5.6. В случае возникновения между Сторонами споров или разногласий, вытекающих из настоящего Договора или связанных с ним, Стороны примут все меры к их разрешению путем переговоров между собой. Претензионный порядок разрешения споров является для Сторон обязательным (в соответствии с ч.5 ст.4 АПК РФ). Срок ответа на претензию - 10 (десять) календарных дней с даты получения претензии соответствующей Стороной.
+
+            </p>
+            
+            <p>
+              5.7. В случае если не удается разрешить возникшие между Сторонами споры и/или разногласия путем переговоров, то такие споры разрешаются в Арбитражном суде Санкт-Петербурга и Ленинградской области.
+
+            </p>
+            <p>
+              5.8. Предлагаемые товары и услуги предоставляются не по заказу лица либо предприятия, эксплуатирующего систему WebMoney Transfer. Мы являемся независимым предприятием, оказывающим услуги, и самостоятельно принимаем решения о ценах и предложениях. Предприятия, эксплуатирующие систему WebMoney Transfer, не получают комиссионных вознаграждений или иных вознаграждений за участие в предоставлении услуг и не несут никакой ответственности за нашу деятельность. Аттестация, произведенная со стороны WebMoney Transfer, лишь подтверждает наши реквизиты для связи и удостоверяет личность. Она осуществляется по нашему желанию и не означает, что мы каким-либо образом связаны с продажами операторов системы WebMoney.
+
+            </p>
+            
+            <h3>
+              6. Прочие условия.
+            </h3>
+            
+            <p>
+              6.1. Настоящее Соглашение вступает в силу с даты акцепта и действует до полного исполнения своих обязательств Сторонами.
+
+            </p>
+            
+            <p>
+              6.2. Настоящее Соглашение может быть расторгнуто досрочно по взаимному соглашению Сторон, а также по инициативе Администрации Сервиса в случае нарушения Пользователем условий настоящего Соглашения без возврата последнему каких-либо денежных средств.
+
+            </p>
+            
+            <p>
+              6.3. Поскольку настоящее Соглашение является офертой, и в силу действующего гражданского законодательства РФ Администрация Сервиса имеет право на отзыв оферты в соответствии со ст. 436 ГК РФ. В случае отзыва настоящего Соглашения в течение срока его действия настоящее Соглашение считается прекращенным с момента отзыва. Отзыв осуществляется путем размещения соответствующей информации на сайте.
+
+            </p>
+            
+            <p>
+              6.4. Стороны договорились, что при исполнении настоящего Соглашения допускается использование подписей представителей Сторон, а также их печатей с помощью средств факсимильной связи, механического или иного копирования, электронно-цифровой подписи либо иного аналога собственноручной подписи руководителей и печатей организаций. Стороны подтверждают, что приложения к настоящему Соглашению, подписанные и оформленные указанным в настоящем пункте способом, имеют юридическую силу и обязательны для исполнения сторонами.
+
+            </p>
+            
+            <p>
+              6.5. Администрация Сервиса вправе в одностороннем порядке внести изменения в условия предоставления услуг Сервиса, разместив об этом информацию на сайте в публичном доступе и внеся изменения в настоящее Соглашение.
+
+            </p>
+
+            <p>
+              6.6. Указанные изменения в условиях настоящего Соглашения вступают в силу с даты их публикации, если иное не оговорено в соответствующей публикации. Продолжение использования Сервиса Пользователем после внесения изменений и/или дополнений в Соглашение означает принятие и согласие Пользователя с такими изменениями и/или дополнениями.
+
+            </p>
+            
+            <h3>
+              7. Гарантии.
+            </h3>
+            
+            <p>
+              7.1. За исключением гарантий, прямо указанных в тексте настоящего договора, Администрация Сервиса не предоставляет никаких иных гарантий.
+
+            </p>  
+            
+            <p>
+              7.2.Администрация Сервиса гарантирует Пользователю, что его персональные данные, размещенные на Сервисе будут доступны только в строгом соответствии с законодательством Российской Федерации и/или в порядке и объеме, согласованным с Пользователем.
+
+            </p>
+            
+            <p>
+
+              7.3. Соглашаясь с условиями и принимая условия настоящей оферты путем ее акцепта, Пользователь заверяет Администрацию Сервиса и гарантирует, что он:
+
+            </p>
+            <p>
+              указал достоверные персональные данные при регистрации;<br>
+              заключает настоящий договор добровольно;<br>
+              ознакомился со всеми условиями настоящего договора;<br>
+              полностью понимает и подтверждает предмет оферты и договора;<br>
+              обладает всеми правами и полномочиями, необходимыми для заключения и исполнения настоящего договора.<br>
+            </p>
+            
+            <h3>8. Адрес и реквизиты Администрации Сервиса.</h3>
+            ООО "Техноком"<br>
+            Юридический адрес: 196084, г. Санкт-Петербург,  ул. Коли Томчака д. 28, лит.Л, офис 12<br>
+            ИНН: 7810387937 КПП: 781001001<br>
+            ОГРН: 1147847347009<br>
+            Расчетный счет: 40702810010000028214<br>
+            Банк: АО «Тинькофф Банк»<br>
+            БИК: 044525974<br>
+            Kорр. счет: 30101810145250000974<br>
+            Электронный адрес: info@k-ps.ru<br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./agg/assets/js/search.js"></script>
+  <script src="./agg/assets/js/script.js"></script>
+  <script src="./agg/assets/js/showtime.js"></script>
+  <script src="./agg/assets/js/resizeinput.js"></script>
+  <script src="./agg/assets/js/dropdown.js"></script>
+  <script src="./agg/assets/js/contractModal.js"></script>
+</body>
+</html>
