@@ -166,9 +166,11 @@
 }
 .statistics__trigger{
   cursor: pointer;
+  position: relative;
 }
 .statistics__trigger-arrow{
   margin-left: 6px;
+  margin-bottom: 1px;
 }
 .statistics__trigger-arrow--active{
   transform: rotate(180deg);
