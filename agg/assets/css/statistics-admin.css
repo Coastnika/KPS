@@ -224,10 +224,56 @@ label input{
 .admin__nav-item{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .admin__nav-icon{
     cursor: pointer;
+    position: relative;
 }
+.admin__nav-info{
+    position: absolute;
+    top:-43px;
+    left: -20px;
+    width: 149px;
+    padding: 8px 11px;
+    background: #FFFFFF;
+    border: 1px solid #CECFCF;
+    border-radius: 3px;
+    box-shadow: 0px 12px 12px rgba(68, 68, 68, 0.08), 0px 16px 24px rgba(68, 68, 68, 0.08);
+    z-index: 1;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+    display: none;
+  }
+  .admin__nav-info-repeat{
+    width: 208px;
+    left: -30px;
+  }
+  .admin__nav-info-cancel{
+    width: 162px;
+    left: -22px;
+  }
+  .admin__nav-info-know{
+    width: 129px;
+    left: -17px;
+  }
+  .admin__nav-info::before{
+    content: '';
+    position: absolute;
+    left: 16%;
+    bottom: 0%;
+    transform: translate(0%, 55%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #CECFCF;
+    border-right: 1px solid #CECFCF;
+    background-color: #fff;
+  }
+.admin__nav-icon:hover .admin__nav-info{
+    display: block;
+  }
 .admin__nav-title{
     padding-left: 8px;
     font-weight: 300;
@@ -239,3 +285,20 @@ label input{
     padding: 0;
     border-bottom: none;
 }
+
+.admin__info{
+    position: absolute;
+    top: 5px;
+    width: 149px;
+    padding: 8px 11px;
+    background: #FFFFFF;
+    border: 1px solid #CECFCF;
+    border-radius: 3px;
+    box-shadow: 0px 12px 12px rgba(68, 68, 68, 0.08), 0px 16px 24px rgba(68, 68, 68, 0.08);
+    z-index: 1;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+
+  }
