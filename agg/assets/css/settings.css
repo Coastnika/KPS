@@ -2365,7 +2365,7 @@ input::-webkit-inner-spin-button {
   padding-right: 13px;
   margin-left: 2px;
   color: #2F99CC;
-  border-bottom: 1px dashed rgba(47,153,204, .5);
+  
   cursor: pointer;
   position: relative;
 }
@@ -2382,7 +2382,7 @@ input::-webkit-inner-spin-button {
   transform: rotate(180deg);
 }
 .custom__select:hover{
-  border-bottom: 1px dashed rgba(47,153,204, 0);
+ 
 }
 
 .custom__select-content{
@@ -2394,6 +2394,12 @@ input::-webkit-inner-spin-button {
   bottom: -92px;
   left: 0;
   z-index: 1;
+}
+.custom__select-title{
+  border-bottom: 1px dashed rgba(47,153,204, .5);
+}
+.custom__select-title:hover{
+  border-bottom: 1px dashed rgba(47,153,204, 0);
 }
 .custom__select-text{
   font-weight: 300;
