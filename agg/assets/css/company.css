@@ -377,6 +377,7 @@ label input{
     padding-left: 46px;
 }
 .company__plug-more-title{
+    font-family: MuseoSansCyrl;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;

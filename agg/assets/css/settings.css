@@ -745,6 +745,40 @@
 .settings__upload{
   display: block!important;
 }
+.settings__upload-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  padding-top: 0px;
+}
+.settings__upload-icon svg{
+  width: 20px;
+  height: 20px;
+}
+
+.settings__upload-preview{
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  position: relative;
+}
+.settings__upload-preview span{
+  border-bottom: 1px dashed rgba(47,153,204, .5);
+  
+}
+
+.settings__upload-dropdown{
+  position: relative;
+}
+
+.settings__upload-dropdown-text{
+  
+  
+}
+.settings__upload-dropdown-text:hover{
+  
+}
 
 .settings__upload-form{
   margin-bottom: 20px;
@@ -763,6 +797,7 @@
 }
 .settings__upload-file-return{
   margin-right: 15px;
+  font-size: 14px;
 }
 
 .settings__upload-file input{
@@ -2022,6 +2057,33 @@ input::-webkit-inner-spin-button {
 .banner{}
 .banner__settings{}
 .banner__upload{}
+.banner__upload-mobile{
+  margin-bottom: 10px;
+}
+.banner__upload-label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 370px;
+  font-size: 14px;
+}
+.banner__upload-label input{
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('../images/svg/unchecked-checkbox.svg');
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.banner__upload-label input:checked{
+  background-image: url('../images/svg/checked-checkbox.svg');
+}
+.banner__upload-label input:not(:checked):hover{
+  background-image: url('../images/svg/hover-checkbox.svg');
+}
+
 .banner__title{
   font-family: MuseoSansCyrl;
   font-weight: 500;
@@ -2039,6 +2101,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 20px;
 }
+
 
 /* === pay ===*/
 .pay{}
@@ -2087,6 +2150,9 @@ input::-webkit-inner-spin-button {
   background-image: url('../images/svg/checked-radio.svg');
 }
 
+.pay__form-radio-label input:not(:checked):hover{
+  background-image: url('../images/svg/hover-radio.svg');
+}
 .pay__form-checkbox{}
 .pay__form-checkbox-label{
   display: flex;
@@ -2106,6 +2172,9 @@ input::-webkit-inner-spin-button {
 }
 .pay__form-checkbox-label input:checked{
   background-image: url('../images/svg/checked-checkbox.svg');
+}
+.pay__form-checkbox-label input:not(:checked):hover{
+  background-image: url('../images/svg/hover-checkbox.svg');
 }
 .pay__form-checkbox-label span{
   font-weight: 300;
@@ -2292,3 +2361,51 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #fff;
 }
 
+.custom__select{
+  padding-right: 13px;
+  margin-left: 2px;
+  color: #2F99CC;
+  border-bottom: 1px dashed rgba(47,153,204, .5);
+  cursor: pointer;
+  position: relative;
+}
+.custom__select::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 6px;
+  background-image: url('../images/svg/select-arrow.svg');
+  width: 7px;
+  height: 5px;
+}
+.custom__select--active::before{
+  transform: rotate(180deg);
+}
+.custom__select:hover{
+  border-bottom: 1px dashed rgba(47,153,204, 0);
+}
+
+.custom__select-content{
+  border: 1px solid #F2F2F2;
+  position: absolute;
+  padding: 14px 16px;
+  background-color: #fff;
+  min-width: 300px ;
+  bottom: -92px;
+  left: 0;
+  z-index: 1;
+}
+.custom__select-text{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  cursor: pointer;
+}
+.custom__select-text:hover{
+  color: #2F99CC;
+}
+
+.custom__select-text--active{
+  color: #2F99CC;
+}
