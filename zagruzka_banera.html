@@ -1136,7 +1136,7 @@
                     <div class="company__card-sum">25 копеек <span class="grey">за показ</span></div>
                     <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
                     <div class="company__card-button">
-                      <button class="company__card-btn">Разместить</button>
+                      <button class="company__card-btn">выбрать</button>
                     </div>
                   </div>
                   <div class="company__card">
@@ -1148,7 +1148,7 @@
                     <div class="company__card-sum">15 копеек <span class="grey">за показ</span></div>
                     <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
                     <div class="company__card-button">
-                      <button class="company__card-btn">Разместить</button>
+                      <button class="company__card-btn">выбрать</button>
                     </div>
                   </div>
                   <div class="company__card">
@@ -1160,7 +1160,7 @@
                     <div class="company__card-sum">20 копеек <span class="grey">за показ</span></div>
                     <div class="company__card-sum company__card-sum--pad">25 рублей <span class="grey">за клик</span></div>
                     <div class="company__card-button">
-                      <button class="company__card-btn">Разместить</button>
+                      <button class="company__card-btn">выбрать</button>
                     </div>
                   </div>
                 </div>
@@ -1181,6 +1181,50 @@
                       <input type="file" id="file_btn">
                       <label class="settings__upload-file-return" for="file_btn">Выбрать файл с товарами</label>
                       <span class="settings__upload-text settings__upload-text-return"> upload.xls </span>
+                      <div class="settings__upload-preview"> 
+                        <span>Посмотреть результат </span> 
+                        <div class="settings__upload-dropdown custom__select">
+                          <div class="settings__upload-dropdown-text custom__select-title"> в АГРЕГАТОРЕ </div>
+                          <div class="custom__select-content hide">
+                            <div class="custom__select-text">в АГРЕГАТОРЕ</div>
+                            <div class="custom__select-text">на ГЛАВНОЙ СТРАНИЦЕ</div>
+                            <div class="custom__select-text">на ТЕХНИЧЕСКИХ ХАРАКТЕРИСТИКАХ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings__upload-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="#eye"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="banner__upload-mobile">
+                      <label class="banner__upload-label">
+                        <input type="checkbox">
+                        <span>Разместить баннер для мобильной версии ?</span>
+                      </label>
+                    </div>
+                    <div class="settings__upload-file settings__upload-file-return settings__upload-file-mobile hide">
+                      <span class="settings__upload-text settings__upload-text-return settings__upload-text-banner">Баннер для мобильного</span>
+                      <input type="file" id="file_btn">
+                      <label class="settings__upload-file-return" for="file_btn">Выбрать файл с товарами</label>
+                      <span class="settings__upload-text settings__upload-text-return"> upload.xls </span>
+                      <div class="settings__upload-preview"> 
+                        <span>Посмотреть результат </span> 
+                        <div class="settings__upload-dropdown custom__select">
+                          <div class="settings__upload-dropdown-text custom__select-title"> в АГРЕГАТОРЕ </div>
+                          <div class="custom__select-content hide">
+                            <div class="custom__select-text">в АГРЕГАТОРЕ</div>
+                            <div class="custom__select-text">на ГЛАВНОЙ СТРАНИЦЕ</div>
+                            <div class="custom__select-text">на ТЕХНИЧЕСКИХ ХАРАКТЕРИСТИКАХ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings__upload-icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="#eye"></use>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1516,6 +1560,7 @@
       </div>
     </div>
   </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="./agg/assets/js/search.js"></script>
   <script src="./agg/assets/js/script.js"></script>
@@ -1523,5 +1568,7 @@
   <script src="./agg/assets/js/resizeinput.js"></script>
   <script src="./agg/assets/js/dropdown.js"></script>
   <script src="./agg/assets/js/contractModal.js"></script>
+  <script src="./agg/assets/js/customSelect.js"></script>
+  <script src="./agg/assets/js/showMobile.js"></script>
 </body>
 </html>
