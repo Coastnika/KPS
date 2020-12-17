@@ -7,7 +7,8 @@
 
 html,
 body {
-	height: 100%;
+  height: 100%;
+  font-family: MuseoSansCyrl;
 }
 
 
@@ -19,6 +20,15 @@ a{
   text-decoration: none;
 }
 
+.hide{
+  display: none!important;
+}
+.opacity{
+  opacity: .5 !important;
+}
+.visibility{
+  visibility: hidden;
+}
 
 .container{
   max-width: 1140px;
@@ -29,4 +39,17 @@ a{
   position: relative;
   min-height: 100vh;
   padding-bottom: 60px;
+}
+
+.input-error{
+  border: 1px solid #D02D42!important;
+}
+
+.input-error-text{
+  color: #D02D42!important;
+  opacity: 0;
+}
+
+.input-error-text--active{
+  opacity: 1;
 }
