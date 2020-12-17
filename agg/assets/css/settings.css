@@ -2130,6 +2130,7 @@ input::-webkit-inner-spin-button {
 }
 .pay__form-price input:focus{
   padding-left: 12px;
+  border: 1px solid #2F99CC;
 }
 .pay__form-price input:focus::placeholder{
   opacity: 0;
