@@ -115,19 +115,33 @@
               <div class="settings__dropdown-title">Плательщик</div>
               <img class="settings__dropdown-arrow" tab-index="1" src="./agg/assets/images/svg/chevron-left.svg" alt="">
             </div>
-            <div class="form__payer-wrapper">
-              <label class="form__payer-radio">
-                <input type="radio" name="name_payer" checked>
-                <span>Иванов И.И. (физическое лицо)</span>
-              </label>
-            </div>
-            <div class="settings__payer settings__tab">
-              <form class="form__payer" action="">
-                <div class="form__payer-addcompany dropdown-element hide" tab-index="1">
-                  <div class="addcompany">
+            <form class="settings__payer settings__tab settings__tab--show">
+              <div class="form__payer-wrapper">
+                <label class="form__payer-radio">
+                  <input  type="radio"name="name_payer" checked>
+                  <span>Иванов И.И. (физическое лицо)</span>
+                </label>
+                <label class="form__payer-radio hide">
+                  <input  type="radio" name="name_payer">
+                  <span>ООО “Кабель”, ИНН 7101010110</span>
+                </label>
+                <label class="form__payer-radio hide">
+                  <input  type="radio" name="name_payer">
+                  <span>ООО “Кабель”, ИНН 7101010110</span>
+                </label>
+              </div>
+              <div class="form__payer dropdown-element hide" tab-index="1" action="">
+                <div class="form__payer-btn form__button--gray">
+                  <button type="button" class="button button--show__form button--gray button__send-request"> Добавить организацию</button>
+                  <svg class="svg--gray">
+                    <use xlink:href="#btn-plus"></use>
+                  </svg>
+                </div>
+                <div class="form__payer-addcompany">
+                  <div class="addcompany hide">
                     <div class="addcompany__title">
                       Добавление организации
-                      <span class="addcompany__title-close" tab-index="1">
+                      <span class="addcompany__title-close">
                         Отменить
                       </span>
                     </div>
@@ -142,20 +156,18 @@
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name" class="addcompany__form-name">Название организации<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-nameCompany input-valid" type="text" name="nameCompany"
-                            placeholder="ООО “Провод”">
+                          <input  class="addcompany__form-nameCompany input-valid" type="text" name="nameCompany" placeholder="ООО “Провод”">
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">Юридический адрес<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-address input-valid" type="text" name="address"
-                            placeholder="1254557, г. Санкт-Петербург, пр. Невский, д.110">
+                          <input class="addcompany__form-address input-valid" type="text" name="address" placeholder="1254557, г. Санкт-Петербург, пр. Невский, д.110">
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">КПП<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-kpp input-valid"  type="text" name="kpp" placeholder="78101001">
+                          <input class="addcompany__form-kpp input-valid" type="text" name="kpp" placeholder="78101001">
                         </div>
                         <div class="addcompany__form-input">
-                          <div class="addcompany__form-name">ОГРН<sup class="input-error-text">*</sup></div>
+                          <div  class="addcompany__form-name">ОГРН<sup class="input-error-text">*</sup></div>
                           <input class="addcompany__form-ogrn input-valid" type="text" name="ogrn" placeholder="721008110083010">
                         </div>
                       </div>
@@ -198,17 +210,15 @@
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">Адрес офиса<sup class="input-error-text">*</sup></div>
-                        <input class="addcompany__form-office input-valid" type="text" name="office"
-                          placeholder="г. Санкт-Петербург, пр. Невский, д.110">
+                        <input class="addcompany__form-office input-valid" type="text" name="office" placeholder="г. Санкт-Петербург, пр. Невский, д.110">
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">О компании<sup class="input-error-text">*</sup></div>
-                        <textarea class="addcompany__form-about input-valid" type="text" name="office"
-                          placeholder="Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. <- Это 200 символов. "></textarea>
+                        <textarea class="addcompany__form-about input-valid" type="text" name="office" placeholder="Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. <- Это 200 символов. "></textarea>
                       </div>
                     </div>
                   </div>
-                  <div class="settings__payer-controlls">
+                  <div class="settings__payer-controlls settings__payer-controlls-last hide">
                     
                     <div class="settings__payer-button">
                       <button type="submit" class="button-save">Сохранить</button>
@@ -224,27 +234,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="form__payer-contract form__payer-contract--form hide" tab-index="1">
+                <div class="form__payer-contract hide">
                   <label class="form__payer-checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                   </label>
                   <span class="form__payer-checkbox-text">Подписать договор об оказании услуг</span>
                 </div>
-                <!-- <div class="form__payer-btn form__button--gray">
-                  <button type="button" class="button button--show__form button--gray"> Добавить организацию</button>
-                  <svg class="svg--gray">
-                    <use xlink:href="#btn-plus"></use>
-                  </svg>
-                </div> -->
-                <div
-                  class="settings__payer-controlls settings__payer-controlls--margin settings__payer-controlls--hide">
-                  <!-- <div class="settings__payer-button">
-                    <button type="button" class="button-load">Перейти к загрузке товаров</button>
+                
+                <!-- <div class="settings__payer-controlls settings__payer-controlls--margin settings__payer-controlls-first">
+                  <div class="settings__payer-button">
+                    <button type="submit" class="button-load button__send-request">Перейти к загрузке товаров</button>
                     <svg class="svg--blue">
                       <use xlink:href="#btn-load"></use>
                     </svg>
-                  </div> -->
-                </div>
+                  </div>
+                </div> -->
               </form>
             </div>
           </div>
@@ -1484,5 +1488,6 @@
   <script src="./agg/assets/js/dropdown.js"></script>
   <script src="./agg/assets/js/contractModal.js"></script>
   <script src="./agg/assets/js/validOrganizationForm.js"></script>
+  <script src="./agg/assets/js/showForm.js"></script>
 </body>
 </html>
