@@ -1,63 +1,75 @@
+//Моадльное окно - удаление группы
+let toggleModal = document.querySelectorAll('.upload__modal')
+let modaDelete = document.querySelector('.modal__delete')
+
+// toggleModal.forEach(toggle => {
+//   toggle.addEventListener('click', function(){
+//     //дописать
+
+//   })
+// })
+
+//Скрипт для добавления/удаления элементов в группе
+let uploadGroup = document.querySelectorAll('.upload__group')
+
+uploadGroup.forEach(group => {
+  group.addEventListener('input', function(e) {
+    let checkbox = group.querySelectorAll('.uplaod__item-action-del')
+    //Проверяем клик и состояние чекбокса
+    if(e.target == checkbox[0] && checkbox[0].checked){
+      checkbox.forEach(checkbox => {
+        if(!checkbox.checked){
+          checkbox.click()
+        }
+      })
+    }
+    else if(e.target == checkbox[0] && !checkbox[0].checked){
+      checkbox.forEach(checkbox => {
+        if(checkbox.checked){
+          checkbox.click()
+        }
+      })
+    }
+  })
+  //Модальное окно
+
+  //Поведение чекбоксов при наведении на группу
+  group.addEventListener('mouseover', function(){
+    let checkbox = group.querySelectorAll('.uplaod__item-action-del')
+    checkbox.forEach(checkbox => {
+      checkbox.classList.remove('visibility')
+    })
+  })
+
+  group.addEventListener('mouseout', function(){
+    let checkbox = group.querySelectorAll('.uplaod__item-action-del')
+    checkbox.forEach(checkbox => {
+      checkbox.classList.add('visibility')
+    })
+  })
+})
+
+
+
+
+//Скрипт для активных и не активных элементов
 let uploadDelGroup = document.querySelectorAll('.uplaod__item-action-del')
-let modalDel = document.querySelector('.modal__delete')
-let modalDelClose = document.querySelector('.modal__delete-close')
 
-let modalDelConfirm = document.querySelector('.modal__btn-yes')
-let modalDelCancel = document.querySelector('.modal__btn-cancel')
-
-uploadDelGroup.forEach(element => {
-  element.addEventListener('input', e => {
+uploadDelGroup.forEach(checkbox => {
+  checkbox.addEventListener('input', function(e){
     let parentElem = e.target.closest('.uplaod__item-action').nextSibling.parentElement
     let childElems = parentElem.children
-
-    if(element.checked){
-      modalDel.classList.add('modal__delete--show')
-      element.closest('.uplaod__item-action').classList.add('uplaod__item-action-active')
-
-      for(let i = 1; i < childElems.length - 1; i++){
-        childElems[i].style.color = '#999'
-      }
-    }
-    else{
-      element.closest('.uplaod__item-action').classList.remove('uplaod__item-action-active')
-      for(let i = 1; i < childElems.length - 1; i++){
-        childElems[i].style.color = '#444'
-      }
-    }
     
-    modalDelConfirm.onclick = () => {
-      e.target.checked = true
-      modalDel.classList.remove('modal__delete--show')
+    if(checkbox.checked){
       for(let i = 1; i < childElems.length - 1; i++){
-        childElems[i].style.color = '#999'
+        childElems[i].classList.add('opacity')
       }
     }
-
-    modalDelCancel.onclick = () => {
-      e.target.checked = false
-      modalDel.classList.remove('modal__delete--show')
-      element.closest('.uplaod__item-action').classList.remove('uplaod__item-action-active')
+    else if(!checkbox.checked){
       for(let i = 1; i < childElems.length - 1; i++){
-        childElems[i].style.color = '#444'
+        childElems[i].classList.remove('opacity')
       }
     }
   })
 })
 
-modalDelClose.addEventListener('click', () => {
-  modalDel.classList.remove('modal__delete--show')
-})
-
-// modal-moderator
-
-let modalModerator = document.querySelector('.modal__moderator')
-let modalModeratorOpen = document.querySelector('.upload__error-send')
-let modalModeratorClose = document.querySelector('.modal__moderator-close')
-
-modalModeratorOpen.addEventListener('click', () => {
-  modalModerator.classList.add('modal__moderator--show')
-})
-
-modalModeratorClose.addEventListener('click', () => {
-  modalModerator.classList.remove('modal__moderator--show')
-})

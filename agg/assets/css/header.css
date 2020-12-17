@@ -7,7 +7,7 @@ body {
   color: #444444;
 }
 body, button, textarea, input {
-  font-family: 'MuseoSansCyrl_agg' ;
+  font-family: MuseoSansCyrl ;
   font-weight: 300;
 }
 button, textarea, input {
@@ -465,7 +465,7 @@ display: inline-block;
   font-size: 20px;
   line-height: 130%;
   /*font-family: Segoe UI;*/
-  font-family: 'MuseoSansCyrl_agg'!important;
+  font-family: MuseoSansCyrl;
   width: 640px;
   margin-top: -17px;
 
@@ -534,7 +534,7 @@ display: inline-block;
       font-size: 20px;
       line-height: 130%;
       /*font-family: Segoe UI;*/
-      font-family: 'MuseoSansCyrl_agg'!important;
+      font-family: MuseoSansCyrl;
       width: 100%;
 
       padding-top:0px;
