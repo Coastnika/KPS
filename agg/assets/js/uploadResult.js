@@ -1,13 +1,3 @@
-//Моадльное окно - удаление группы
-let toggleModal = document.querySelectorAll('.upload__modal')
-let modaDelete = document.querySelector('.modal__delete')
-
-// toggleModal.forEach(toggle => {
-//   toggle.addEventListener('click', function(){
-//     //дописать
-
-//   })
-// })
 
 //Скрипт для добавления/удаления элементов в группе
 let uploadGroup = document.querySelectorAll('.upload__group')
@@ -69,4 +59,42 @@ uploadDelGroup.forEach(checkbox => {
     }
   })
 })
+
+
+//Моадльное окно - удаление группы
+let toggleModal = document.querySelectorAll('.upload__modal')
+let modaDelete = document.querySelector('.modal__delete')
+
+let confirmModal = document.querySelector('.modal__btn-yes')
+let cancelModal = document.querySelectorAll('.delete-close')
+
+toggleModal.forEach(toggle => {
+  toggle.addEventListener('input', function(e) {
+    let action = e.target
+
+    if(action.checked){
+      modaDelete.classList.remove('hide')
+    }
+ 
+
+    confirmModal.addEventListener('click', () => {
+      modaDelete.classList.add('hide')
+    })
+
+    cancelModal.forEach(cancelModal => {
+      cancelModal.addEventListener('click', () => {
+        modaDelete.classList.add('hide')
+        action.click()
+      })
+    })
+
+    modaDelete.addEventListener('click', function(e){
+      if(!e.target.closest('.modal__delete-wrap')){
+        modaDelete.classList.add('hide')
+        action.click()
+      }
+    })
+  })
+})
+
 

@@ -11,8 +11,8 @@ selectContent.forEach((content, contentIndex) => {
           title.textContent = e.target.textContent
         }
       })
-      selectCustom.forEach((select) => {
-        select.classList.remove('custom__select--active')
+      selectTitle.forEach((select) => {
+        select.classList.remove('custom__select-title--active')
       })
       content.classList.toggle('hide')
     }
@@ -29,12 +29,12 @@ selectTitle.forEach((title, titleIndex) => {
         content.classList.add('hide')
       }
     })
-    selectCustom.forEach((select, selectIndex) => {
+    selectTitle.forEach((select, selectIndex) => {
       if(titleIndex == selectIndex){
-        select.classList.toggle('custom__select--active')
+        select.classList.toggle('custom__select-title--active')
       }
       else{
-        select.classList.remove('custom__select--active')
+        select.classList.remove('custom__select-title--active')
       }
     })
   })

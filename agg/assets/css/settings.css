@@ -945,6 +945,10 @@
 .upload{
   padding-left: 46px;
 }
+.upload--padding{
+  padding-left: 0;
+  padding-right: 46px;
+}
 .dropdown-products{
   width: 150px;
   cursor: pointer;
@@ -2263,10 +2267,9 @@ input::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
   z-index: 999;
 }
 .modal__delete--show{
@@ -2408,16 +2411,18 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   position: relative;
 }
-.custom__select::before{
+.custom__select-title::before{
   content: '';
   position: absolute;
-  right: 0;
-  top: 6px;
+  right: -4px;
+  top: 1px;
   background-image: url('../images/svg/select-arrow.svg');
-  width: 7px;
-  height: 5px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 17px;
+  height: 15px;
 }
-.custom__select--active::before{
+.custom__select-title--active::before{
   transform: rotate(180deg);
 }
 
