@@ -97,6 +97,7 @@ let country = document.querySelectorAll('.region__select-country-input')
 let districts = document.querySelectorAll('.region__select-district-input')
 let regions = document.querySelectorAll('.region__select-city-input')
 
+let countryContainer = document.querySelectorAll('.region__select-country')
 let districtsContainer = document.querySelectorAll('.region__select-district')
 let citiesContainer = document.querySelectorAll('.region__select-city')
 let container = document.querySelectorAll('.cities')
@@ -190,6 +191,85 @@ districts.forEach((district, districtIndex) => {
   })
 })
 
+// region checbox checked
+
+let checkboxCountry = document.querySelectorAll('.checkbox-country')
+let checkboxDistrict = document.querySelectorAll('.checkbox-district')
+let checkboxRegion = document.querySelectorAll('.checkbox-region')
+let checkboxCity = document.querySelectorAll('.checkbox-city')
+let regionWrapper = document.querySelectorAll('.wrapper-region')
+// countryContainer districtsContainer citiesContainer container
+
+// НУЖНО ЧТО БЫ ВСЕ ДОЧЕРНИЕ ЧЕКАЛИСЬ И АНЧЕКАЛИСЬ =)
+countryContainer.forEach(country => {
+  country.addEventListener('input', e => {
+    let checkboxCountry = country.querySelectorAll('.checkbox-country')
+    let checkboxDistrict = country.querySelectorAll('.checkbox-district')
+
+    if(e.target == country.querySelector('.checkbox-country')){
+      checkboxCountry.forEach(item => {
+        if(item.checked){
+          checkboxDistrict.forEach(element => {
+            element.checked = true
+          })
+        }
+        else{
+          checkboxDistrict.forEach(element => {
+            element.checked = false
+          })
+        }
+      })
+    }
+  })
+})
+
+districtsContainer.forEach(country => {
+  country.addEventListener('input', e => {
+    
+    let checkboxDistrict = country.querySelectorAll('.checkbox-district')
+    let checkboxRegion = country.querySelectorAll('.checkbox-region')
+
+    if(e.target == country.querySelector('.checkbox-district')){
+      checkboxDistrict.forEach(item => {
+        if(item.checked){
+          checkboxRegion.forEach(element => {
+            element.checked = true
+          })
+        }
+        else{
+          checkboxRegion.forEach(element => {
+            element.checked = false
+          })
+        }
+      })
+    }
+  })
+})
+
+regionWrapper.forEach(region => {
+  region.addEventListener('input', e => {
+    
+    let checkboxRegion = region.querySelectorAll('.checkbox-region')
+    let checkboxCity = region.querySelectorAll('.checkbox-city')
+
+    if(e.target == region.querySelector('.checkbox-region')){
+      checkboxRegion.forEach(item => {
+        if(item.checked){
+          console.log('1')
+          checkboxCity.forEach(element => {
+            element.checked = true
+          })
+        }
+        else{
+          console.log('0')
+          checkboxCity.forEach(element => {
+            element.checked = false
+          })
+        }
+      })
+    }
+  })
+})
 
 
 
