@@ -159,7 +159,7 @@
                         <div class="addcompany__form-title"><span>Данные юридического лица</span></div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">ИНН<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-inn input-valid" type="text" name="inn" placeholder="7810050505">
+                          <input class="addcompany__form-inn input-valid" type="number" name="inn" placeholder="7810050505">
                           <div class="addcompany__form-company">ООО “Провод”</div>
                           <div class="addcompany__form-help">Заполнить?</div>
                         </div>
@@ -173,18 +173,18 @@
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">КПП<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-kpp input-valid" type="text" name="kpp" placeholder="78101001">
+                          <input class="addcompany__form-kpp input-valid" type="number" name="kpp" placeholder="78101001">
                         </div>
                         <div class="addcompany__form-input">
                           <div  class="addcompany__form-name">ОГРН<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-ogrn input-valid" type="text" name="ogrn" placeholder="721008110083010">
+                          <input class="addcompany__form-ogrn input-valid" type="number" name="ogrn" placeholder="721008110083010">
                         </div>
                       </div>
                       <div class="addcompany__form addcompany__bank ">
                         <div class="addcompany__form-title"><span>Данные банка</span></div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">БИК<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-bik input-valid" type="text" name="bik" placeholder="044529754">
+                          <input class="addcompany__form-bik input-valid" type="number" name="bik" placeholder="044529754">
                           <div class="addcompany__form-company">АО “Тинькофф Банк”</div>
                           <div class="addcompany__form-help">Заполнить?</div>
                         </div>
@@ -194,11 +194,11 @@
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">К/сч<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-ksch input-valid" type="text" name="ksch" placeholder="3010810819876594">
+                          <input class="addcompany__form-ksch input-valid" type="number" name="ksch" placeholder="3010810819876594">
                         </div>
                         <div class="addcompany__form-input">
                           <div class="addcompany__form-name">Р/сч<sup class="input-error-text">*</sup></div>
-                          <input class="addcompany__form-rsch input-valid" type="text" name="rsch" placeholder="">
+                          <input class="addcompany__form-rsch input-valid" type="number" name="rsch" placeholder="">
                         </div>
                       </div>
                     </div>
@@ -215,7 +215,7 @@
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">Номер телефона<sup class="input-error-text">*</sup></div>
-                        <input class="addcompany__form-phone input-valid" type="text" name="phone" placeholder="+7 (xxx) xxx-xx-xx">
+                        <input class="addcompany__form-phone input-valid" type="number" name="phone" placeholder="+7 (xxx) xxx-xx-xx">
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">Адрес офиса<sup class="input-error-text">*</sup></div>
@@ -287,10 +287,9 @@
                       <div class="region__select">
                         <div class="region__select-country">
                           <div class="region__select-country-wrapper">
+                            <input class="region__select-country-input region__input" type="checkbox" checked>
                             <label>
-                              <img class="region__select-arrow  region__select-arrow--active"
-                                src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox" checked>
+                              <input type="checkbox" class="checkbox-country">
                               <span>Россия</span>
                             </label>
                             <div class="region__select-value">58 143 134</div>
@@ -299,331 +298,99 @@
                           <div class="region__select-district" style="display: block;">
                             <div class="region__subwrapper" >
                               <div class="region__select-district-wrapper">
+                                <input class="region__select-district-input region__input" type="checkbox" checked>
                                 <label>
-                                  <img class="region__select-arrow_2  region__select-arrow_2--active"
-                                    src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                  <input class="region__select-district-input region__input" type="checkbox" checked>
+                                  <input type="checkbox" class="checkbox-district">
                                   <span>Центр</span>
                                 </label>
                                 <div class="region__select-value">39 378 059 </div>
                               </div>
-                              <!--Выбор города-->
+                              <!--Выбор области-->
                               <div class="region__select-city" style="display: block;">
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
+                                <div class="wrapper-region">
+                                  <div class="region__select-city-wrapper">
                                     <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Москва</span>
-                                  </label>
-                                  <div class="region__select-value">11 136 535</div>
+                                    <label>
+                                      <input type="checkbox" class="checkbox-region">
+                                      <span>Московская область</span>
+                                    </label>
+                                    <div class="region__select-value">11 136 535</div>
+                                  </div>
+                                  <!--Выбор города-->
+                                  <div class="cities" style="display: none;">
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
+                              
+                                <!--Выбор области-->
+                                <div class="wrapper-region">
+                                  <div class="region__select-city-wrapper">
                                     <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Самара</span>
-                                  </label>
-                                  <div class="region__select-value">1 136 535</div>
-                                </div>
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
-                                    <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Москва</span>
-                                  </label>
-                                  <div class="region__select-value">11 136 535</div>
+                                    <label>
+                                      <input type="checkbox" class="checkbox-region">
+                                      <span>Московская область</span>
+                                    </label>
+                                    <div class="region__select-value">11 136 535</div>
+                                  </div>
+                                  <!--Выбор города-->
+                                  <div class="cities" style="display: none;">
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                    <div class="cities-wrapper">
+                                      <input class="cities__checkbox region__input" type="checkbox">
+                                      <label>
+                                        <input type="checkbox" class="checkbox-city">
+                                        <span>Москова</span>
+                                      </label>
+                                      <div class="region__select-value">11 136 53</div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="region__subwrapper">
-                              <div class="region__select-district-wrapper">
-                                <label>
-                                  <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-district-input region__input" type="checkbox">
-                                  <span>Центр</span>
-                                </label>
-                                <div class="region__select-value">39 378 059 </div>
-                              </div>
-                              <!--Выбор города-->
-                              <div class="region__select-city">
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
-                                    <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Москва</span>
-                                  </label>
-                                  <div class="region__select-value">11 136 535</div>
-                                </div>
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
-                                    <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Самара</span>
-                                  </label>
-                                  <div class="region__select-value">1 136 535</div>
-                                </div>
-                                <div class="region__select-city-wrapper">
-                                  <label>
-                                    <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                      alt="">
-                                    <input class="region__select-city-input region__input" type="checkbox">
-                                    <span>Москва</span>
-                                  </label>
-                                  <div class="region__select-value">11 136 535</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div>
+                        
                       </div>
                       <!--/Выбор страны 1-->
-
-                      <!--Выбор страны 2-->
-                      <div class="region__select">
-                        <div class="region__select-country">
-                          <div class="region__select-country-wrapper">
-                            <label>
-                              <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox">
-                              <span>Россия</span>
-                            </label>
-                            <div class="region__select-value">58 143 134</div>
-                          </div>
-                          <!--Выбор региона-->
-                          <div class="region__select-district">
-                            <div class="region__select-district-wrapper">
-                              <label>
-                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                <input class="region__select-district-input region__input" type="checkbox">
-                                <span>Центр</span>
-                              </label>
-                              <div class="region__select-value">39 378 059 </div>
-                            </div>
-
-                            <!--Выбор города-->
-                            <div class="region__select-city">
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Москва</span>
-                                </label>
-                                <div class="region__select-value">11 136 535</div>
-                              </div>
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Самара</span>
-                                </label>
-                                <div class="region__select-value">1 136 535</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/Выбор страны 2-->
-
-                      <!--Выбор страны 3-->
-                      <div class="region__select">
-                        <div class="region__select-country">
-                          <div class="region__select-country-wrapper">
-                            <label>
-                              <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox">
-                              <span>Россия</span>
-                            </label>
-                            <div class="region__select-value">58 143 134</div>
-                          </div>
-                          <!--Выбор региона-->
-                          <div class="region__select-district">
-                            <div class="region__select-district-wrapper">
-                              <label>
-                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                <input class="region__select-district-input region__input" type="checkbox">
-                                <span>Центр</span>
-                              </label>
-                              <div class="region__select-value">39 378 059 </div>
-                            </div>
-
-                            <!--Выбор города-->
-                            <div class="region__select-city">
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Москва</span>
-                                </label>
-                                <div class="region__select-value">11 136 535</div>
-                              </div>
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Самара</span>
-                                </label>
-                                <div class="region__select-value">1 136 535</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/Выбор страны 3-->
-
-                      <!--Выбор страны 4-->
-                      <div class="region__select">
-                        <div class="region__select-country">
-                          <div class="region__select-country-wrapper">
-                            <label>
-                              <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox">
-                              <span>Россия</span>
-                            </label>
-                            <div class="region__select-value">58 143 134</div>
-                          </div>
-                          <!--Выбор региона-->
-                          <div class="region__select-district">
-                            <div class="region__select-district-wrapper">
-                              <label>
-                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                <input class="region__select-district-input region__input" type="checkbox">
-                                <span>Центр</span>
-                              </label>
-                              <div class="region__select-value">39 378 059 </div>
-                            </div>
-
-                            <!--Выбор города-->
-                            <div class="region__select-city">
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Москва</span>
-                                </label>
-                                <div class="region__select-value">11 136 535</div>
-                              </div>
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Самара</span>
-                                </label>
-                                <div class="region__select-value">1 136 535</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/Выбор страны 4-->
-
-                      <!--Выбор страны 5-->
-                      <div class="region__select">
-                        <div class="region__select-country">
-                          <div class="region__select-country-wrapper">
-                            <label>
-                              <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox">
-                              <span>Россия</span>
-                            </label>
-                            <div class="region__select-value">58 143 134</div>
-                          </div>
-                          <!--Выбор региона-->
-                          <div class="region__select-district">
-                            <div class="region__select-district-wrapper">
-                              <label>
-                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                <input class="region__select-district-input region__input" type="checkbox">
-                                <span>Центр</span>
-                              </label>
-                              <div class="region__select-value">39 378 059 </div>
-                            </div>
-
-                            <!--Выбор города-->
-                            <div class="region__select-city">
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Москва</span>
-                                </label>
-                                <div class="region__select-value">11 136 535</div>
-                              </div>
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Самара</span>
-                                </label>
-                                <div class="region__select-value">1 136 535</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/Выбор страны 5-->
-
-                      <!--Выбор страны 6-->
-                      <div class="region__select">
-                        <div class="region__select-country">
-                          <div class="region__select-country-wrapper">
-                            <label>
-                              <img class="region__select-arrow" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                              <input class="region__select-country-input region__input" type="checkbox">
-                              <span>Россия</span>
-                            </label>
-                            <div class="region__select-value">58 143 134</div>
-                          </div>
-                          <!--Выбор региона-->
-                          <div class="region__select-district">
-                            <div class="region__select-district-wrapper">
-                              <label>
-                                <img class="region__select-arrow_2" src="./agg/assets/images/svg/arrow-region.svg" alt="">
-                                <input class="region__select-district-input region__input" type="checkbox">
-                                <span>Центр</span>
-                              </label>
-                              <div class="region__select-value">39 378 059 </div>
-                            </div>
-
-                            <!--Выбор города-->
-                            <div class="region__select-city">
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Москва</span>
-                                </label>
-                                <div class="region__select-value">11 136 535</div>
-                              </div>
-                              <div class="region__select-city-wrapper">
-                                <label>
-                                  <img class="region__select-arrow--city" src="./agg/assets/images/svg/arrow-region.svg"
-                                    alt="">
-                                  <input class="region__select-city-input region__input" type="checkbox">
-                                  <span>Самара</span>
-                                </label>
-                                <div class="region__select-value">1 136 535</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/Выбор страны 6-->
+                      
+                      
                     </div>
                   </div>
                 </div>
