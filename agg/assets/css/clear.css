@@ -53,3 +53,14 @@ a{
 .input-error-text--active{
   opacity: 1;
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: #444 !important; /* цвет текста */
+    color: #444 !important; /* цвет текста */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

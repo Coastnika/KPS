@@ -95,13 +95,34 @@ dotsContainer.addEventListener('mouseout', e => {
 
 let country = document.querySelectorAll('.region__select-country-input')
 let districts = document.querySelectorAll('.region__select-district-input')
+let regions = document.querySelectorAll('.region__select-city-input')
 
 let districtsContainer = document.querySelectorAll('.region__select-district')
 let citiesContainer = document.querySelectorAll('.region__select-city')
+let container = document.querySelectorAll('.cities')
 
 let arrows = document.querySelectorAll('.region__select-arrow')
 let arrows2 = document.querySelectorAll('.region__select-arrow_2')
 
+
+regions.forEach((region, regionIndex) => {
+  region.addEventListener('input', () => {
+    if(!region.checked){
+      container.forEach((container, containerIndex) => {
+        if(regionIndex == containerIndex){
+          container.style.display = "none"
+        }
+      })
+    }
+    else if(region.checked){
+      container.forEach((container, containerIndex) => {
+        if(regionIndex == containerIndex){
+          container.style.display = "block"
+        }
+      })
+    }
+  })
+})
 
 country.forEach((elem,countryIndex) => {
   elem.addEventListener('input', () => {
@@ -168,5 +189,7 @@ districts.forEach((district, districtIndex) => {
     }
   })
 })
+
+
 
 

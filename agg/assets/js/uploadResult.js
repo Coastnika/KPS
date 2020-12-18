@@ -49,9 +49,6 @@ uploadGroup.forEach(group => {
   })
 })
 
-
-
-
 //Скрипт для активных и не активных элементов
 let uploadDelGroup = document.querySelectorAll('.uplaod__item-action-del')
 

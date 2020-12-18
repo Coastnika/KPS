@@ -15,14 +15,14 @@ typePay.forEach(input => {
   })
 })
 
-founds.addEventListener('input', function(){
-  if(this.checked){
-    price.classList.remove('hide')
-  }
-  else{
-    price.classList.add('hide')
-  }
-})
+// founds.addEventListener('input', function(){
+//   if(this.checked){
+//     price.classList.remove('hide')
+//   }
+//   else{
+//     price.classList.add('hide')
+//   }
+// })
 
 //validation price
 upBalance.forEach(balance => {
