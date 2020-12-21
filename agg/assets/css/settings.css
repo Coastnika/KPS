@@ -1311,6 +1311,9 @@
 .showtime__hours-label-all{
   margin-right: 10px;
 }
+.showtime__hours-label-all span{
+  opacity: 0;
+}
 
 .showtime__hours-label span{
   text-align: center;
