@@ -1294,7 +1294,7 @@
 
 .showtime__hours{
   display: flex;
-  margin-left: 56px;
+  margin-left: 26px;
   margin-bottom: 10px;
 }
 
@@ -1307,6 +1307,9 @@
   line-height: 20px;
   color: #444;
   cursor: pointer;
+}
+.showtime__hours-label-all{
+  margin-right: 10px;
 }
 
 .showtime__hours-label span{
@@ -1436,16 +1439,7 @@
   position: relative;
 }
 .timezone__zone-input::before{
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -16px;
-  transform: translateY(-50%);
-  width: 13px;
-  height: 13px;
-  background-image: url('../images/svg/pencil.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  
 }
 
 /* ************ */
@@ -1531,7 +1525,7 @@
   position: relative;
 }
 .timezone__show-range-wrapper::before{
-  content: '';
+  /* content: '';
   position: absolute;
   top: calc(50% - 1px);
   right: -2px;
@@ -1541,10 +1535,10 @@
   background-image: url('../images/svg/pencil.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: #fff;
+  background-color: #fff; */
 }
 .timezone__show-range-wrapper{
-  margin-right: 7px;
+  margin-right: 12px;
 }
 .timezone__show-range-wrapper:not(:first-child){
   
@@ -1552,6 +1546,7 @@
 
 .timezone__show-range span{
   margin-right: 7px;
+  margin-bottom: 1px;
 }
 
 .timezone__show-range input{
@@ -1577,6 +1572,11 @@
   padding-bottom: 1px;
   cursor: pointer;
 }
+
+
+.timezone__zone-input::before{
+ 
+}
 .timezone__input-change--pad{
   padding-top: 0;
 }
@@ -1601,7 +1601,10 @@
   margin-bottom: 20px;
   
 }
-.region__link span{
+.region__link{
+  position: relative;
+}
+.region__link-title{
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
@@ -1609,10 +1612,10 @@
   cursor: pointer;
   position: relative;
 }
-.region__link span:hover{
+.region__link-title:hover{
   border-bottom: 1px dashed rgba(47,153,204, 0);
 }
-.region__link span::before{
+.region__link-title::before{
   content: '';
   position: absolute;
   top: 50%;
@@ -1623,6 +1626,10 @@
   background-image: url('../images/svg/pencil.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.region__content{
+  
 }
 
 
@@ -1643,9 +1650,17 @@
   height: 300px;
   overflow: auto;
 }
+.region__wrapper-dropdown{
+  background-color: #fff;
+  position: absolute;
+  width: 402px;
+  height: 288px;
+  border: 1px solid #2F99CC;
+  background-color: #fff;
+}
 
 .region__wrapper input{
-  margin-left: 14px;
+  /* margin-left: 14px; */
 }
 
 .region__title{
@@ -1740,7 +1755,10 @@
 }
 
 .region__select-title-region{
-  width: 600px;
+  width: 611px;
+  margin-left: 47px;
+}
+.region__select-title-region-dropdown{
   margin-left: 42px;
 }
 
@@ -1820,9 +1838,35 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  margin-left: 17px;
   
 }
+.cities-wrapper label{
+  width: 582px;
+}
 
+
+.input-toggle{
+
+}
+.checkbox-toggle{ 
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('../images/svg/unchecked-checkbox.svg');
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.checkbox-toggle:checked{
+  background-image: url('../images/svg/checked-checkbox.svg');
+}
+
+.checkbox-toggle:not(:checked):hover{
+  background-image: url('../images/svg/hover-checkbox.svg');
+}
 /* === media quires=== */
 
 /* === strategy === */
@@ -2436,6 +2480,21 @@ input::-webkit-inner-spin-button {
   left: 0;
   z-index: 9;
 }
+
+.custom__select-content-time{
+  border: none!important;
+  border: 1px solid #2F99CC!important;
+  box-sizing: border-box;
+  border-radius: 0px 0px 3px 3px;
+  padding: 0px 0px;
+  bottom: 0;
+  transform: translateY(101%);
+  height: 258px;
+  overflow: auto;
+}
+.custom__select-content-hour{
+  min-width: 70px;
+}
 .custom__select-title{
   border-bottom: 1px dashed rgba(47,153,204, .5);
 }
@@ -2449,10 +2508,31 @@ input::-webkit-inner-spin-button {
   color: #444444;
   cursor: pointer;
 }
+.custom__select-text-time{
+  padding: 9px 16px;
+}
+
 .custom__select-text:hover{
   color: #2F99CC;
+}
+.custom__select-text-time:hover{
+  color: #fff;
+  background-color: #2F99CC;
 }
 
 .custom__select-text--active{
   color: #2F99CC;
+}
+
+.timezone__input-change::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  background-image: url('../images/svg/pencil.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

@@ -39,4 +39,3 @@ selectTitle.forEach((title, titleIndex) => {
     })
   })
 })
-
