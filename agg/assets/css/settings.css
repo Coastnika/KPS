@@ -1603,6 +1603,7 @@
 }
 .region__link{
   position: relative;
+  margin-bottom: 20px;
 }
 .region__link-title{
   font-weight: 300;
