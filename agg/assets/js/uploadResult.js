@@ -21,23 +21,59 @@ uploadGroup.forEach(group => {
       })
     }
   })
-  //Модальное окно
+})
 
-  //Поведение чекбоксов при наведении на группу
-  group.addEventListener('mouseover', function(){
-    let checkbox = group.querySelectorAll('.uplaod__item-action-del')
-    checkbox.forEach(checkbox => {
-      checkbox.classList.remove('visibility')
-    })
-  })
+let itemHover = document.querySelectorAll('.upload__item-hover')
+let uploadContainer = document.querySelectorAll('.upload__container')
 
-  group.addEventListener('mouseout', function(){
-    let checkbox = group.querySelectorAll('.uplaod__item-action-del')
-    checkbox.forEach(checkbox => {
-      checkbox.classList.add('visibility')
+itemHover.forEach((item, itemIndex) => {
+  item.addEventListener('mouseover', () => {
+
+    uploadContainer.forEach((group, groupIndex) => {
+      let action = group.querySelectorAll('.uplaod__item-action-del')
+      
+      if(itemIndex === groupIndex){
+        action.forEach(action => {
+          action.classList.remove('visibility')
+        })
+      }
     })
   })
 })
+
+itemHover.forEach((item, itemIndex) => {
+  item.addEventListener('mouseout', () => {
+
+    uploadGroup.forEach((group, groupIndex) => {
+      let action = group.querySelectorAll('.uplaod__item-action-del')
+      
+      if(itemIndex === groupIndex){
+        action.forEach(action => {
+          action.classList.add('visibility')
+        })
+      }
+    })
+  })
+})
+
+
+let uploadItems = document.querySelectorAll('.upload__item')
+
+uploadItems.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    let action = item.querySelector('.uplaod__item-action-del')
+    action.classList.remove('visibility')
+  })
+})
+
+uploadItems.forEach(item => {
+  item.addEventListener('mouseout', () => {
+    let action = item.querySelector('.uplaod__item-action-del')
+    action.classList.add('visibility')
+  })
+})
+
+
 
 //Скрипт для активных и не активных элементов
 let uploadDelGroup = document.querySelectorAll('.uplaod__item-action-del')
