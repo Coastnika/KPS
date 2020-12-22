@@ -108,7 +108,7 @@ let regionWrapper = document.querySelectorAll('.wrapper-region')
 let districtSubcontainer = document.querySelectorAll('.region__subwrapper')
 // countryContainer districtsContainer citiesContainer container
 
-// НУЖНО ЧТО БЫ ВСЕ ДОЧЕРНИЕ ЧЕКАЛИСЬ И АНЧЕКАЛИСЬ =)
+
 countryContainer.forEach(country => {
   country.addEventListener('input', e => {
     let checkboxCountry = country.querySelectorAll('.checkbox-country')
@@ -163,13 +163,11 @@ regionWrapper.forEach(region => {
     if(e.target == region.querySelector('.checkbox-region')){
       checkboxRegion.forEach(item => {
         if(item.checked){
-          console.log('1')
           checkboxCity.forEach(element => {
             element.checked = true
           })
         }
         else{
-          console.log('0')
           checkboxCity.forEach(element => {
             element.checked = false
           })
