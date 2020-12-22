@@ -115,9 +115,16 @@
       <div class="container">
         <div class="statistics__title">Администрирование кампаний</div>
         <div class="admin__search">
-          <div class="admin__search-title">Поиск
-            <span class="admin__search-title--choose">по названию пользователя</span>
-            <img class="admin__search-img" src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
+          <div class="admin__search-title">
+            <span>Поиск</span>
+            <div class="settings__upload-dropdown custom__select">
+              <div class="settings__upload-dropdown-text custom__select-title custom__select-title-admin"> по названию пользователя</div>
+              <div class="custom__select-content hide">
+                <div class="custom__select-text">по названию пользователя</div>
+                <div class="custom__select-text">по номеру кампании</div>
+                <div class="custom__select-text">по номеру телефона</div>
+              </div>
+            </div>
           </div>
           <div class="statistics__search">
             <input type="text" class="search__field-statistics" placeholder="Введите текст запроса">
@@ -860,6 +867,7 @@
     <script src="./agg/assets/js/search.js"></script>
     <script src="./agg/assets/js/script.js"></script>
     <script src="./agg/assets/js/statistics.js"></script>
+    <script src="agg/assets/js/customSelect.js"></script>
 
 </body>
 

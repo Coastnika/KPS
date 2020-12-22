@@ -42,18 +42,14 @@
     line-height: 143%;
     color: #444444;
     position: relative;
+  }
+  .dropdown-checkbox__toggle{
+    border-bottom: 1px dashed rgba(47,153,204, .5);
+    display: inline-block;
+    position: relative;
     cursor: pointer;
   }
-  .statistics__choose-link-item p{
-    border-bottom: 1px dashed rgba(47,153,204, .5);
-  }
-  .statistics__choose-link-item p:hover{
-    border-bottom: 1px solid #fff;
-  }
-  .statistics__choose-link-item:not(:last-child){
-    margin-right: 25px;
-  }
-  .statistics__choose-link-item::before{
+  .dropdown-checkbox__toggle::before{
     content: '';
     position: absolute;
     right:-20px;
@@ -64,6 +60,12 @@
     background-position: 50% 50%;
     width: 15px;
     height: 15px;
+  }
+ .dropdown-checkbox__toggle:hover{
+  border-bottom: 1px dashed rgba(47,153,204, 0);
+  }
+  .statistics__choose-link-item:not(:last-child){
+    margin-right: 25px;
   }
   .statistics__choose{
     font-weight: 300;
@@ -200,5 +202,48 @@
 }
 .statistics__more{
   cursor: pointer;
+}
+
+.dropdown-checkbox__container{
+ 
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  padding: 14px 16px;
+  position: absolute;
+  min-width: 137px;
+}
+
+.dropdown-checkbox__label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.dropdown-checkbox__label-span{
+ 
+}
+
+.dropdown-checkbox__label-input{
+
+}
+
+.dropdown-checkbox__label-input{
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/svg/showtime-unchecked.svg');
+  cursor: pointer;
+  margin-right: 7px;
+  position: relative;
+}
+
+.dropdown-checkbox__label-input:not(:checked):hover{
+  background-image: url('../images/svg/hover-checkbox.svg');
+}
+
+.dropdown-checkbox__label-input:checked{
+  background-image: url('../images/svg/showtime-checked.svg');
 }
 

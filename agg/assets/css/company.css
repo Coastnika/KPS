@@ -424,6 +424,7 @@ label input{
 }
 .company__card-wrap--padding{
     padding-bottom: 20px;
+    padding-right: 90px;
 }
 .company__card{
     width: 28%;
@@ -565,7 +566,8 @@ label input{
     cursor: pointer;
 }
 
-/* === media quires=== */
+
+/* === media quires===
 @media(max-width:960px){
     .company__plug-more{
         padding: 0;
@@ -650,4 +652,4 @@ label input{
         padding-left: 5px;
         font-size: 18px;
     }
-}
+} */
