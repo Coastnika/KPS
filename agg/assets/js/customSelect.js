@@ -39,3 +39,15 @@ selectTitle.forEach((title, titleIndex) => {
     })
   })
 })
+
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('.custom__select-content') && !e.target.closest('.custom__select-title')){
+    selectContent.forEach(content => {
+      content.classList.add('hide')
+    })
+    selectTitle.forEach(select => {
+      select.classList.remove('custom__select-title--active')
+    })
+  }
+})
