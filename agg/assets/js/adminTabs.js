@@ -15,6 +15,6 @@ cards.forEach(card => {
       else if(target.getAttribute('tab-index') != content.getAttribute('tab-index')){
         content.classList.add('hide')
       }
-    })
+    })  
   })
 })
