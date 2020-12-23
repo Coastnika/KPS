@@ -1349,6 +1349,9 @@
 .showtime__hours-label-all{
   margin-right: 10px;
 }
+.showtime__hours-label-all span{
+  opacity: 0;
+}
 
 .showtime__hours-label span{
   text-align: center;
@@ -1668,6 +1671,9 @@
 }
 .region__link--margin{
   margin-bottom: 10px;
+}
+.region__link--statistics{
+  margin-bottom: 3px;
 }
 .region__link-title{
   font-weight: 300;

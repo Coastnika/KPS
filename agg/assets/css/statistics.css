@@ -76,12 +76,15 @@
 .statistics__wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 1140px;
 }
 .statistics__download{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 200px;
+    margin-bottom: 9px;
 }
 .statistics__download-title{
     font-weight: 300;
@@ -93,7 +96,8 @@
   padding: 25px;
   border: 1px solid #CECFCF;
   border-radius: 3px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   
 }
 .statistics__transition-admin{
@@ -217,6 +221,7 @@
   position: absolute;
   min-width: 137px;
   z-index: 10;
+
 }
 
 .dropdown-checkbox__label{
