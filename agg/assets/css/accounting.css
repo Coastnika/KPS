@@ -1,0 +1,128 @@
+.accounting__title{
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    color: #444444;
+    padding-bottom: 10px;
+}
+.accounting__switches{
+    display: flex;
+    justify-content: space-between;
+    width: 253px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.accounting__switch{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.accounting__switch--active{
+    border-bottom: 2px solid #2F99CC;
+}
+.accounting__table-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    padding-bottom: 10px;
+    padding-top: 24px;
+}
+.accounting__table-wrap{
+    width: 798px;
+}
+.accounting__table-wrap-cheque{
+    width: 428px;
+}
+.accounting__headline{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    background: rgba(47, 153, 204, 0.15);
+    border-radius: 3px 3px 0px 0px; 
+    padding: 0px 14px;
+}
+.accounting__text{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.accounting__text-number{
+    width: 170px;
+}
+.accounting__text-date{
+    width: 139px;
+}
+.accounting__text-sum{
+    width: 159px;
+}
+.accounting__text-status{
+    width: 172px;
+}
+.accounting__item{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding: 0px 14px;
+    border: 1px solid rgba(255,255,255,0);
+    border-bottom: 1px solid #F2F2F2;
+    border-radius: 3px;
+    
+  }
+.accounting__item:hover{
+    border: 1px solid rgba(47, 153, 204, 0.25);
+    box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
+}
+.accounting__text-link{
+    text-decoration-line: underline;
+    color: #2F99CC;
+    cursor: pointer;
+}
+.accounting__text--green{
+    color: #4CAE4C;
+}
+.accounting__text--red{
+    color: #D02D42;
+}
+
+/* accounting-user */
+
+.accounting__user-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+.accounting__user-text-span{
+    font-weight: 300;
+}
+.accounting__sum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 228px;
+    margin-top: 10px;
+}
+.accounting__sum-status{
+    background: rgba(76, 174, 76, 0.1);
+    border: 1px solid #4CAE4C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 78px;
+    height: 26px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4CAE4C;
+    padding: 5px 10px;
+}
+.accounting__pdf-wrap{
+    display: flex;
+    margin-top: 11px;
+}
+.accounting__pdf{
+    width: 200px;
+    display: flex; 
+}
+
