@@ -49,7 +49,6 @@
 /* card */
 
 .admin__card{
-    background: #FFFFFF;
     border: 1px solid #CECFCF;
     border-radius: 3px;
     width: 100%;
@@ -295,7 +294,6 @@ label input{
     top: 5px;
     width: 149px;
     padding: 8px 11px;
-    background: #FFFFFF;
     border: 1px solid #CECFCF;
     border-radius: 3px;
     box-shadow: 0px 12px 12px rgba(68, 68, 68, 0.08), 0px 16px 24px rgba(68, 68, 68, 0.08);
@@ -313,19 +311,10 @@ label input{
   .admin-cancel__btn{
     min-width: 315px;
   }
-  .custom__select-admin{
-      position: absolute;
-      right: 0;
-      z-index: 10;
-      top: 50%;
-      transform: translateY(-50%);
-  }
+ 
 
   .admin-wrapper{
-    padding-top: 38px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
+    padding: 24px;
     border: 1px solid #CECFCF !important;
   }
 
@@ -370,6 +359,37 @@ label input{
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
-  
     color: #444444;
+  }
+
+  .admin-controls{
+   display: flex;
+   justify-content: flex-end;
+  }
+  .admin-controls-wrapper{
+    min-width: 280px;
+    display: inline-block;
+  }
+  .admin-controls__btn{
+    border: 1px solid #CECFCF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .button-cancel{
+    background: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    padding: 10px 7px 10px 44px;
+  }
+  .admin-controls__save{
+      display: inline-block;
+      position: relative;
+      margin-left: 15px;
   }
