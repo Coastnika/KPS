@@ -2279,10 +2279,12 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
+.pay__form-radio:not(:last-child){
+  margin-bottom: 10px;
+}
 .pay__form-radio-label{
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
