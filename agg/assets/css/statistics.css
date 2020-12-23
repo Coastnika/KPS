@@ -96,6 +96,11 @@
   margin-top: 20px;
   
 }
+.statistics__transition-admin{
+  padding: 0px;
+  border: none;
+  margin-top: 10px;
+}
 
 .transition__table{}
 .transition__headline{
@@ -132,10 +137,10 @@
   font-weight: 500;
 }
 .transition__text-company{
-  width: 190px;
+  width: 170px;
 }
 .transition__text-period{
-  width: 216px;
+  width: 200px;
 }
 .transition__text-click{
   width: 108px;
