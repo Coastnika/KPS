@@ -12,6 +12,7 @@
   
   <link rel="stylesheet" href="./agg/assets/css/settings.css">
   <link rel="stylesheet" href="./agg/assets/css/statistics.css">
+  <link rel="stylesheet" href="./agg/assets/css/datepicker.css">
 </head>
 <body>
   <div class="page">
@@ -101,15 +102,23 @@
       <div class="container">
         <div class="statistics__title">Статистика</div>
         <div class="statistics__links">
-            <a href="" class="statistics__link">Вчера</a>
-            <a href="" class="statistics__link">Сегодня</a>
-            <a href="" class="statistics__link">Неделя</a>
-            <a href="" class="statistics__link">Месяц</a>
-            <a href="" class="statistics__link statistics__link--blue">Период:</a>
-            <a href="" class="statistics__link statistics__link--none">с</a>
-            <a href="" class="statistics__link">01.11.20</a>
-            <a href="" class="statistics__link statistics__link--none">по</a>
-            <a href="" class="statistics__link">18.12.20</a>
+          <a class="statistics__link statistics-period">Вчера</a>
+          <a class="statistics__link statistics-period">Сегодня</a>
+          <a class="statistics__link statistics-period">Неделя</a>
+          <a class="statistics__link statistics-period">Месяц</a>
+          <a class="statistics__link statistics-period trigger-datapicker">Период:</a>
+
+          <div class="statistics__datepicker">
+            <span class="statistics__link statistics__link--none">с</span>
+            <input type='text' class='datepicker-here statistics__link datepicker-here-size' placeholder="01.11.2020"/>
+            <span class="statistics__link statistics__link--none" >по</span>
+            <input type='text' class='datepicker-here statistics__link datepicker-here-size' placeholder="18.12.2020"/>
+          </div>
+          <div class="datepicker">
+            <i class="datepicker--pointer"></i>
+            <nav class="datepicker--nav"></nav>
+            <div class="datepicker--content"></div>
+          </div>
         </div>
         <div class="statistics__choose-link">
             <div class="statistics__choose-link-item">
@@ -725,11 +734,13 @@
     
   <script src="./agg/assets/js/resizeinput.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="./agg/assets/js/datepicker.js"></script>
   <script src="./agg/assets/js/search.js"></script>
   <script src="./agg/assets/js/script.js"></script>
   <script src="./agg/assets/js/statistics.js"></script>
   <script src="./agg/assets/js/dropdownCompany.js"></script>
   <script src="./agg/assets/js/toggleShowRegions.js"></script>
   <script src="./agg/assets/js/showRegion.js"></script>
+  <script src="agg/assets/js/statisticsPeriod.js"></script>
 </body>
 </html>
