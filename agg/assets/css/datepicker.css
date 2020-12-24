@@ -623,6 +623,7 @@
 
     .datepicker{
       border: 1px solid #2F99CC;
+      border-radius: 0px;
     }
     .datepicker-inline .datepicker{
       background: #FFFFFF;
