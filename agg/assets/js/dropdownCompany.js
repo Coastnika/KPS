@@ -1,10 +1,12 @@
 let dropdownToggle = document.querySelector('.dropdown-checkbox__toggle')
 let dropdownContainer = document.querySelector('.dropdown-checkbox__container')
-// let dropdownCheckbox = document.querySelector('.dropdown-checkbox__label-input')
-// let dropdownText = document.querySelector('.dropdown-checkbox__label-text')
+let dropdownClose = document.querySelector('.dropdown-checkbox__close')
 
 dropdownToggle.addEventListener('click', () => {
   dropdownContainer.classList.toggle('hide')
+})
+dropdownClose.addEventListener('click', () => {
+  dropdownContainer.classList.add('hide')
 })
 
 document.addEventListener('click', (e) => {

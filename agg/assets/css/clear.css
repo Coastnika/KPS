@@ -31,7 +31,7 @@ a{
 }
 
 .container{
-  max-width: 1140px;
+  width: 1140px;
   margin: auto;
 }
 
@@ -68,3 +68,13 @@ input::-webkit-inner-spin-button {
 input:focus::placeholder{
   opacity: 0;
 }
+/* ::-webkit-scrollbar{
+  background-color: #F2F2F2;
+  width: 14px;
+}::-webkit-scrollbar-thumb{
+  width: 10px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-color: #E0E0E0;
+}
+::-webkit-scrollbar-thumb {max-height: 20px; height: 20px;} */

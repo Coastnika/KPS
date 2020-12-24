@@ -215,7 +215,7 @@
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">Номер телефона<sup class="input-error-text">*</sup></div>
-                        <input class="addcompany__form-phone input-valid" type="number" name="phone" placeholder="+7 (xxx) xxx-xx-xx">
+                        <input class="addcompany__form-phone input-valid" type="phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx">
                       </div>
                       <div class="addcompany__form-input">
                         <div class="addcompany__form-name">Адрес офиса<sup class="input-error-text">*</sup></div>
@@ -270,7 +270,7 @@
             </div>
             <div class="settings__showtime settings__tab--show">
               <!--region-->
-                <div class="region">
+                <form class="region">
                   <div class="region__title">
                     <span>Регионы показа </span>
                   </div>
@@ -941,7 +941,7 @@
                       </div>
                     </div>
                 </div>
-              </div>
+              </form>
               <!--/showtime-->
 
               <!--strategy-->
@@ -988,7 +988,7 @@
                 </div>
               </div>
               <div class="settings__payer-button settings__payer-button--textalign settings__payer-button--width">
-                <button type="button" class="button-load">Перейти к загрузке товаров</button>
+                <button type="submit" class="button-load region-accept">Перейти к загрузке товаров</button>
                 <svg class="svg--blue">
                   <use xlink:href="#btn-load"></use>
                 </svg>
@@ -1457,6 +1457,8 @@
   <script src="./agg//assets/js/validOrganizationForm.js"></script>
   <script src="./agg/assets/js/showForm.js"></script>
   <script src="./agg/assets/js/customSelect.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./agg/assets/js/phoneMask.js"></script>
 </body>
 
 </html>

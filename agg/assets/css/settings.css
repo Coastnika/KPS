@@ -519,7 +519,7 @@
 }
 
 .addcompany__form-phone{
-  width: 135px;
+  width: 147px;
 }
 
 .addcompany__form-office{
@@ -536,6 +536,10 @@
   padding: 10px 12px;
   font-size: 14px;
   line-height: 20px;
+  color: #444;
+}
+.addcompany__form-about::placeholder{
+  color: #444;
 }
 
 
@@ -1005,6 +1009,19 @@
   overflow: auto;
   height: 352px;
 }
+.upload__wrapper::-webkit-scrollbar{
+  background-color: #F2F2F2;
+  width: 14px;
+}
+.upload__wrapper::-webkit-scrollbar-thumb{
+  /* background-image: url('../images/svg/scroll.svg'); */
+  width: 10px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-color: #E0E0E0;
+}
+
+
 .upload__content-headline{
   display: flex;
   align-items: center;
@@ -1464,7 +1481,7 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.timezone__zone{
+.timezone__zone-admin{
   margin-bottom: 0px;
 }
 .timezone__zone-title{
@@ -1655,6 +1672,16 @@
 .region{
   margin-bottom: 20px;
   
+}
+.region-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/svg/close.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 .region__link{
   position: relative;
