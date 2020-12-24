@@ -565,7 +565,7 @@
   color: #2F99CC;
   border-bottom: 1px dashed rgba(47,153,204, .5);
   cursor: pointer;
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 .addcompany__form-help:hover{
@@ -1464,6 +1464,9 @@
   align-items: center;
   margin-bottom: 15px;
 }
+.timezone__zone{
+  margin-bottom: 0px;
+}
 .timezone__zone-title{
   font-family: MuseoSansCyrl;
   font-size: 14px;
@@ -1600,7 +1603,7 @@
 
 .timezone__show-range span{
   margin-right: 7px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .timezone__show-range input{
@@ -1659,6 +1662,13 @@
   display: flex;
   align-items: center;
 }
+.region__headline{
+  font-size: 20px;
+  line-height: 32px;
+  color: #444444;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 .region__link--margin{
   margin-bottom: 10px;
 }
@@ -1674,6 +1684,8 @@
   position: relative;
   margin-right: 24px;
 }
+
+
 .region__link-title:hover{
   border-bottom: 1px dashed rgba(47,153,204, 0);
 }
@@ -1688,6 +1700,13 @@
   background-image: url('../images/svg/pencil.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+.region__link-title-admin{
+  border: none;
+  cursor: default;
+}
+.region__link-title-admin::before{
+  display: none
 }
 
 .region__content{
@@ -2358,7 +2377,6 @@ input::-webkit-inner-spin-button {
   margin-left: 10px;
   position: relative;
   background: none;
-  margin-bottom: 6px;
 }
 .download__account:hover{
   border-bottom: 1px solid rgba(47,153,204, 0);
@@ -2555,7 +2573,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   position: absolute;
   background-color: #fff;
-  min-width: 300px ;
+  min-width: 285px ;
   bottom: -123px;
   left: 0;
   z-index: 9;
@@ -2563,6 +2581,9 @@ input::-webkit-inner-spin-button {
 }
 .custom__select-content-admin{
   bottom: -84px;
+}
+.custom__select-content-search{
+  min-width: 215px;
 }
 
 .custom__select-content-time{

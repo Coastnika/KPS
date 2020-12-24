@@ -226,12 +226,20 @@ label input{
 .admin__nav-item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     cursor: pointer;
+    padding-bottom: 1px;
+    border-bottom: 2px solid  rgba(47,153,204, 0);
+}
+.admin__nav-item-active{
+    border-bottom: 2px solid  rgba(47,153,204, 1);
 }
 .admin__nav-icon{
     cursor: pointer;
     position: relative;
+    width: 20px;
+    height: 20px;
 }
 .admin__nav-info{
     position: absolute;
