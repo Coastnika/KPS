@@ -16,6 +16,12 @@ if(saveForm){
       dropDownElement.forEach(element => {
         if(save.getAttribute('tab-index') == element.getAttribute('tab-index')){
           element.classList.toggle('hide')
+          
+        }
+      })
+      tabArrows.forEach(arrow => {
+        if(save.getAttribute('tab-index') == arrow.getAttribute('tab-index')){
+          arrow.classList.toggle('settings__dropdown-arrow--active')
         }
       })
     })

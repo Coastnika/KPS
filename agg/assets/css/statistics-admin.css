@@ -14,7 +14,7 @@
     align-items: center;
 }
 .admin__search-title span{
-    border-bottom: 1px dashed rgba(47,153,204, .5);
+    border-bottom: 1px dashed rgba(47,153,204, 0);
 }
 
 

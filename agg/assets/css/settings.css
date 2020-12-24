@@ -792,7 +792,7 @@
   position: relative;
 }
 .settings__upload-preview span{
-  border-bottom: 1px dashed rgba(47,153,204, .5);
+  border-bottom: 1px dashed rgba(47,153,204, 0);
   
 }
 
@@ -1106,7 +1106,8 @@
   width: 145px;
 }
 .upload__text-url{
-  width: 420px;
+  width: 303px;
+  margin-right: 120px;
 }
 .upload__text-url a{
   color: #444;
@@ -1334,6 +1335,10 @@
   border: 1px solid #CECFCF;
   border-radius: 3px;
   margin-left: 47px;
+  margin-bottom: 20px;
+}
+.showtime__content-error{
+  border: 1px solid #D02D42;
 }
 .showtime__content-target{
   margin-left: 0px;
@@ -1554,6 +1559,30 @@
 .timezone__show-days-label input:checked{
   background-image: url('../images/svg/checked-radio.svg');
 }
+.timezone__show-days-label-checkbox{
+  margin-top: 10px;
+}
+.timezone__show-days-label-checkbox span{
+  margin-top: 1px
+}
+.timezone__show-days-label-checkbox input{
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/svg/unchecked-checkbox.svg');
+  cursor: pointer;
+  margin-right: 7px;
+  position: relative;
+}
+
+.timezone__show-days-label-checkbox input:not(:checked):hover{
+  background-image: url('../images/svg/hover-checkbox.svg');
+}
+.timezone__show-days-label-checkbox input:checked{
+  background-image: url('../images/svg/checked-checkbox.svg');
+}
 .timezone__show-days-label span{
   font-weight: 300;
   font-size: 14px;
@@ -1749,7 +1778,12 @@
 .region__container{
   margin-left: 47px;
   padding: 25px;
+  margin-bottom: 20px;
   border: 1px solid #CECFCF;
+}
+
+.region__container-error{
+  border: 1px solid  #D02D42;
 }
 
 .region__wrapper{
@@ -2001,6 +2035,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .strategy__data-text{
@@ -2124,9 +2159,6 @@
   margin-right: 7px;
   cursor: pointer;
 }
-.strategy__font{
-  font-size: 14px;
-}
 
 .strategy__data-radio:not(:checked):hover{
   background-image: url('../images/svg/hover-radio.svg');
@@ -2140,6 +2172,12 @@
   width: 210px;
   margin-left: auto;
 }
+.settings__showtime-button--textalign{
+  text-align: right;
+  width: 132px;
+  margin-left: auto;
+}
+
 .settings__payer-button--width{
   width: 250px;
 }
