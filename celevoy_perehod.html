@@ -678,21 +678,18 @@
                   <div class="timezone__show-wrapper">
                     <div class="timezone__show-days">
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>eжедневно</span>
                       </label>
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>по будням</span>
                       </label>
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>по выходным</span>
                       </label>
-                      <label class="timezone__show-days-label">
-                        <input type="checkbox">
-                        <span>праздничные дни</span>
-                      </label>
+                      
                     </div>
                     <div class="timezone__show-hours">
                       <label class="timezone__show-hours-label">
@@ -771,6 +768,10 @@
                       </div>
                     </div>
                   </div>
+                  <label class="timezone__show-days-label timezone__show-days-label-checkbox">
+                    <input type="checkbox" name="days">
+                    <span>Показывать объявления в праздничные дни</span>
+                  </label>
                 </div>
               </div>
             </div>
@@ -788,7 +789,7 @@
               <div class="strategy__data">
                 <div class="strategy__wrapper">
                   <label>
-                    <input class="strategy__data-radio" type="radio" name="strategy-radio">
+                    <input class="strategy__data-radio" type="radio" name="strategy-radio" checked> 
                     <span class="strategy__font">Без ограничений</span>
                   </label>
                 </div>

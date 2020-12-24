@@ -260,7 +260,7 @@
                 <img src="./agg/assets/images/svg/done.svg" alt="">
               </div>
               <div class="settings__dropdown-title">Кампания</div>
-              <img class="settings__dropdown-arrow" tab-index="2" src="./agg/assets/images/svg/chevron-left.svg" alt="">
+              <img class="settings__dropdown-arrow " tab-index="2" src="./agg/assets/images/svg/chevron-left.svg" alt="">
             </div>
             <div class="settings__showtime dropdown-element hide" tab-index="2">
               <!--region-->
@@ -839,21 +839,18 @@
                       <div class="timezone__show-wrapper">
                         <div class="timezone__show-days">
                           <label class="timezone__show-days-label">
-                            <input type="checkbox">
+                            <input type="radio" name="days">
                             <span>eжедневно</span>
                           </label>
                           <label class="timezone__show-days-label">
-                            <input type="checkbox">
+                            <input type="radio" name="days">
                             <span>по будням</span>
                           </label>
                           <label class="timezone__show-days-label">
-                            <input type="checkbox">
+                            <input type="radio" name="days">
                             <span>по выходным</span>
                           </label>
-                          <label class="timezone__show-days-label">
-                            <input type="checkbox">
-                            <span>праздничные дни</span>
-                          </label>
+                          
                         </div>
                         <div class="timezone__show-hours">
                           <label class="timezone__show-hours-label">
@@ -932,6 +929,10 @@
                           </div>
                         </div>
                       </div>
+                      <label class="timezone__show-days-label timezone__show-days-label-checkbox">
+                        <input type="checkbox" name="days">
+                        <span>Показывать объявления в праздничные дни</span>
+                      </label>
                     </div>
                   </div>
               </div>
@@ -944,7 +945,7 @@
                 <div class="strategy__data">
                   <div class="strategy__wrapper">
                     <label>
-                      <input class="strategy__data-radio" type="radio" name="strategy-radio">
+                      <input class="strategy__data-radio" type="radio" name="strategy-radio" checked>
                       <span class="strategy__font">Без ограничений</span>
                     </label>
                   </div>
@@ -981,8 +982,8 @@
 
                 </div>
               </div>
-              <div class="settings__payer-button settings__payer-button--textalign">
-                <button type="button" class="button-load save-form" tab-index="2">Cохранить изменения</button>
+              <div class="settings__payer-button settings__payer-button--textalign settings__showtime-button--textalign">
+                <button type="button" class="button-load save-form" tab-index="2">Cохранить</button>
                 <svg class="svg--blue">
                   <use xlink:href="#btn-save"></use>
                 </svg>
