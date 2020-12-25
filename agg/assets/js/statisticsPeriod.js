@@ -26,9 +26,3 @@ function hilight(select){
   selected.classList.add('statistics__link--blue')
 }
 
-//Показываем период
-let triggerDatapicker = document.querySelector('')
-
-linkContainer.addEventListener('click', e => {
-  
-})

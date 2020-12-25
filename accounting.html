@@ -115,10 +115,10 @@
             <div class="container">
                 <div class="accounting__title">Бухгалтерия</div>
                 <div class="accounting__switches">
-                    <div class="accounting__switch accounting__switch--active">ООО “Провод”</div>
-                    <div class="accounting__switch">Иванов И.И. (id7495)</div>
+                    <div class="accounting__switch" tab-index="1">ООО “Провод”</div>
+                    <div class="accounting__switch" tab-index="2">Иванов И.И. (id7495)</div>
                 </div>
-                <div class="accounting__table">
+                <div class="accounting__table" tab-index="1">
                     <div class="accounting__table-title">Выписанные счета</div>
                     <div class="accounting__table-wrap">
                         <div class="accounting__headline">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="accounting__table hide">
+                <div class="accounting__table hide" tab-index="2">
                     <div class="accounting__table-title">Оплаченные чеки</div>
                     <div class="accounting__table-wrap accounting__table-wrap-cheque">
                         <div class="accounting__headline">
@@ -234,10 +234,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="./agg/assets/js/search.js"></script>
         <script src="./agg/assets/js/script.js"></script>
-        <script src="./agg/assets/js/statistics.js"></script>
-        <script src="./agg/assets/js/dropdownCompany.js"></script>
-        <script src="./agg/assets/js/toggleShowRegions.js"></script>
-        <script src="./agg/assets/js/showRegion.js"></script>
+        <script src="./agg/assets/js/accountingTabs.js"></script>
 </body>
 
 </html>

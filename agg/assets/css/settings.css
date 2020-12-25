@@ -1713,17 +1713,17 @@
   background-size: cover;
   cursor: pointer;
 }
+.fixed-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
 .region-save{
-  position: fixed;
-  left: 310px;
-  top: 455px;
+  display: inline-block;
   background: #fff;
   z-index: 999;
 }
 .company-save{
-  position: fixed;
-  left: 310px;
-  top: 485px;
+  display: inline-block;
   background: #fff;
   z-index: 999;
 }
@@ -1805,7 +1805,6 @@
   padding: 11px 16px;
   border: 1px solid #CECFCF;
   height: 300px;
-  position: relative;
   overflow: auto;
 }
 .region__wrapper-dropdown{
