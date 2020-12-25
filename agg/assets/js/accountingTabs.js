@@ -5,6 +5,7 @@ let selected
 
 accountingSwitch.forEach(item => {
   item.addEventListener('click', () => {
+    
 
     accountingTable.forEach(table => {
       if(item.getAttribute('tab-index') == table.getAttribute('tab-index')){
@@ -20,6 +21,11 @@ accountingSwitch.forEach(item => {
 //Подсвечиваем элементы
 accountingSwitchContainer.addEventListener('click', e => {
   let target = e.target
+
+  accountingSwitch.forEach(item => {
+    item.classList.remove('accounting__switch--active')
+  })
+
   if(!target.classList.contains('accounting__switch')) return;
   
   hilights(target)
