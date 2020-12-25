@@ -701,21 +701,18 @@
                   <div class="timezone__show-wrapper">
                     <div class="timezone__show-days">
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>eжедневно</span>
                       </label>
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>по будням</span>
                       </label>
                       <label class="timezone__show-days-label">
-                        <input type="checkbox">
+                        <input type="radio" name="days">
                         <span>по выходным</span>
                       </label>
-                      <label class="timezone__show-days-label">
-                        <input type="checkbox">
-                        <span>праздничные дни</span>
-                      </label>
+                      
                     </div>
                     <div class="timezone__show-hours">
                       <label class="timezone__show-hours-label">
@@ -794,6 +791,10 @@
                       </div>
                     </div>
                   </div>
+                  <label class="timezone__show-days-label timezone__show-days-label-checkbox">
+                    <input type="checkbox" name="days">
+                    <span>Показывать объявления в праздничные дни</span>
+                  </label>
                 </div>
               </div>
             </div>
