@@ -1704,13 +1704,28 @@
 }
 .region-close{
   position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 16px;
-  height: 16px;
+  right: 12px;
+  top: 14px;
+  width: 12px;
+  height: 12px;
   background-image: url('../images/svg/close.svg');
   background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
+}
+.region-save{
+  position: fixed;
+  left: 310px;
+  top: 455px;
+  background: #fff;
+  z-index: 999;
+}
+.company-save{
+  position: fixed;
+  left: 310px;
+  top: 485px;
+  background: #fff;
+  z-index: 999;
 }
 .region__link{
   position: relative;
@@ -1790,6 +1805,7 @@
   padding: 11px 16px;
   border: 1px solid #CECFCF;
   height: 300px;
+  position: relative;
   overflow: auto;
 }
 .region__wrapper-dropdown{
@@ -1797,7 +1813,7 @@
   position: absolute;
   left: 0;
   top: 22px;
-  width: 371px;
+  width: 451px;
   height: 288px;
   border: 1px solid #2F99CC;
   background-color: #fff;
@@ -2638,7 +2654,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   position: absolute;
   background-color: #fff;
-  min-width: 285px ;
+  min-width: 250px ;
   bottom: -123px;
   left: 0;
   z-index: 9;
@@ -2646,6 +2662,7 @@ input::-webkit-inner-spin-button {
 }
 .custom__select-content-admin{
   bottom: -84px;
+  min-width: 185px;
 }
 .custom__select-content-search{
   min-width: 215px;
