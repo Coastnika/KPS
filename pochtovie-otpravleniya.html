@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./agg/assets/css/clear.css">
+  <link rel="stylesheet" href="./agg/assets/css/fonts.css">
+  <link rel="stylesheet" href="./agg/assets/css/breadcrumbs.css">
+  <link rel="stylesheet" href="./agg/assets/css/header.css">
+  <link rel="stylesheet" href="./agg/assets/css/footer.css">
+
+  
+  <link rel="stylesheet" href="./agg/assets/css/statistics.css">
+  <link rel="stylesheet" href="./agg/assets/css/statistics-admin.css">
+  <link rel="stylesheet" href="./agg/assets/css/settings.css">
+  <link rel="stylesheet" href="./agg/assets/css/accounting.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="content spacer container">
+        <a href="https://k-ps.ru" class="logo">
+        </a>
+        <div class="header__right spacer">
+          <div id="search_cable" class="search " autocomplete="off">
+            <input data-limit="5" type="text" id="mr_search" name="mr_search" class="search__field"
+              placeholder="Поиск по маркоразмеру">
+            <div class="search__select">
+              <p data-stype="1" class="search__selected">
+                <svg class="svg-icon icon-search-type-2">
+                  <use xlink:href="#icon-search-type-2"></use>
+                </svg>
+                <span>По характеристикам</span>
+              </p>
+
+              <svg class="svg-icon icon-arrow-select">
+                <use xlink:href="#icon-arrow-select"></use>
+              </svg>
+
+              <div class="search__select-list">
+                <p data-stype="1" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-2">
+                    <use xlink:href="#icon-search-type-2"></use>
+                  </svg>
+                  <span>На складах</span>
+                </p>
+                <p data-stype="2" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-1">
+                    <use xlink:href="#icon-search-type-1"></use>
+                  </svg>
+                  <span>По характеристикам</span>
+                </p>
+              </div>
+              <!--search__select-list-->
+            </div>
+            <!--search__select-->
+            <button class="search__btn">
+              <svg class="svg-icon icon-search pos-center">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--header__right-->
+        <div class="header__price">
+          <div class="header__price-text">1 334,62 руб</div>
+          <div class="header__price-btn">
+            <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu-icon">
+            <img class="header__menu-icon--margin" src="./agg/assets/images/svg/profile.svg" alt="">
+            <img src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
+          </div>
+        </div>
+        <!--content-->
+    </header>
+
+    <section class="pager">
+      <div class="content container">
+        <a href="https://k-ps.ru/" class="pager__link">КПС</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Личный кабинет</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Бухгалтерия</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Администратор</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link pager__link--active">Почтовые отправления</a>
+      </div>
+      <!--content-->
+    </section>
+    <!--pager-->
+
+    <div class="lk">
+      <nav class="lk__nav">
+        <div class="container">
+          <ul class="lk__nav-list">
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Кампании</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link lk__nav-link--current">Статистика</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Бухгалтерия</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <section class="admin">
+      <div class="container">
+        <div class="statistics__title">Отправка оригиналов закрывающих документов</div>
+        <div class="admin__search admin__search-accounting">
+          <div class="admin__search-title">
+            <span>Поиск</span>
+            <div class="settings__upload-dropdown custom__select">
+              <div class="settings__upload-dropdown-text custom__select-title custom__select-title-admin"> по названию</div>
+              <div class="custom__select-content custom__select-content-accounting hide">
+                <div class="custom__select-text">по названию</div>
+                <div class="custom__select-text">ИНН</div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics__search">
+            <input type="text" class="search__field-statistics" placeholder="Введите текст запроса">
+            <svg class="icon-search icon-search-statistics">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="dispatch">
+          <div class="dispatch__card">
+            <div class="dispatch__card-wrapper">
+              <div class="dispatch__card-date dispatch__card-item">25.11.20</div>
+              <div class="dispatch__card-number dispatch__card-item">00011012</div>
+              <div class="dispatch__card-name dispatch__card-item">ООО “Провод”</div>
+              <div class="dispatch__card-seal dispatch__card-item">Распечатать комплект</div>
+            </div>
+          </div>
+        
+
+          <div class="dispatch__card">
+            <div class="dispatch__card-wrapper">
+              <div class="dispatch__card-date dispatch__card-item">02.11.20</div>
+              <div class="dispatch__card-number  dispatch__card-item">00011012</div>
+              <div class="dispatch__card-name  dispatch__card-item">ООО “Шнур”</div>
+              <div class="dispatch__card-seal dispatch__card-item">Распечатать снова (28.10.20)</div>
+            </div>
+            <div class="dispatch__number">
+              <div class="dispatch__number-text">
+                Ввести номер отправления
+              </div>
+              <div class="dispatch__number-input">
+                <input class="dispatch__input" type="number">
+              </div>
+            </div>
+            <div class="dispatch__save hide">
+              <div class="settings__payer-button">
+                <button type="submit" class="button-save">Сохранить</button>
+                <svg class="svg--blue">
+                  <use xlink:href="#btn-save"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="dispatch__card dispatch__card--active">
+            <div class="dispatch__card-wrapper">
+              <div class="dispatch__card-date dispatch__card-item">02.11.20</div>
+              <div class="dispatch__card-number  dispatch__card-item">00011012</div>
+              <div class="dispatch__card-name  dispatch__card-item">ООО “Шнур”</div>
+              <div class="dispatch__card-send dispatch__card-item">Отправлено</div>
+            </div>
+            <div class="dispatch__number">
+              <div class="dispatch__number-text">
+                Номер отправления:
+              </div>
+              <div class="dispatch__number-input">
+                <span class="dispatch__input">652114325234567134</span>
+              </div>
+            </div>
+            <div class="dispatch__save hide">
+              <div class="settings__payer-button">
+                <button type="submit" class="button-save">Сохранить</button>
+                <svg class="svg--blue">
+                  <use xlink:href="#btn-save"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="spacer content-footer">
+        <div class="footer__wrapper">
+          <p class="copyright">
+            КПС 2015—2020 </p>
+
+          <nav class="nav">
+            <a href="https://k-ps.ru/info/adv/" class="nav__link">Реклама</a>
+            <a href="https://k-ps.ru/info/" class="nav__link">Возможности системы</a>
+            <a href="https://k-ps.ru/confirm/" class="nav__link">Пользовательское соглашение</a>
+            <a href="https://k-ps.ru/contact/" class="nav__link">Контакты</a>
+          </nav>
+          <div class="social">
+            <a href="https://vk.com/kpsru" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-1">
+                <use xlink:href="#icon-social-1"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/KabelnayaPoiskovayaSistema/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-2">
+                <use xlink:href="#icon-social-2"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/kpsru/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-3">
+                <use xlink:href="#icon-social-3"></use>
+              </svg>
+            </a>
+            <a href="https://ok.ru/group/55563832590453" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-4">
+                <use xlink:href="#icon-social-4"></use>
+              </svg>
+            </a>
+          </div>
+          <!--social-->
+        </div>
+      </div>
+      <!--content-->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./agg/assets/js/search.js"></script>
+    <script src="./agg/assets/js/script.js"></script>
+    <script src="./agg/assets/js/customSelect.js"></script>
+    <script src="./agg/assets/js/dispatch.js"></script>
+</body>
+
+</html>
