@@ -152,40 +152,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="settings__payer-button settings__payer-button--width">
-                  <button type="submit" class="button-load region-accept">Перейти к загрузке товаров</button>
+                <div class="settings__payer-button settings__payer-button--accounting accounting-button ">
+                  <button type="button" class="button-load region-accept">Получить оригиналы по почте</button>
                   <svg class="svg--blue">
                     <use xlink:href="#btn-load"></use>
                   </svg>
                 </div>
 
-                <div class="accounting__question">
+                <div class="accounting__question hide">
                   <span>Получить докменты по адресу: </span>
                   <span> г. Санкт-Петербург, пр. Невский, д.110? </span>
-                  <button class="accounting__question-accept">Да</button>
-                  <button class="accounting__question-decline">Нет, другой</button>
+                  <button type="button"class="accounting__question-accept">Да</button>
+                  <button type="button"class="accounting__question-decline">Нет, другой</button>
                 </div>
 
-                <div class="accounting__send">
+                <div class="accounting__send hide">
                   Запрос на отправку документов по Почте России на адрес: 1254557, г. Санкт-Петербург, пр. Невский, д.110 отправлен. Обрабатывается.
                 </div>
 
-                <div class="accounting__contacts">
+                <div class="accounting__contacts hide">
                     <div class="accounting__subtitle">Заполните поля</div>
                     <form class="accounting__contacts-form">
                         <div class="accounting__contacts-wrapper">
                             <div class="accounting__contacts-text">Индекс</div>
-                            <input class="accounting__contacts-input accounting__contacts-input-index" type="text">
+                            <input class="accounting__contacts-input accounting__contacts-input-index input-valid" type="number">
                         </div>
                         <div class="accounting__contacts-wrapper">
-                            <div class="accounting__contacts-text">Адрес (населенный пункт, улица, дом/строение, квартира/офис)</div>
-                            <input class="accounting__contacts-input" type="text">
+                            <div class="accounting__contacts-text">Адрес (населенный пункт, улица, дом/строение, квартира/офис)<sup class="input-error-text">*</sup></div>
+                            <input class="accounting__contacts-input input-valid" type="text">
                         </div>
                         <div class="accounting__contacts-wrapper">
-                            <div class="accounting__contacts-text">ФИО или наименование организаци</div>
-                            <input type="text" class="accounting__contacts-input" >
+                            <div class="accounting__contacts-text">ФИО или наименование организаци<sup class="input-error-text">*</sup></div>
+                            <input type="text" class="accounting__contacts-input input-valid" >
+                        </div>
+                        <div class="submit-disable">
+                            <div class="settings__payer-button settings__payer-button--accounting accounting-button">
+                                <button type="button" class="button-load region-accept get-original">Получить оригиналы по почте</button>
+                                <svg class="svg--blue">
+                                    <use xlink:href="#btn-load"></use>
+                                </svg>
+                            </div>
                         </div>
                     </form>
+                </div>
+
+                <div class="accounting__successful hide">
+                    <div class="accounting__successful-address">
+                        <span>Почтовый адрес: </span>
+                        г. Санкт-Петербург, пр. Невский, д.110
+                    </div>
+                    <div class="accounting__successful-text">
+                        Документы <span class="accounting__successful-status">отправлены</span> Почтой России
+                    </div>
+                    <div class="accounting__successful-tracking">
+                        Номер для отслеживнаия: 
+                        <a href="" class="accounting__successful-num">1234568134001</a>
+                    </div>
                 </div>
 
             </div>
@@ -237,10 +259,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="./agg/assets/js/search.js"></script>
         <script src="./agg/assets/js/script.js"></script>
-        <script src="./agg/assets/js/statistics.js"></script>
-        <script src="./agg/assets/js/dropdownCompany.js"></script>
-        <script src="./agg/assets/js/toggleShowRegions.js"></script>
-        <script src="./agg/assets/js/showRegion.js"></script>
+        <script src="./agg/assets/js/accountingUser.js"></script>
 </body>
 
 </html>
