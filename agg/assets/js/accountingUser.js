@@ -11,10 +11,12 @@ accountingForm.addEventListener('input', () => {
     if(input.value.trim() != ''){
       valid = 1
     }
-    else return
-    
+    else{
+      valid = 0
+    }
     console.log(valid)
   })
+  
   if(valid == 1){
     buttonSend.classList.add('submit-disable-hide')
   }

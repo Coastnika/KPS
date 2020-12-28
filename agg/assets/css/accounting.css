@@ -125,6 +125,9 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
+.acounting__documents--margin{
+    margin-bottom: 10px;
+}
 .accounting__subtitle{
     font-size: 18px;
     line-height: 32px;
@@ -313,4 +316,55 @@
 
 .accounting__successful-address span{
     font-weight: 500;
+}
+
+.accounting__text-num{
+    width: 210px;
+}
+.accounting__text-num span{
+    color: #2F99CC;
+    border-bottom: 1px solid rgba(47,153,204, 1);
+    margin-top: 1px;
+}
+.accounting__text-num span:hover{
+    border-bottom: 1px dashed rgba(47,153,204, 0);
+}
+.accounting__text-date{
+    width: 90px;
+}
+.accounting__text-organization{
+    width: 150px;
+}
+.accounting__text-price{
+    width: 135px;
+}
+.accounting__text-status{
+    width: 145px;
+}
+.accounting__notification{
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.text--red{
+    color: #D02D42;
+}
+.text--green{
+    color: #4CAE4C;
+}
+.text--gray{
+    color: #999;
+}
+.account__subitems{
+    margin-bottom: 20px;
+    padding-left: 12px;
+}
+
+.accounting__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    margin-bottom: 10px;
 }
