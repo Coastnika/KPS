@@ -9,19 +9,17 @@ accountingForm.addEventListener('input', () => {
 
   accountingInputs.forEach(input => {
     if(input.value.trim() != ''){
-      valid = 1
+      valid += 1
     }
     else{
       valid = 0
     }
     console.log(valid)
   })
-  
-  if(valid == 1){
+
+  if(valid >= accountingInputs.length){
     buttonSend.classList.add('submit-disable-hide')
   }
-  
-
 })
 
 buttonSend.addEventListener('click', e => {
@@ -63,6 +61,8 @@ function toggleContent(hide, show){
   show.classList.remove('hide')
 }
 
+
+// имитаия запроса на сервер
 function asyncRequire(hide, show) {
   setTimeout(() => {
     hide.classList.add('hide')
