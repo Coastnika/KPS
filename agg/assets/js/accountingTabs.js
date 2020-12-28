@@ -23,7 +23,7 @@ accountingSwitchContainer.addEventListener('click', e => {
   let target = e.target
 
   accountingSwitch.forEach(item => {
-    item.classList.remove('accounting__switch--active')
+    item.classList.remove('accounting__switch--activeit')
   })
 
   if(!target.classList.contains('accounting__switch')) return;
