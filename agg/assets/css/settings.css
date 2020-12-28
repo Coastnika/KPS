@@ -2196,6 +2196,9 @@
 .settings__payer-button--width{
   width: 250px;
 }
+.settings__payer-button--accounting{
+  width: 270px;
+}
 /* === modal === */
 .modal-contract{
   position: fixed;

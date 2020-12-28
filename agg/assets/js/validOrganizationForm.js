@@ -37,5 +37,3 @@ formInputs.forEach((input, inputIndex) => {
       })
   })
 })
-
-console.log('valid')
