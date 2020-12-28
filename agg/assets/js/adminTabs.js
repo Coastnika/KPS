@@ -18,13 +18,18 @@ cards.forEach(card => {
 
     toggleContent.forEach(content => {
       if(target.getAttribute('tab-index') == content.getAttribute('tab-index')){
-        navItem.forEach(item => {
-          item.classList.remove('admin__nav-item-active')
-        })
-        target.classList.add('admin__nav-item-active')
-        content.classList.remove('hide')
+        content.classList.toggle('hide')
+        if(!target.classList.contains('admin__nav-item-active')){
+          navItem.forEach(item => {
+            item.classList.remove('admin__nav-item-active')
+          })
+          target.classList.add('admin__nav-item-active')
+        }
+        else if(target.classList.contains('admin__nav-item-active')){
+          target.classList.remove('admin__nav-item-active')
+        }
       }
-      else if(target.getAttribute('tab-index') != content.getAttribute('tab-index')){
+      if(target.getAttribute('tab-index') != content.getAttribute('tab-index')){
         content.classList.add('hide')
       }
     })  

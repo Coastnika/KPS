@@ -105,6 +105,7 @@
   border-radius: 3px;
   margin-top: 10px;
   margin-bottom: 20px;
+  z-index: 1;
   
 }
 .statistics__transition-admin{
@@ -120,6 +121,13 @@
   border-radius: 3px 3px 0px 0px; 
   padding: 0px 12px;
 }
+.transition__sroll-wrap{
+  height: 294px;
+  overflow: auto;
+  padding-top: 42px;
+  transform: translateY(-42px);
+  z-index: -1;
+}
 .transition__item{
   display: flex;
   align-items: center;
@@ -128,7 +136,11 @@
   border: 1px solid rgba(255,255,255,0);
   border-bottom: 1px solid #F2F2F2;
   border-radius: 3px;
-  
+  background: #fff;
+}
+.transition__item-headline{
+  z-index: 10;
+  background: #fff;
 }
 .transition__item:hover{
   border: 1px solid rgba(47, 153, 204, 0.25);
@@ -140,6 +152,10 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
 }
 .transition__text--bold{
   font-family: MuseoSansCyrl;
