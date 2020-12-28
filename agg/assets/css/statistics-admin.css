@@ -417,3 +417,12 @@ label input{
       position: relative;
       margin-left: 15px;
   }
+/* 
+  .admin-controls__save .svg--blue{
+      stroke: #2F99CC;
+      border: 2px solid #2F99CC;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  } */
