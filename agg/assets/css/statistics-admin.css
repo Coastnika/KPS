@@ -140,6 +140,7 @@ label input{
     line-height: 20px;
     color: #2F99CC;
     border-bottom: 1px solid rgba(47,153,204, .5);
+    height: 19px;
 }
 .admin__card-contacts--blue:hover{
     border-bottom: 1px solid #fff;
