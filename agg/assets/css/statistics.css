@@ -26,6 +26,7 @@
     line-height: 143%;
     color: #444444;
     border-bottom: 1px dashed rgba(47,153,204, .5);
+    height: 19px;
     
 }
 .statistics__link:hover{
@@ -46,7 +47,6 @@
   .statistics__choose-link-item{
     font-weight: 300;
     font-size: 14px;
-    line-height: 143%;
     color: #444444;
     position: relative;
   }
@@ -91,7 +91,7 @@
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 .statistics__download-title{
     font-weight: 300;

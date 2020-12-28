@@ -68,7 +68,7 @@
   border-bottom: 1px dashed rgba(47,153,204, .5);
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   color: #2F99CC;
   width: 90px;
   height: 20px;
@@ -837,7 +837,6 @@
   display: inline-block;
   font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
   color: #444;
   background: none;
   padding: 10px 15px;
@@ -1088,9 +1087,9 @@
 .upload__text{
   font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
   color: #444444;
   padding-top: 1px;
+  height: 19px;
 }
 .upload__text--bold{
   font-family: MuseoSansCyrl;
@@ -1754,6 +1753,7 @@
   cursor: pointer;
   position: relative;
   margin-right: 24px;
+  height: 19px;
 }
 
 
