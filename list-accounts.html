@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./agg/assets/css/clear.css">
+  <link rel="stylesheet" href="./agg/assets/css/fonts.css">
+  <link rel="stylesheet" href="./agg/assets/css/breadcrumbs.css">
+  <link rel="stylesheet" href="./agg/assets/css/header.css">
+  <link rel="stylesheet" href="./agg/assets/css/footer.css">
+
+  
+  <link rel="stylesheet" href="./agg/assets/css/statistics.css">
+  <link rel="stylesheet" href="./agg/assets/css/statistics-admin.css">
+  <link rel="stylesheet" href="./agg/assets/css/settings.css">
+  <link rel="stylesheet" href="./agg/assets/css/accounting.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="content spacer container">
+        <a href="https://k-ps.ru" class="logo">
+        </a>
+        <div class="header__right spacer">
+          <div id="search_cable" class="search " autocomplete="off">
+            <input data-limit="5" type="text" id="mr_search" name="mr_search" class="search__field"
+              placeholder="Поиск по маркоразмеру">
+            <div class="search__select">
+              <p data-stype="1" class="search__selected">
+                <svg class="svg-icon icon-search-type-2">
+                  <use xlink:href="#icon-search-type-2"></use>
+                </svg>
+                <span>По характеристикам</span>
+              </p>
+
+              <svg class="svg-icon icon-arrow-select">
+                <use xlink:href="#icon-arrow-select"></use>
+              </svg>
+
+              <div class="search__select-list">
+                <p data-stype="1" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-2">
+                    <use xlink:href="#icon-search-type-2"></use>
+                  </svg>
+                  <span>На складах</span>
+                </p>
+                <p data-stype="2" class="search__select-item">
+                  <svg class="svg-icon icon-search-type-1">
+                    <use xlink:href="#icon-search-type-1"></use>
+                  </svg>
+                  <span>По характеристикам</span>
+                </p>
+              </div>
+              <!--search__select-list-->
+            </div>
+            <!--search__select-->
+            <button class="search__btn">
+              <svg class="svg-icon icon-search pos-center">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--header__right-->
+        <div class="header__price">
+          <div class="header__price-text">1 334,62 руб</div>
+          <div class="header__price-btn">
+            <img src="./agg/assets/images/svg/AddPlus.svg" alt="">
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu-icon">
+            <img class="header__menu-icon--margin" src="./agg/assets/images/svg/profile.svg" alt="">
+            <img src="./agg/assets/images/svg/arrow-bottom.svg" alt="">
+          </div>
+        </div>
+        <!--content-->
+    </header>
+
+    <section class="pager">
+      <div class="content container">
+        <a href="https://k-ps.ru/" class="pager__link">КПС</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Личный кабинет</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link">Статистика</a>
+        <span class="pager__colon">
+          <img src="./agg/assets/images/svg/arrow.svg" class="svg-icon icon-arrow-pager" />
+        </span>
+        <a href="" class="pager__link pager__link--active">Администратор</a>
+      </div>
+      <!--content-->
+    </section>
+    <!--pager-->
+
+    <div class="lk">
+      <nav class="lk__nav">
+        <div class="container">
+          <ul class="lk__nav-list">
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Кампании</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link lk__nav-link--current">Статистика</a></li>
+            <li class="lk__nav-item"><a href="" class="lk__nav-link">Бухгалтерия</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <section class="admin">
+      <div class="container">
+        <div class="statistics__title">Выписанные счета</div>
+        <div class="admin__search admin__search-accounting">
+          <div class="admin__search-title">
+            <span>Поиск</span>
+            <div class="settings__upload-dropdown custom__select">
+              <div class="settings__upload-dropdown-text custom__select-title custom__select-title-admin"> по названию</div>
+              <div class="custom__select-content custom__select-content-accounting hide">
+                <div class="custom__select-text">по названию</div>
+                <div class="custom__select-text">ИНН</div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics__search">
+            <input type="text" class="search__field-statistics" placeholder="Введите текст запроса">
+            <svg class="icon-search icon-search-statistics">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="statistics__transition">
+          <div class="transition">
+            <div class="transition__table">
+              <div class="transition__headline">
+                <div class="transition__text accounting__text-num">Номер счета</div>
+                <div class="transition__text accounting__text-date">Дата</div>
+                <div class="transition__text accounting__text-organization">Организация</div>
+                <div class="transition__text accounting__text-price">Сумма, руб</div>
+                <div class="transition__text accounting__text-status">Статус счета</div>
+                <div class="transition__text accounting__text">Статус документов</div>
+              </div>
+              <!--item1-->
+              <div class="transition__item">
+                <div class="transition__text accounting__text-num transition__text--bold" >
+                  <label class="statistics__trigger">
+                    <span>00011012</span> 
+                    <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                      <use xlink:href="#icon-arrow-select"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="transition__text transition__text--bold accounting__text-date">02.11.20</div>
+                <div class="transition__text transition__text--bold accounting__text-organization">ООО “Провод”</div>
+                <div class="transition__text transition__text--bold accounting__text-price">3 300,00</div>
+                <div class="transition__text transition__text--bold accounting__text-status text--green">Оплачен</div>
+                <div class="transition__text transition__text--bold text--green">Готовы</div>
+              </div>
+               <!--/item1-->
+              <!--subitems1-->
+              <div class="statistics__subitems account__subitems hide">
+                <div class="acounting__documents acounting__documents--margin">
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text ">
+                          Счёт
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                    <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                    <div class="acounting__documents-text ">
+                        Акт
+                    </div>
+                </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Отчет о расходах
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf-group.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Комплект документов
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <!--/subitems1-->
+              <!--item2-->
+              <div class="transition__item">
+                <div class="transition__text accounting__text-num transition__text--bold" >
+                  <label class="statistics__trigger">
+                    <span>00011012</span> 
+                    <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                      <use xlink:href="#icon-arrow-select"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="transition__text transition__text--bold accounting__text-date">02.11.20</div>
+                <div class="transition__text transition__text--bold accounting__text-organization">ООО “Провод”</div>
+                <div class="transition__text transition__text--bold accounting__text-price">3 300,00</div>
+                <div class="transition__text transition__text--bold accounting__text-status text--red">Не оплачен</div>
+                <div class="transition__text transition__text--bold"></div>
+              </div>
+               <!--/item2-->
+              <!--subitems2-->
+              <div class="statistics__subitems account__subitems hide">
+                <div class="acounting__documents acounting__documents--margin">
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text ">
+                          Счёт
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                    <img  src ="./agg/assets/images/svg/unactive-pdf.svg"class="acounting__documents-icon"/>
+                    <div class="acounting__documents-text acounting__documents-text-unactive">
+                        Акт
+                    </div>
+                </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/unactive-pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text acounting__documents-text-unactive">
+                          Отчет о расходах
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/unactive-pdf-group.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text acounting__documents-text-unactive">
+                          Комплект документов
+                      </div>
+                  </div>
+                </div>
+                <div class="accounting__notification">
+                  В банке по ИНН<span class="accounting__notification-status text--red"> платежей не найдено </span>
+                </div>
+              </div>
+              <!--/subitems2-->
+               <!--item3-->
+               <div class="transition__item">
+                <div class="transition__text accounting__text-num transition__text--bold" >
+                  <label class="statistics__trigger">
+                    <span>00011012</span> 
+                    <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                      <use xlink:href="#icon-arrow-select"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="transition__text transition__text--bold accounting__text-date">02.11.20</div>
+                <div class="transition__text transition__text--bold accounting__text-organization">ООО “Провод”</div>
+                <div class="transition__text transition__text--bold accounting__text-price">3 300,00</div>
+                <div class="transition__text transition__text--bold accounting__text-status text--red">Не оплачен</div>
+                <div class="transition__text transition__text--bold text--green"></div>
+                </div>
+               <!--/item3-->
+              <!--subitems3-->
+              <div class="statistics__subitems  account__subitems hide">
+                <div class="acounting__documents acounting__documents--margin">
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text ">
+                          Счёт
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                    <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                    <div class="acounting__documents-text ">
+                        Акт
+                    </div>
+                </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Отчет о расходах
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf-group.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Комплект документов
+                      </div>
+                  </div>
+              </div>
+              <div class="accounting__notification">
+                В банке по ИНН <span class="accounting__notification-status text--green">найден п/п 390 от 05.10.2020</span>
+              </div>
+              <div class="accounting__text">
+                <p>ООО “Провод”, ИНН 7810050505</p>
+                <p>Назначение платежа: Оплата за услуги рекламы по счету от 04.10.2020</p> 
+              </div>
+              <div class="settings__payer-button settings__payer-button--bind">
+                  <button type="button" class="button-load region-accept">Привязать платеж к счету: 00011012 </button>
+                  <svg class="svg--blue">
+                    <use xlink:href="#bind"></use>
+                  </svg>
+                </div>
+              </div>
+              <!--/subitems3-->
+              <!--item4-->
+              <div class="transition__item">
+                <div class="transition__text accounting__text-num transition__text--bold" >
+                  <label class="statistics__trigger">
+                    <span>00011012</span> 
+                    <svg class="svg-icon icon-arrow-select statistics__trigger-arrow">
+                      <use xlink:href="#icon-arrow-select"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="transition__text transition__text--bold accounting__text-date">02.11.20</div>
+                <div class="transition__text transition__text--bold accounting__text-organization">ООО “Провод”</div>
+                <div class="transition__text transition__text--bold accounting__text-price">3 300,00</div>
+                <div class="transition__text transition__text--bold accounting__text-status text--gray">Анулирован</div>
+                <div class="transition__text transition__text--bold text--green"></div>
+              </div>
+               <!--/item4-->
+              <!--subitems4-->
+              <div class="statistics__subitems  account__subitems hide">
+                <div class="acounting__documents acounting__documents--margin">
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text ">
+                          Счёт
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                    <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                    <div class="acounting__documents-text ">
+                        Акт
+                    </div>
+                </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Отчет о расходах
+                      </div>
+                  </div>
+                  <div class="acounting__documents-item">
+                      <img  src ="./agg/assets/images/svg/pdf-group.svg"class="acounting__documents-icon"/>
+                      <div class="acounting__documents-text">
+                          Комплект документов
+                      </div>
+                  </div>
+              </div>
+              <div class="accounting__notification">
+                В банке по ИНН <span class="accounting__notification-status text--green">найден п/п 390 от 05.10.2020</span>
+              </div>
+              <div class="accounting__text">
+                <p>ООО “Провод”, ИНН 7810050505</p>
+                <p>Назначение платежа: Оплата за услуги рекламы по счету от 04.10.2020</p> 
+              </div>
+              </div>
+              <!--/subitems4-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="spacer content-footer">
+        <div class="footer__wrapper">
+          <p class="copyright">
+            КПС 2015—2020 </p>
+
+          <nav class="nav">
+            <a href="https://k-ps.ru/info/adv/" class="nav__link">Реклама</a>
+            <a href="https://k-ps.ru/info/" class="nav__link">Возможности системы</a>
+            <a href="https://k-ps.ru/confirm/" class="nav__link">Пользовательское соглашение</a>
+            <a href="https://k-ps.ru/contact/" class="nav__link">Контакты</a>
+          </nav>
+          <div class="social">
+            <a href="https://vk.com/kpsru" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-1">
+                <use xlink:href="#icon-social-1"></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/KabelnayaPoiskovayaSistema/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-2">
+                <use xlink:href="#icon-social-2"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/kpsru/" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-3">
+                <use xlink:href="#icon-social-3"></use>
+              </svg>
+            </a>
+            <a href="https://ok.ru/group/55563832590453" class="social__link" rel="nofollow">
+              <svg class="svg-icon icon-social-4">
+                <use xlink:href="#icon-social-4"></use>
+              </svg>
+            </a>
+          </div>
+          <!--social-->
+        </div>
+      </div>
+      <!--content-->
+    </footer>
+
+     <!-- modal-delete -->
+
+  <div class="modal__delete hide">
+    <div class="modal__delete-wrap">
+      <div class="modal__delete-close delete-close">
+        <img src="./agg/assets/images/svg/close.svg" alt="">
+      </div>
+      <div class="modal__delete-content">
+        <div class="modal__delete-exclamation"><img src="./agg/assets/images/svg/exclamation.svg" alt=""></div>
+        <div class="modal__delete-question">Вы хотите удалить все 15 маркоразмеров кабеля ВВГнг(А)?</div>
+      </div>
+      <div class="modal__buttons">
+        <div class="modal__button-yes">
+          <button class="modal__btn-yes">Да</button>
+        </div>
+        <div class="modal__button-cancel">
+          <button class="modal__btn-cancel delete-close">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- modal-moderator-->
+
+   <div class="modal__moderator">
+    <div class="modal__moderator-wrap">
+      <div class="modal__moderator-close">
+        <img src="./agg/assets/images/svg/close.svg" alt="">
+      </div>
+     <div class="modal__moderator-text">
+      Ошибки отправлены на проверку модератору, их исправление может занимать до 3 суток. Результат проверки будет внесен в кампанию, а пояснения по ошибкам придутна вашу почту 
+      <span class="modal-email">user@mail.ru</span>
+     </div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./agg/assets/js/search.js"></script>
+    <script src="./agg/assets/js/script.js"></script>
+    <script src="./agg/assets/js/statistics.js"></script>
+</body>
+
+</html>

@@ -2451,6 +2451,9 @@ input::-webkit-inner-spin-button {
 .settings__payer-button-account{
  
 }
+.settings__payer-button--bind{
+  display: inline-block;
+}
 .download__account{
   font-weight: 300;
   font-size: 14px;
@@ -2668,6 +2671,10 @@ input::-webkit-inner-spin-button {
 }
 .custom__select-content-search{
   min-width: 215px;
+}
+.custom__select-content-accounting{
+  bottom: -84px;
+  min-width: 125px;
 }
 
 .custom__select-content-time{

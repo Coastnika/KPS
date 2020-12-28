@@ -4,11 +4,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.admin__search-accounting{
+    width: 450px;
+}
 .admin__search-title{
     cursor: pointer;
     font-weight: 300;
     font-size: 14px;
-    line-height: 20px;
     color: #444444;
     display: flex;
     align-items: center;
