@@ -208,3 +208,40 @@
     line-height: 20px;
     color: #999999;
 }
+
+.accounting__contacts{}
+.accounting__contacts-form{
+    padding-top: 15px;
+}
+.accounting__contacts-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.accounting__contacts-text{
+    width: 220px;
+    margin-right: 14px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #444;
+}
+.accounting__contacts-input{
+    color: #444;
+    width: 320px;
+    height: 40px;
+    border: 1px solid #CECFCF;
+    font-size: 14px;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.accounting__contacts-input:focus{
+    border: 1px solid #2F99CC;
+}
+.accounting__contacts-input::placeholder{
+    color: #444;
+}
+
+.accounting__contacts-input-index{
+    width: 92px;
+}
