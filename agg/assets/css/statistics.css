@@ -238,8 +238,8 @@
 }
 .statistics__more{
   cursor: pointer;
+  margin: auto;
 }
-
 .dropdown-checkbox__container{
   background: #FFFFFF;
   border: 1px solid #2F99CC;
