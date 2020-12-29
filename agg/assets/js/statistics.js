@@ -53,14 +53,3 @@ switchIn.forEach((input, inputIndex) => {
     })
   })
 })
-
-//Костыль для скролла в статистике
-let headlineContainer = document.querySelectorAll('.transition__item-headline')
-
-headlineContainer.forEach(headline => {
-  headline.addEventListener('click', e => {
-    if(e.target.closest('.headline-trigger')){
-      console.log('123')
-    }
-  })
-})

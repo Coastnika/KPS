@@ -67,6 +67,6 @@ function asyncRequire(hide, show) {
   setTimeout(() => {
     hide.classList.add('hide')
     show.classList.remove('hide')
-  }, 2000)
+  }, 3000)
 }
 

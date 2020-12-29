@@ -43,22 +43,22 @@
     border-radius: 3px 3px 0px 0px; 
     padding: 0px 14px;
 }
-.accounting__text{
+.accounting__item-text{
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     color: #444444;
 }
-.accounting__text-number{
+.accounting__text-item-number{
     width: 170px;
 }
-.accounting__text-date{
+.accounting__text-item-date{
     width: 139px;
 }
-.accounting__text-sum{
+.accounting__text-item-sum{
     width: 159px;
 }
-.accounting__text-status{
+.accounting__text-item-status{
     width: 172px;
 }
 .accounting__item{
@@ -75,10 +75,14 @@
     border: 1px solid rgba(47, 153, 204, 0.25);
     box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
 }
-.accounting__text-link{
-    text-decoration-line: underline;
+.accounting__text-link span{
+    border-bottom: 1px solid rgba(47,153,204, .5);
     color: #2F99CC;
     cursor: pointer;
+    margin-top: 1px;
+}
+.accounting__text-link span:hover{
+    border-bottom: 1px solid rgba(47,153,204,0);
 }
 .accounting__text--green{
     color: #4CAE4C;
