@@ -106,6 +106,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   z-index: 1;
+  background: #fff;
   
 }
 .statistics__transition-admin{
@@ -133,15 +134,14 @@
   align-items: center;
   height: 42px;
   padding: 0px 12px;
-  border: 1px solid rgba(255,255,255,0);
+  /* border: 1px solid rgba(255,255,255,0); */
   border-bottom: 1px solid #F2F2F2;
   border-radius: 3px;
-  background: #fff;
+  background-color: #fff;
+  position: relative;
 }
 .transition__item-headline{
-  z-index: 10;
   background: #fff;
-  position: relative;
   
 }
 .transition__item-headline--margin{
@@ -149,8 +149,14 @@
   margin-right: 17px;
 }
 .transition__item:hover{
-  border: 1px solid rgba(47, 153, 204, 0.25);
+  /* border: 1px solid rgba(47, 153, 204, 0.25);
   box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
+  position: relative; */
+}
+
+.headline-index{
+  z-index: 10;
+  background-color: #fff;
 }
 
 .transition__text{
