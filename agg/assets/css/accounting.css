@@ -324,8 +324,9 @@
 }
 .accounting__text-num span{
     color: #2F99CC;
-    border-bottom: 1px solid rgba(47,153,204, 1);
+    /* border-bottom: 1px solid rgba(47,153,204, 1); */
     margin-top: 1px;
+    text-decoration: underline;
 }
 .accounting__text-num span:hover{
     border-bottom: 1px dashed rgba(47,153,204, 0);
