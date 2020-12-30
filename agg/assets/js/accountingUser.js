@@ -62,7 +62,7 @@ function toggleContent(hide, show){
 }
 
 
-// имитаия запроса на сервер
+// имитация запроса на сервер
 function asyncRequire(hide, show) {
   setTimeout(() => {
     hide.classList.add('hide')

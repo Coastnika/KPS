@@ -2642,7 +2642,7 @@ input::-webkit-inner-spin-button {
 .custom__select-title::before{
   content: '';
   position: absolute;
-  right: -15px;
+  right: -19px;
   top: 2px;
   background-image: url('../images/svg/select-arrow.svg');
   background-repeat: no-repeat;
