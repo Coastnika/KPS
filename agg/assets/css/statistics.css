@@ -139,6 +139,10 @@
   background: #fff;
 }
 
+
+.transition__item-clearfix{
+  border: none;
+}
 .transition__item-headline{
   z-index: 10;
   background: #fff;
@@ -152,7 +156,20 @@
 .transition__item:hover{
   border: 1px solid rgba(47, 153, 204, 0.25);
   box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
-  position: relative;
+
+}
+.transition__item-clearfix:hover{
+  border: none;
+  box-shadow: none;
+}
+.transition__container{
+  border: 1px solid rgba(255,255,255,0);
+  border-bottom: 1px solid #F2F2F2;
+  border-radius: 3px;
+}
+.transition__container:hover{
+  border: 1px solid rgba(47, 153, 204, 0.25);
+  box-shadow: 0px 4px 4px rgba(47, 153, 204, .1);
 }
 
 .transition__text{
