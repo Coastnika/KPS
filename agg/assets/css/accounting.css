@@ -138,13 +138,14 @@
     font-weight: 500;
     color: #444444;
     margin-top: 20px;
+    margin-bottom: 11px;
 }
 .accounting__documents-item{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.acounting__documents-item-unactive{
+.accounting__documents-item-unactive{
     cursor: default;
 
 }
@@ -222,11 +223,6 @@
     font-size: 14px;
     line-height: 20px;
     color: #999999;
-}
-
-.accounting__contacts{}
-.accounting__contacts-form{
-    padding-top: 15px;
 }
 .accounting__contacts-wrapper{
     display: flex;
