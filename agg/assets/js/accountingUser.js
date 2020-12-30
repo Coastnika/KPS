@@ -1,30 +1,4 @@
-// //validation contacts
-let accountingInputs = document.querySelectorAll('.accounting__contacts-input')
-let buttonSend = document.querySelector('.submit-disable')
-let accountingForm = document.querySelector('.accounting__contacts-form')
 
-
-accountingForm.addEventListener('input', () => {
-  let valid = 0;
-
-  accountingInputs.forEach(input => {
-    if(input.value.trim() != ''){
-      valid += 1
-    }
-    else{
-      valid = 0
-    }
-    console.log(valid)
-  })
-
-  if(valid >= accountingInputs.length){
-    buttonSend.classList.add('submit-disable-hide')
-  }
-})
-
-buttonSend.addEventListener('click', e => {
-  e.preventDefault()
-})
 
 // logic 
 let accountingButton = document.querySelector('.accounting-button')
@@ -70,3 +44,39 @@ function asyncRequire(hide, show) {
   }, 3000)
 }
 
+// //validation contacts
+let accountingInputs = document.querySelectorAll('.accounting__contacts-input')
+let buttonSend = document.querySelector('.submit-disable')
+let accountingForm = document.querySelector('.accounting__contacts-form')
+let getOriginalIcon = document.querySelector('.get-original-icon')
+
+accountingForm.addEventListener('input', () => {
+  let valid = 0;
+
+  accountingInputs.forEach(input => {
+    if(input.value.trim() != ''){
+      valid += 1
+    }
+    else{
+      valid = 0
+    }
+    console.log(valid)
+  })
+
+  if(valid >= accountingInputs.length){
+    buttonSend.classList.add('submit-disable-hide')
+    getOriginal.classList.remove('get-original--gray')
+    getOriginalIcon.classList.remove('svg--gray')
+    getOriginalIcon.classList.add('svg--blue')
+  }
+  else{
+    buttonSend.classList.remove('submit-disable-hide')
+    getOriginal.classList.add('get-original--gray')
+    getOriginalIcon.classList.add('svg--gray')
+    getOriginalIcon.classList.remove('svg--blue')
+  }
+})
+
+buttonSend.addEventListener('click', e => {
+  e.preventDefault()
+})

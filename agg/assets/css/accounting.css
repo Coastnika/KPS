@@ -108,6 +108,7 @@
     align-items: center;
     width: 228px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .accounting__sum-status{
     background: rgba(76, 174, 76, 0.1);
@@ -126,7 +127,6 @@
 .acounting__documents{
     display: flex;
     align-items: center;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 .acounting__documents--margin{
@@ -145,7 +145,7 @@
     cursor: pointer;
 }
 .acounting__documents-item-unactive{
-    cursor: default!;
+    cursor: default;
 }
 .acounting__documents-item:not(:last-child){
     margin-right: 30px;
@@ -270,7 +270,7 @@
     right: 0;
     bottom: 0;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .submit-disable-hide::before{
@@ -485,3 +485,7 @@
     margin-top: 10px;
 }
 
+.get-original--gray{
+    border-color: #CECFCF;
+    color: #CECFCF;
+}
