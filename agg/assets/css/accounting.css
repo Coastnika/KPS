@@ -135,7 +135,7 @@
 .accounting__subtitle{
     font-size: 18px;
     line-height: 32px;
-    font-weight: bold;
+    font-weight: 500;
     color: #444444;
     margin-top: 20px;
 }
@@ -143,6 +143,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.acounting__documents-item-unactive{
+    cursor: default!;
 }
 .acounting__documents-item:not(:last-child){
     margin-right: 30px;
@@ -167,7 +170,7 @@
 .accounting__question span{
     font-size: 14px;
     color: #444444;
-    font-weight: bold;
+    font-weight:500;
 }
 
 .accounting__question-accept{
